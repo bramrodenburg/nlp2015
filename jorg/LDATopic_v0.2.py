@@ -52,6 +52,8 @@ def extractallsentences(xdoc, stops):
     # because that was not included in the original files
     numOfReviews = 0
     start = timer()
+    reviewsentences_cleaned = []
+
     for review in tree.find_all("review_text"):
         # for each review text: 1) split in sentences
         #                               2) get rid of punctuations
@@ -143,7 +145,7 @@ if __name__ == '__main__':
 
     """
     parameters:
-        (1) preprocess files:
+        (1) preprocess files: "True" or "False" (no boolean but string)
         (2) directory path for input & output files
     """
 
@@ -151,27 +153,23 @@ if __name__ == '__main__':
         preprocess = "False"
         dir_path = 'F:/temp/'
     else:
-        print "# of args  %s" % (len(sys.argv))
-        print "Command args %s %s %s" % (sys.argv[0], sys.argv[1], sys.argv[2])
         preprocess = sys.argv[1]
         dir_path = sys.argv[2]
 
     inFile = dir_path + "dvdReviews.xml"
-    pickefile = dir_path + "dvd_reviews_limited.pkl"
+    pickelfile = dir_path + "dvd_reviews_limited.pkl"
 
     # inFile = sys.argv[2] + "dvd.xml" huge file
 
     if preprocess == 'True':
         print "Preprocssing...."
         reviews, w = preprocessing(inFile)
-        reviewsentences_cleaned = []
-
-    if preprocess == 'True':
-        with open(pickefile, 'wb') as f:
+        print "Save objects to file %s" % pickelfile
+        with open(pickelfile, 'wb') as f:
             pickle.dump(reviews, f)
             pickle.dump(w, f)
     else:
-        with open(pickefile, 'rb') as f:
+        with open(pickelfile, 'rb') as f:
             print "Loading objects from file...."
             reviews = pickle.load(f)
             print "Number of reviews %s" % (len(reviews))
