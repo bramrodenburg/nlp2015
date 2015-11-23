@@ -24,7 +24,7 @@ def preprocessing(inFile):
 
     start = timer()
     print "Preprocssing...."
-    xdoc = codecs.open(inFile, 'r', encoding='utf8', errors='ignore') # , errors='replace'
+    xdoc = codecs.open(inFile, 'r',  errors='ignore') # , errors='replace'
     stops = stopwords.words("english")
     reviews, bag_of_w = extractallsentences(xdoc, stops)
 
@@ -34,6 +34,7 @@ def preprocessing(inFile):
 
     start = timer()
     bag_of_w = filter(None, bag_of_w)
+    bag_of_w = dict([(bag_of_w[i], i) for i in range(len(bag_of_w))])
     doc_words = create_doc_word_matrix(reviews, bag_of_w)
     end = timer()
     print "create_doc_word_matrix time %s" % (end - start)
@@ -55,10 +56,11 @@ def extractallsentences(xdoc, stops):
     # because that was not included in the original files
     numOfReviews = 0
     start = timer()
-    reviewsentences_cleaned = []
+    #reviewsentences_cleaned = []
     bag_of_w = []
 
     for review in tree.find_all("review_text"):
+        reviewsentences_cleaned = []
         # for each review text: 1) split in sentences
         #                               2) get rid of punctuations
         #                               3) tokenize to words
@@ -95,7 +97,6 @@ def word_indices(vec):
     for idx in vec.nonzero()[0]:
         for i in xrange(int(vec[idx])):
             yield idx
-
 
 class LDAModel(object):
 
@@ -140,7 +141,7 @@ class LDAModel(object):
             # the index "i" indicates the i-th word in the document
             for i, wd in enumerate(word_indices(doc_word_m[d, :])):
                 # choose an arbitrary topic as first topic for word i
-                k = np.random.randint(self.num_of_topics)
+                k = np.random.randint(self.num_of_topics, size=self.num_of_topics)
                 self.ndk[d, k] += 1
                 self.nd[d] += 1
                 self.nkw[k, wd] += 1
@@ -152,7 +153,6 @@ class LDAModel(object):
         # use this vector of "num_of_topics" to construct the multinomial distribution from which we will sample
         # a new topic for the "current word"
         p_k = np.empty(self.num_of_topics)
-
         for tp in range(self.num_of_topics):
             # reference to formula in Ivan's slides
             # self.nd =C(i)=C(d) is # of words in document
@@ -169,7 +169,7 @@ class LDAModel(object):
         return p_k
 
     def run_gibbs_sampling(self, max_iterations=2):
-
+	print "Total number of documents: %d" % self.n_docs
         # how long do we iter before we stop?
         for gibbs_iteration in range(max_iterations):
             # loop over documents/reviews
@@ -181,10 +181,12 @@ class LDAModel(object):
                 # wd is the index of the word taken from the document/word matrix
                 # if doc contains 3 times the word "book" and twice the word "science" the result is:
                 # 0 book, 1 book, 2 book, 3 science, 4 science....
+                print "Length of doc_word_counts: (%d, ,)" % self.doc_word_counts[d, :].shape
+                print "Number of words: %d" % np.sum(self.doc_word_counts[d, :])
                 for i, wd in enumerate(word_indices(self.doc_word_counts[d, :])):
 
                     # in fact we don't need the word
-                    word = self.bag_of_words[wd]
+                    word = self.bag_of_words.values()[wd]
                     # choose the topic for the word we assigned in the initialization
                     k = self.doc_w_topics_assgn[(d, i)]
                     # lower all necessary counts for this topic
@@ -193,7 +195,8 @@ class LDAModel(object):
                     self.nk[k] -= 1
                     p_k = self.build_topic_multinomial_dist(d, wd)
                     # sample a new topic from the "new" distribution p_k (p_k is a num_of_topics dimensional vector)
-                    k = np.nonzero(np.random.multinomial(1, p_k))[0][0]
+                    #k = np.nonzero(np.random.multinomial(1, p_k))[0][0]
+                    k = np.random.choice(range(self.num_of_topics), p_k)
                     # increase counters according to the new sampled topic
                     self.ndk[d, k] += 1
                     self.nkw[k, wd] += 1
@@ -235,9 +238,10 @@ def create_doc_word_matrix(docs, words):
             # above...strange
             s = filter(None, s)
             for wd in s:
-                idx = words.index(wd)
-                dw[idx] += 1
-        docs_words_m[m, :] = dw[:]
+                idx = words[wd]
+                docs_words_m[m, idx] += 1
+
+    print("Finished creating doc word matrix.")
 
     return docs_words_m
 
@@ -258,8 +262,8 @@ if __name__ == '__main__':
         dir_path = sys.argv[2]
 
     # inFile = dir_path + "dvd.xml"
-    inFile = dir_path + "dvdReviews.xml"
-    inFile = dir_path + "example.xml"
+    inFile = dir_path + "all.review"
+    #inFile = dir_path + "example.xml"
     pickelfile = dir_path + "example.pkl"
     # pickelfile = dir_path + "dvd_reviews_limited.pkl"
 
@@ -276,7 +280,7 @@ if __name__ == '__main__':
             print "# of words in bag %s %s" % doc_words.shape
             pickle.dump(doc_words, f)
         end = timer()
-        print "save objects %s" % (end - start)
+        print "Saved objects to file in %s seconds." % (end - start)
     else:
         with open(pickelfile, 'rb') as f:
             print "Loading objects from file...."
