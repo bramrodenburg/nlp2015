@@ -6,16 +6,17 @@ from nltk.stem.porter import *
 from bs4 import BeautifulSoup
 import codecs
 from timeit import default_timer as timer
+import string
 
 
 def preprocessing(inFile):
 
     start = timer()
     print "Preprocssing...."
-    xdoc = codecs.open(inFile, 'r',  errors='ignore') # , errors='replace'
+    xdoc = codecs.open(inFile, 'r',  errors='ignore')  # , errors='replace'
     stops = stopwords.words("english")
-    reviews, bag_of_w = extractallsentences(xdoc, stops)
-
+    reviews, bag_of_w, max_number_s = extractallsentences(xdoc, stops)
+    print "Max # of sentences %d" % max_number_s
     bag_of_w = list(set(bag_of_w))
     end = timer()
     print "preprocessing time %s" % (end - start)
@@ -44,8 +45,8 @@ def extractallsentences(xdoc, stops):
     # because that was not included in the original files
     numOfReviews = 0
     start = timer()
-    #reviewsentences_cleaned = []
     bag_of_w = []
+    max_number_s = 0
 
     for review in tree.find_all("review_text"):
         reviewsentences_cleaned = []
@@ -58,10 +59,14 @@ def extractallsentences(xdoc, stops):
         for sentence in reviewsentences:
             # get rid off stop words
             sentence__clean = [stemmer.stem(word.lower().strip().strip(",.;:?!-#*[]()")) for word in sentence if (word not in stops and word not in punct)]
-            reviewsentences_cleaned.append(sentence__clean)
             sentence__clean = filter(None, sentence__clean)
             for ww in sentence__clean:
                 bag_of_w.append(ww)
+            # print sentence__clean
+            reviewsentences_cleaned.append(sentence__clean)
+
+        if max_number_s < len(reviewsentences_cleaned):
+            max_number_s = len(reviewsentences_cleaned)
 
         reviews.append(reviewsentences_cleaned)
 
@@ -71,9 +76,9 @@ def extractallsentences(xdoc, stops):
 
     print "review in tree.find_all %s" % (end - start)
     print "# of reviews %s, words in bag %s" % (numOfReviews, len(bag_of_w))
-    return reviews, bag_of_w
+    return reviews, bag_of_w, max_number_s
 
-    
+
 def create_doc_word_matrix(docs, words):
 
     # vector that holds for each doc the word counts
@@ -96,4 +101,4 @@ def create_doc_word_matrix(docs, words):
     print("Finished creating doc word matrix.")
 
     return docs_words_m
-    
+

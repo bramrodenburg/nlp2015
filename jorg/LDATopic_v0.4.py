@@ -1,6 +1,5 @@
-from preprocess import *
-
 import sys
+from preprocessv11 import *
 import pickle
 from timeit import default_timer as timer
 
@@ -27,6 +26,7 @@ def word_indices(vec):
     for idx in vec.nonzero()[0]:
         for i in xrange(int(vec[idx])):
             yield idx
+
 
 class LDAModel(object):
 
@@ -99,7 +99,7 @@ class LDAModel(object):
         return p_k
 
     def run_gibbs_sampling(self, max_iterations=2):
-	print "Total number of documents: %d" % self.n_docs
+        # print "Total number of documents: %d" % self.n_docs
         # how long do we iter before we stop?
         for gibbs_iteration in range(max_iterations):
             # loop over documents/reviews
@@ -111,12 +111,12 @@ class LDAModel(object):
                 # wd is the index of the word taken from the document/word matrix
                 # if doc contains 3 times the word "book" and twice the word "science" the result is:
                 # 0 book, 1 book, 2 book, 3 science, 4 science....
-                print "Length of doc_word_counts: (%d, ,)" % self.doc_word_counts[d, :].shape
-                print "Number of words: %d" % np.sum(self.doc_word_counts[d, :])
+                # print "Length of doc_word_counts: (%d, ,)" % self.doc_word_counts[d, :].shape
+                # print "Number of words: %d" % np.sum(self.doc_word_counts[d, :])
                 for i, wd in enumerate(word_indices(self.doc_word_counts[d, :])):
 
                     # in fact we don't need the word
-                    word = self.bag_of_words.values()[wd]
+                    # word = self.bag_of_words.values()[wd]
                     # choose the topic for the word we assigned in the initialization
                     k = self.doc_w_topics_assgn[(d, i)]
                     # lower all necessary counts for this topic
@@ -126,7 +126,7 @@ class LDAModel(object):
                     p_k = self.build_topic_multinomial_dist(d, wd)
                     # sample a new topic from the "new" distribution p_k (p_k is a num_of_topics dimensional vector)
                     k = np.nonzero(np.random.multinomial(1, p_k))[0][0]
-                    #k = np.random.choice(range(self.num_of_topics), p_k)
+                    # k = np.random.choice(range(self.num_of_topics), p_k)
                     # increase counters according to the new sampled topic
                     self.ndk[d, k] += 1
                     self.nkw[k, wd] += 1
@@ -142,15 +142,23 @@ class LDAModel(object):
         # and contains for each topic/word combination the probability for a word belonging to that topic k
 
         for k in range(self.num_of_topics):
-            self.phi_dist[k, :] = self.nkw[k, :] * 1/np.sum(self.nkw[k, :])
-            # print "phi row sum to %s" % np.sum(self.phi_dist[k, :])
+            if np.sum(np.sum(self.nkw[k, :] != 0)):
+                self.phi_dist[k, :] = self.nkw[k, :] * 1/np.sum(self.nkw[k, :])
+                # print "phi row sum to %s" % np.sum(self.phi_dist[k, :])
 
     def build_theta_matrix(self):
         # theta is a matrix that holds the topic probabilities for a certain document p(k|d)
         for d in xrange(self.n_docs):
-            self.theta_dist[d, :] = self.ndk[d, :] * 1/np.sum(self.ndk[d, :])
-            # print "theta row sum to %s" % np.sum(self.theta_dist[d, :])
+            if np.sum(self.ndk[d, :] != 0):
+                self.theta_dist[d, :] = self.ndk[d, :] * 1/np.sum(self.ndk[d, :])
+                # print "theta row sum to %s" % np.sum(self.theta_dist[d, :])
 
+    def store_results(self, mem_file):
+        # store the theta and phi matrix
+        with open(mem_file, 'wb') as f:
+            pickle.dump(self.theta_dist, f)
+            pickle.dump(self.phi_dist, f)
+        f.close()
 
 
 if __name__ == '__main__':
@@ -162,22 +170,24 @@ if __name__ == '__main__':
     """
 
     if len(sys.argv) == 1:
-        preprocess = "False"
-        # dir_path = 'F:/temp/'
-        dir_path = "/Users/jesse/Desktop/nlp1_project/src/"
+        preprocess = "True"
+        dir_path = 'F:/temp/topics/'
+        # dir_path = "/Users/jesse/Desktop/nlp1_project/src/"
     else:
         preprocess = sys.argv[1]
         dir_path = sys.argv[2]
 
-    # inFile = dir_path + "dvd.xml"
-    inFile = dir_path + "dvdsmall.xml"
-    #inFile = dir_path + "example.xml"
+    inFile = dir_path + "dvd.xml"
+    inFile = dir_path + "dvdReviews.xml"
+    # inFile = dir_path + "example.xml"
     pickelfile = dir_path + "dvd_reviews_limited.pkl"
     # pickelfile = dir_path + "example.pkl"
+    # pickelfile = dir_path + "dvd_reviews.pkl"
+    mem_file_results = dir_path + "lda_results.mem"
 
     # inFile = sys.argv[2] + "dvd.xml" huge file
 
-    if preprocess == 'True': 
+    if preprocess == 'True':
 
         reviews, w, doc_words = preprocessing(inFile)
         print "Save objects to file %s" % pickelfile
@@ -196,6 +206,7 @@ if __name__ == '__main__':
             w = pickle.load(f)
             doc_words = pickle.load(f)
             print "# of docs %s" % (len(reviews))
+            print "vocabulary size %d" % (len(w))
     # check_doc_word_matrix(doc_words, reviews, w)
 
     # create LDAModel object and initialize counters for Gibbs sampling
@@ -216,4 +227,6 @@ if __name__ == '__main__':
     # build the phi matrix
     lda.build_phi_matrix()
     lda.build_theta_matrix()
-    # print lda.theta_dist
+    # print lda.phi_dist
+    print np.sum(lda.phi_dist[1, :])
+    lda.store_results(mem_file_results)
