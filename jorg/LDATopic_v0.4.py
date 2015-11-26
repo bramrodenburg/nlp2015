@@ -41,6 +41,8 @@ class LDAModel(object):
         self.alpha.fill(alpha)
         self.beta = np.empty(self.vocab_size)
         self.beta.fill(beta)
+        self.sum_alpha = sum(self.alpha)
+        self.sum_beta = sum(self.beta)
 
         # number of times document m and topic k co-occur
         self.ndk = np.zeros((self.n_docs, self.num_of_topics))
@@ -62,13 +64,13 @@ class LDAModel(object):
         self.theta_dist = np.zeros((self.n_docs, self.num_of_topics))
 
     def initialize(self, doc_word_m):
-
         for d in xrange(self.n_docs):
             # i is a number between 0 and doc_length-1
             # w is a number between 0 and vocab_size-1
             # for each document, take the doc/word counter and use that to
             # create a long vector that contains each word token (so a word can appear more than once
             # the index "i" indicates the i-th word in the document
+            start = timer()
             for i, wd in enumerate(word_indices(doc_word_m[d, :])):
                 # choose an arbitrary topic as first topic for word i
                 k = np.random.randint(self.num_of_topics, size=self.num_of_topics)
@@ -77,11 +79,18 @@ class LDAModel(object):
                 self.nkw[k, wd] += 1
                 self.nk[k] += 1
                 self.doc_w_topics_assgn[(d, i)] = k  # assign topic to word in document!
+            end = timer()
 
     def build_topic_multinomial_dist(self, d, wd):
         # will return for each topic the current probability for a word-document being assigned to that topic
         # use this vector of "num_of_topics" to construct the multinomial distribution from which we will sample
         # a new topic for the "current word"
+        hltkid = (self.alpha + self.ndk[d, :]) / (self.nd[d] + self.sum_alpha)
+        hwwft = (self.beta[wd] + self.nkw[:, wd]) / (self.sum_beta + self.nk)
+        p_k = hltkid*hwwft
+        pk = p_k/sum(p_k)
+        return p_k
+        '''
         p_k = np.empty(self.num_of_topics)
         for tp in range(self.num_of_topics):
             # reference to formula in Ivan's slides
@@ -97,6 +106,7 @@ class LDAModel(object):
         # still need to normalize because this equation is just proportional to p_k
         p_k = p_k * 1/sum(p_k)
         return p_k
+        '''
 
     def run_gibbs_sampling(self, max_iterations=2):
         # print "Total number of documents: %d" % self.n_docs
@@ -113,8 +123,9 @@ class LDAModel(object):
                 # 0 book, 1 book, 2 book, 3 science, 4 science....
                 # print "Length of doc_word_counts: (%d, ,)" % self.doc_word_counts[d, :].shape
                 # print "Number of words: %d" % np.sum(self.doc_word_counts[d, :])
+                n = 0
                 for i, wd in enumerate(word_indices(self.doc_word_counts[d, :])):
-
+                    n+=1
                     # in fact we don't need the word
                     # word = self.bag_of_words.values()[wd]
                     # choose the topic for the word we assigned in the initialization
@@ -132,6 +143,7 @@ class LDAModel(object):
                     self.nkw[k, wd] += 1
                     self.nk[k] += 1
                     self.doc_w_topics_assgn[(d, i)] = k
+                print "Number of iteratoins: %d" % n
 
     # the method could return the last four counters, the one we need in order to construct our
     # distributions phi_k(w) = p(w|k) and theta_d(k) = p(k|d)
@@ -177,9 +189,10 @@ if __name__ == '__main__':
         preprocess = sys.argv[1]
         dir_path = sys.argv[2]
 
-    inFile = dir_path + "dvd.xml"
-    inFile = dir_path + "dvdReviews.xml"
+    #inFile = dir_path + "dvd.xml"
+    #inFile = dir_path + "dvdReviews.xml"
     # inFile = dir_path + "example.xml"
+    inFile = dir_path + "all.review"
     pickelfile = dir_path + "dvd_reviews_limited.pkl"
     # pickelfile = dir_path + "example.pkl"
     # pickelfile = dir_path + "dvd_reviews.pkl"
