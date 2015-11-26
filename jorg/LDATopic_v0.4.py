@@ -115,7 +115,6 @@ class LDAModel(object):
             # loop over documents/reviews
             print "Iteration %s" % (gibbs_iteration + 1)
             for d in xrange(self.n_docs):
-                print "Document %s" % (d + 1)
                 # again the same trick as in _initialize method above
                 # i is the running index for all words in the document/review
                 # wd is the index of the word taken from the document/word matrix
@@ -123,9 +122,7 @@ class LDAModel(object):
                 # 0 book, 1 book, 2 book, 3 science, 4 science....
                 # print "Length of doc_word_counts: (%d, ,)" % self.doc_word_counts[d, :].shape
                 # print "Number of words: %d" % np.sum(self.doc_word_counts[d, :])
-                n = 0
                 for i, wd in enumerate(word_indices(self.doc_word_counts[d, :])):
-                    n+=1
                     # in fact we don't need the word
                     # word = self.bag_of_words.values()[wd]
                     # choose the topic for the word we assigned in the initialization
@@ -143,7 +140,6 @@ class LDAModel(object):
                     self.nkw[k, wd] += 1
                     self.nk[k] += 1
                     self.doc_w_topics_assgn[(d, i)] = k
-                print "Number of iteratoins: %d" % n
 
     # the method could return the last four counters, the one we need in order to construct our
     # distributions phi_k(w) = p(w|k) and theta_d(k) = p(k|d)
