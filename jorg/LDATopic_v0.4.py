@@ -5,6 +5,7 @@ from timeit import default_timer as timer
 
 # The global number of topics
 K_GL = 10
+N_GIBBS_SAMPLING_ITERATIONS = 5
 
 
 def check_doc_word_matrix(mat, revs, w):
@@ -89,24 +90,7 @@ class LDAModel(object):
         hwwft = (self.beta[wd] + self.nkw[:, wd]) / (self.sum_beta + self.nk)
         p_k = hltkid*hwwft
         pk = p_k/sum(p_k)
-        return p_k
-        '''
-        p_k = np.empty(self.num_of_topics)
-        for tp in range(self.num_of_topics):
-            # reference to formula in Ivan's slides
-            # self.nd =C(i)=C(d) is # of words in document
-            # sum(self.alpha) = K*alpha
-            # sum(self.beta) = V*beta
-            how_likeli_topic_k_in_d = (self.alpha[tp] + self.ndk[d, tp]) / (self.nd[d] + sum(self.alpha))
-            how_well_w_fits_topic = (self.beta[wd] + self.nkw[tp, wd]) / (sum(self.beta) + self.nk[tp])
-            p_k[tp] = how_well_w_fits_topic * how_likeli_topic_k_in_d
-            if self.nk[tp] < 0 or self.nkw[tp, wd] < 0 or self.ndk[d, tp] < 0 or self.nd[d] < 0:
-                print self.nk[tp], self.nkw[tp, wd], self.ndk[d, tp], self.nd[d]
-
-        # still need to normalize because this equation is just proportional to p_k
-        p_k = p_k * 1/sum(p_k)
-        return p_k
-        '''
+        return pk
 
     def run_gibbs_sampling(self, max_iterations=2):
         # print "Total number of documents: %d" % self.n_docs
@@ -228,7 +212,7 @@ if __name__ == '__main__':
     print "LDA initialize time %s" % (end - start)
     # run Gibbs sampling, parameter is number of times we run Gibbs
     start = timer()
-    num_of_iterations = 5
+    num_of_iterations = N_GIBBS_SAMPLING_ITERATIONS
     print "Gibbs sampling for %s" % num_of_iterations, " iterations..."
     lda.run_gibbs_sampling(num_of_iterations)
     end = timer()
@@ -237,5 +221,8 @@ if __name__ == '__main__':
     lda.build_phi_matrix()
     lda.build_theta_matrix()
     # print lda.phi_dist
-    print np.sum(lda.phi_dist[1, :])
+    for i in range(K_GL):
+    	print "Sum of Topic %d is %.4f" % (i, np.sum(lda.phi_dist[i, :]))
     lda.store_results(mem_file_results)
+    print lda.theta_dist.shape
+    print lda.phi_dist.shape
