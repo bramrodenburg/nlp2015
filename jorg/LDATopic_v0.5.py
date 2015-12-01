@@ -2,11 +2,13 @@ import sys
 from preprocessv11 import *
 import pickle
 from timeit import default_timer as timer
+import h5py
 
 # The global number of topics
 K_GL = 10
-N_GIBBS_SAMPLING_ITERATIONS = 5
-
+N_GIBBS_SAMPLING_ITERATIONS = 50
+ALPHA = 1.0 / K_GL
+BETA = 1.0 / K_GL
 
 def check_doc_word_matrix(mat, revs, w):
     print revs[0][0]
@@ -173,10 +175,11 @@ if __name__ == '__main__':
         dir_path = sys.argv[2]
 
     #inFile = dir_path + "dvd.xml"
-    inFile = dir_path + "dvdReviews.xml"
+    #inFile = dir_path + "dvdReviews.xml"
     # inFile = dir_path + "example.xml"
-    # inFile = dir_path + "all.review"
+    inFile = dir_path + "all.review"
     pickelfile = dir_path + "dvd_reviews_limited.pkl"
+    h5_file = dir_path + "data.h5"
     # pickelfile = dir_path + "example.pkl"
     # pickelfile = dir_path + "dvd_reviews.pkl"
     mem_file_results = dir_path + "lda_results.mem"
@@ -191,22 +194,29 @@ if __name__ == '__main__':
         with open(pickelfile, 'wb') as f:
             pickle.dump(reviews, f)
             pickle.dump(w, f)
+            print "Number of reviews : %d" % len(reviews)
             print "# of words in bag %s %s" % doc_words.shape
-            pickle.dump(doc_words, f)
+            #pickle.dump(doc_words, f)
         end = timer()
+        h5f = h5py.File(h5_file, 'w')
+        h5f.create_dataset('doc_words', data=doc_words)
+        h5f.close()
         print "Saved objects to file in %s seconds." % (end - start)
     else:
         with open(pickelfile, 'rb') as f:
             print "Loading objects from file...."
             reviews = pickle.load(f)
             w = pickle.load(f)
-            doc_words = pickle.load(f)
+            #doc_words = pickle.load(f)
             print "# of docs %s" % (len(reviews))
             print "vocabulary size %d" % (len(w))
+        h5f = h5py.File(h5_file, 'r')
+        doc_words = h5f['doc_words'][:]
+        h5f.close()
     # check_doc_word_matrix(doc_words, reviews, w)
 
     # create LDAModel object and initialize counters for Gibbs sampling
-    lda = LDAModel(w, doc_words, K_GL, 0.15, 0.1)
+    lda = LDAModel(w, doc_words, K_GL, ALPHA, BETA)
     # initialize counters
     start = timer()
     print "LDA initialize..."
