@@ -1,4 +1,3 @@
-
 import nltk
 from nltk.corpus import stopwords
 import numpy as np
@@ -7,6 +6,7 @@ from bs4 import BeautifulSoup
 import codecs
 from timeit import default_timer as timer
 import string
+import re
 
 
 def preprocessing(inFile):
@@ -15,6 +15,7 @@ def preprocessing(inFile):
     print "Preprocssing...."
     xdoc = codecs.open(inFile, 'r',  errors='ignore')  # , errors='replace'
     stops = stopwords.words("english")
+    print stops
     reviews, bag_of_w, max_number_s = extractallsentences(xdoc, stops)
     print "Max # of sentences %d" % max_number_s
     bag_of_w = list(set(bag_of_w))
@@ -58,8 +59,11 @@ def extractallsentences(xdoc, stops):
 
         for sentence in reviewsentences:
             # get rid off stop words
-            sentence__clean = [stemmer.stem(word.lower().strip().strip(",.;:?!-#*[]()")) for word in sentence if (word not in stops and word not in punct)]
+            sentence__clean = [re.sub(r'\W+', '', stemmer.stem(word.lower().strip().strip(",.;:?!-#*[]()"))) for word in sentence]
+            sentence__clean = [word for word in sentence__clean if word != None and word not in stops and word not in punct and word !='' and len(word) > 2]
             sentence__clean = filter(None, sentence__clean)
+            print sentence__clean
+            # [i for i in range(10000000)]
             for ww in sentence__clean:
                 bag_of_w.append(ww)
             # print sentence__clean

@@ -5,10 +5,10 @@ from timeit import default_timer as timer
 import h5py
 
 # The global number of topics
-K_GL = 10
-N_GIBBS_SAMPLING_ITERATIONS = 50
-ALPHA = 1.0 / K_GL
-BETA = 1.0 / K_GL
+K_GL = 20
+N_GIBBS_SAMPLING_ITERATIONS = 5
+ALPHA = 50. / K_GL
+BETA = 200. / 31440
 
 def check_doc_word_matrix(mat, revs, w):
     print revs[0][0]
@@ -120,8 +120,8 @@ class LDAModel(object):
                     self.nd[d] -= 1
                     p_k = self.build_topic_multinomial_dist(d, wd)
                     # sample a new topic from the "new" distribution p_k (p_k is a num_of_topics dimensional vector)
-                    k = np.nonzero(np.random.multinomial(1, p_k))[0][0]
-                    # k = np.random.choice(range(self.num_of_topics), p_k)
+                    #k = np.nonzero(np.random.multinomial(1, p_k))[0][0]
+                    k = np.random.choice(range(self.num_of_topics), p_k)
                     # increase counters according to the new sampled topic
                     self.ndk[d, k] += 1
                     self.nkw[k, wd] += 1
