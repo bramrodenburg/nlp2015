@@ -2,14 +2,19 @@ import sys
 from preprocessv12 import *
 import pickle
 from timeit import default_timer as timer
+import h5py
 
 # The global number of topics
 K_GL = 10
 K_LOC = 5
 N_GIBBS_SAMPLING_ITERATIONS = 2
 
-def sample_r():
 
+def sample_r():
+    """
+    determine whether we're going to assign a local or global topic to a word
+    :return:
+    """
     if np.random.randint(2) == 0:
         return "gl"
     else:
@@ -17,20 +22,16 @@ def sample_r():
 
 
 def count_sent_docs(revs):
-    # count number of sentences per document
+    """
+    count the number of sentences per document/review
+    :param revs: corpus
+    :return: vector with number of sentences per doc
+    """
     docs_sent_len = np.zeros(len(revs))
     for r, doc in enumerate(revs):
         docs_sent_len[r] = len(doc)
 
     return docs_sent_len
-
-
-def check_doc_word_matrix(mat, revs, w):
-    print revs[0][0]
-    t = np.squeeze(np.asarray(mat[0, :].nonzero()))
-    print t
-    for idx in t:
-        print w[idx]
 
 
 def word_indices(vec):
@@ -51,22 +52,27 @@ class LDAModel(object):
     def __init__(self, all_words, doc_sentences_words, doc_s_count, num_of_gl_topics, num_of_loc_topics,
                  alpha_gl, alpha_loc, beta_gl, beta_loc, gamma, alpha_mix_gl, alpha_mix_loc):
 
-        # number of sliding windows per sentence
+        # number of sentences covered by a sliding window. Ivan uses 3 in his paper
         self.n_windows = 3
 
-        # number of docs/reviews, total vocabulary size of corpus
+        # number of docs/reviews, max number of sentences/review in corpus, total vocabulary size of corpus
         self.n_docs, self.num_of_max_sentences, self.vocab_size = doc_sentences_words.shape
         self.num_of_gl_topics = num_of_gl_topics
         self.num_of_loc_topics = num_of_loc_topics
+        # vector with number of sentences for each document
         self.doc_s_count = doc_s_count
 
         # for the time being we assume synchronous Dirichlet distributions
+        # parameter for Dirichlet prior dist. from which we sample our global/local topics
         self.alpha_gl = alpha_gl
         self.alpha_loc = alpha_loc
+        # parameter for Dirichlet prior dist. from which we sample K_GL/K_LOC word/topic distributions
         self.beta_gl = beta_gl
         self.beta_loc = beta_loc
+        # parameter for Dirichlet dist. that samples the window covering the sentence
         self.gamma = gamma
-        #
+        # parameter of Beta distribution from which we sample whether a word will be assigned to a global/local
+        # topic. non-symmetrical, so we can regulate whether we prefer global or local topics
         self.alpha_mix_gl = alpha_mix_gl
         self.alpha_mix_loc = alpha_mix_loc
 
@@ -82,30 +88,35 @@ class LDAModel(object):
         # number of times word w co-occur with local topic k
         self.nkw_loc = np.zeros((self.num_of_loc_topics, self.vocab_size))
 
-        # number of words assigned to topic k
+        # number of words assigned to topic global/local topics
         self.nk_gl = np.zeros(self.num_of_gl_topics)
         self.nk_loc = np.zeros(self.num_of_loc_topics)
 
-        # length of sentence s in document m
+        # length of sentence s in document m: here I don't really understand why this is a counter
+        # you would imagine that this is constant for the document, right?
         self.nds = np.zeros((self.n_docs, self.num_of_max_sentences))
-        # number of times a word from sentence s is assigned to window v. Each document has
-        # number of sentences + 2 windows.
+        # number of times a word from sentence s is assigned to window v. So this matrix isn't that
+        # beautiful because of the num_of_max_sentences dimension. So our matrix is very sparse because
+        # especially if the number of sentences/doc varies very much in the corpus. But couldn't come up
+        # with a better solution. At least I changed the last dimension to the number of sentences a
+        # window covers, that will be 3. Be aware that we will often have to add to the "window" number
+        # the running index of the sentence.
         self.ndsv = np.zeros((self.n_docs, self.num_of_max_sentences, self.n_windows))
 
         # number of times a word in document d is assigned to window v
         self.ndv = np.zeros((self.n_docs, self.num_of_max_sentences + 2))
-        # number times a global topic was assigned to document d and window v
+        # number of times a global topic was assigned to document d and window v
         self.ndv_gl = np.zeros((self.n_docs, self.num_of_max_sentences + 2))
-        # number times a local topic was assigned to document d and window v
+        # number of times a local topic was assigned to document d and window v
         self.ndv_loc = np.zeros((self.n_docs, self.num_of_max_sentences + 2))
         # number of local topics in document d and window v assigned to local topic k
         self.ndvk_loc = np.zeros((self.n_docs, self.num_of_max_sentences + 2, self.num_of_loc_topics))
 
-        # dictionary: key is tuple of (docID, wordIdx), value is equal to topic
+        # dictionary: key is tuple of (docID, sentenceID, wordIdx), value is equal to topic
         self.doc_w_topics_assgn = {}  # k_di
-        # assignment of word at position i in document d to window v
+        # assignment of word at position i in document d, sentence s, to window v
         self.doc_w_window_assgn = {}  # v_di
-        # assignment of word at position i in document d to global OR local topic
+        # assignment of word at position i in document d, sentence s, to global OR local topic
         self.doc_w_gl_loc_assgn = {}  # r_di: gl = global topic; loc = local topic
 
         # matrix that holds per document the counts for the words (dims: #of_docs X #words_in_bag)
@@ -126,19 +137,22 @@ class LDAModel(object):
             # create a long vector that contains each word token (so a word can appear more than once
             # the index "i" indicates the i-th word in the document
             start = timer()
+            print "doc-sen-count %d" % self.doc_s_count[d]
             for s in xrange(int(self.doc_s_count[d])):
-
+                # print "sentence %d" % (s+1), np.sum(self.doc_sentences_words[d, s, :]),
+                # len(self.doc_sentences_words[d, s, :])
                 for i, wd in enumerate(word_indices(self.doc_sentences_words[d, s, :])):
+
                     # choose one of the three windows that can be associated with the specific sentence
                     # a number between 0-2 (currently with 3 possible windows per sentence
                     # s + 0/1/2 e.g. document sentence 1 can belong to window {1,2,3} and
                     # sentence 2 can belong to window {2,3,4} etc.
                     v = np.random.randint(self.n_windows)
-                    self.doc_w_window_assgn[(d, i)] = v
+                    self.doc_w_window_assgn[(d, s, i)] = v
                     # choose whether for this word we sample from global or local topics
                     # 0 = global topic, 1 = local topic
                     r = sample_r()
-                    self.doc_w_gl_loc_assgn[(d, i)] = r
+                    self.doc_w_gl_loc_assgn[(d, s, i)] = r
                     # number of times a word from document d is assigned to window v
                     self.ndv[d, s+v] += 1
                     self.ndsv[d, s, v] += 1
@@ -147,12 +161,14 @@ class LDAModel(object):
                     if r == "gl":
                         # global topic assignment
                         k = np.random.randint(self.num_of_gl_topics)
+
                         self.nkw_gl[k, wd] += 1
                         self.ndk_gl[d, k] += 1
                         self.nd_gl[d] += 1
                         self.ndv_gl[d, s+v] += 1
                         self.nk_gl[k] += 1
-
+                        # print "(d,i) (%d,%d) k %d v %d gl word %d %s " % (d, i, k, v, wd,
+                        # self.bag_of_words.keys()[wd]), self.nkw_gl[k, wd]
                     else:
                         # local topic assignment
                         k = np.random.randint(self.num_of_loc_topics)
@@ -162,12 +178,15 @@ class LDAModel(object):
                         self.ndvk_loc[d, s+v, k] += 1
                         self.nd_loc[d] += 1
                         self.nk_loc[k] += 1
+                        self.ndsv[d, s, v] += 1
+                        # print "(d,i) (%d,%d) k %d v %d loc word %d %s " % (d, i, k, v, wd,
+                        # self.bag_of_words.keys()[wd]), self.nkw_loc[k, wd]
 
-                    self.doc_w_topics_assgn[(d, i)] = k  # assign topic to word in document!
+                    self.doc_w_topics_assgn[(d, s, i)] = k  # assign topic to word in document!
 
             end = timer()
 
-    def lower_counts(self, d, s, k, v, r, wd):
+    def lower_counts(self, d, s, k, v, r, wd, i):
 
         self.ndv[d, s+v] -= 1
         self.ndsv[d, s, v] -= 1
@@ -179,6 +198,7 @@ class LDAModel(object):
             self.nd_gl[d] -= 1
             self.ndv_gl[d, s+v] -= 1
             self.nk_gl[k] -= 1
+            # print "i-is %d lower gl word %d %s %d" % (i, wd, self.bag_of_words.keys()[wd], k), self.nkw_gl[k, wd]
         else:
             self.nkw_loc[k, wd] -= 1
             self.ndk_loc[d, k] -= 1
@@ -187,6 +207,7 @@ class LDAModel(object):
             self.nd_loc[d] -= 1
             self.nk_loc[k] -= 1
             self.ndsv[d, s, v] -= 1
+            # print "i-is %s lower loc word %d %s %d" % (i, wd, self.bag_of_words.keys()[wd], k), self.nkw_loc[k, wd]
 
     def increase_counts(self, d, s, k, v, r, wd):
 
@@ -199,7 +220,7 @@ class LDAModel(object):
             self.ndk_gl[d, k] += 1
             self.nd_gl[d] += 1
             self.ndv_gl[d, s+v] += 1
-            self.nk_gl[k] -= 1
+            self.nk_gl[k] += 1
         else:
             self.nkw_loc[k, wd] += 1
             self.ndk_loc[d, k] += 1
@@ -227,7 +248,7 @@ class LDAModel(object):
                 part2 = float(self.ndsv[d, s, v_idx] + self.gamma) / (self.nds[d, s] + (self.n_windows * self.gamma))
                 # term3 = float(self.n_d_v_gl[m][s+v_t] + self.alpha_mix_gl) / (self.n_d_v[m][s+v_idx]
                 # + self.alpha_mix_gl + self.alpha_mix_loc)
-                part3 = float(self.ndv_gl[d, s+v_idx]  + self.alpha_mix_gl) / (self.ndv[d, s+v_idx] + self.alpha_mix_gl + self.alpha_mix_loc)
+                part3 = float(self.ndv_gl[d, s+v_idx] + self.alpha_mix_gl) / (self.ndv[d, s+v_idx] + self.alpha_mix_gl + self.alpha_mix_loc)
                 # term4 = float(self.n_d_gl_z[m][z_t] + self.alpha_gl) / (self.n_d_gl[m] + self.K_gl*self.alpha_gl)
                 part4 = float(self.ndk_gl[d, k_idx] + self.alpha_gl) / (self.nd_gl[d] + (self.num_of_gl_topics*self.alpha_gl))
                 score = part1 * part2 * part3 * part4
@@ -253,16 +274,13 @@ class LDAModel(object):
                 score = part1 * part2 * part3 * part4
                 if score < 0.0:
                     print "local: ", part1, part2, part3, part3
-                    print self.nkw_loc[k_idx, wd], self.beta_loc, self.nk_loc[k_idx], self.vocab_size, self.beta_loc
                     print "0 > %f" % score
                 p_v_r_k.append(score)
 
         np_p_v_r_k = np.array(p_v_r_k)
         num = np_p_v_r_k / np_p_v_r_k.sum()
-        # print num
-        # print num.shape, num
         new_p_v_r_k_idx = np.random.multinomial(1, num).argmax()
-        print new_p_v_r_k_idx
+        # print new_p_v_r_k_idx
         new_v, new_r, new_k = label_v_r_k[new_p_v_r_k_idx]
         return new_v, new_r, new_k
 
@@ -277,22 +295,23 @@ class LDAModel(object):
                 # for each document, take the doc/word counter and use that to
                 # create a long vector that contains each word token (so a word can appear more than once
                 # the index "i" indicates the i-th word in the document
-                start = timer()
+
                 for s in xrange(int(self.doc_s_count[d])):
                     n = 0
                     for i, wd in enumerate(word_indices(self.doc_sentences_words[d, s, :])):
                         n += 1
-                        k = self.doc_w_topics_assgn[(d, i)]
-                        v = self.doc_w_window_assgn[(d, i)]
-                        r = self.doc_w_gl_loc_assgn[(d, i)]
+                        k = self.doc_w_topics_assgn[(d, s, i)]
+                        v = self.doc_w_window_assgn[(d, s, i)]
+                        r = self.doc_w_gl_loc_assgn[(d, s, i)]
                         # lower all counts
-                        self.lower_counts(d, s, k, v, r, wd)
+
+                        self.lower_counts(d, s, k, v, r, wd, i)
                         v_new, r_new, k_new = self.sample_k_v_gl_loc(d, s, wd, v)
                         self.increase_counts(d, s, k_new, v_new, r_new, wd)
-                        self.doc_w_topics_assgn[(d, i)] = k_new
-                        self.doc_w_window_assgn[(d, i)] = v_new
-                        self.doc_w_gl_loc_assgn[(d, i)] = r_new
-                    print "Number of iteratoins: %d" % n
+                        self.doc_w_topics_assgn[(d, s, i)] = k_new
+                        self.doc_w_window_assgn[(d, s, i)] = v_new
+                        self.doc_w_gl_loc_assgn[(d, s, i)] = r_new
+                    # print "Number of iteratoins: %d" % n
 
 
 if __name__ == '__main__':
@@ -304,7 +323,7 @@ if __name__ == '__main__':
     """
 
     if len(sys.argv) == 1:
-        preprocess = "False"
+        preprocess = "True"
         dir_path = 'F:/temp/topics/'
         # dir_path = "/Users/jesse/Desktop/nlp1_project/src/"
     else:
@@ -314,11 +333,17 @@ if __name__ == '__main__':
     # inFile = dir_path + "dvd.xml"
     # inFile = dir_path + "dvdReviews.xml"
     # inFile = dir_path + "example.xml"
-    # inFile = dir_path + "all.review"
-    inFile = dir_path + "example_tiny.xml"
+    inFile = dir_path + "all.review.xml"
+    # inFile = dir_path + "example_tiny.xml"
+    # inFile = dir_path + "example_tinytiny.xml"
     # mem_file_results = dir_path + "lda_results.mem"
     # mem_file_results = dir_path + "example.mem"
     s_object_file = dir_path + "example_tiny_objects.mem"
+    h5_file = dir_path + "example_tt.h5"
+    picklefile = dir_path + "example_tt.pkl"
+    # s_object_file = dir_path + "dvd_objects.mem"
+    # h5_file = dir_path + "dvd_doc_word.h5"
+    # picklefile = dir_path + "dvd_bagofwords.pkl"
 
     # inFile = sys.argv[2] + "dvd.xml" huge file
 
@@ -328,10 +353,14 @@ if __name__ == '__main__':
 
         print "Save objects to file %s" % s_object_file
         start = timer()
-        obj_saved = {'reviews': reviews, 'bag_of_words': w, 'doc_words': doc_words,
-                     'doc_sentence_words': docs_sentence_words}
+        obj_saved = {'reviews': reviews, 'doc_sentence_words': docs_sentence_words}
         with open(s_object_file, 'wb') as fs:
             np.savez_compressed(fs, **obj_saved)
+        with open(picklefile, 'wb') as f:
+            pickle.dump(w, f)
+        h5f = h5py.File(h5_file, 'w')
+        h5f.create_dataset('doc_words', data=doc_words)
+        h5f.close()
         end = timer()
         print "Saved objects to file in %s seconds." % (end - start)
     else:
@@ -341,18 +370,18 @@ if __name__ == '__main__':
                 print obj_id
                 if obj_id == 'reviews':
                     reviews = npz_docs[obj_id]
-                elif obj_id == 'bag_of_words':
-                    w = npz_docs[obj_id]
-                elif obj_id == 'doc_words':
-                    doc_words = npz_docs[obj_id]
                 elif obj_id == 'doc_sentence_words':
                     docs_sentence_words = npz_docs[obj_id]
-            print "sum of first row in docs-sentence-word %d" % np.sum(docs_sentence_words[0, 2, :])
+            # print "sum of first row in docs-sentence-word %d" % np.sum(docs_sentence_words[0, 2, :])
+        with open(picklefile, 'rb') as f:
+            w = pickle.load(f)
+        h5f = h5py.File(h5_file, 'r')
+        doc_words = h5f['doc_words'][:]
+        h5f.close()
     # check_doc_word_matrix(doc_words, reviews, w)
 
     # last parameter is the max number of sentences for corpus
     doc_sentence_count = count_sent_docs(reviews)
-    print doc_sentence_count
     # create LDAModel object and initialize counters for Gibbs sampling
     lda = LDAModel(w, docs_sentence_words, doc_sentence_count, K_GL, K_LOC, 0.1, 0.1, 0.1, 0.1,
                    0.1, 0.1, 0.2)
@@ -360,8 +389,6 @@ if __name__ == '__main__':
     start = timer()
     print "LDA initialize..."
     lda.initialize()
-    print docs_sentence_words.shape
-    print lda.n_docs,  np.sum(lda.nk_gl), np.sum(lda.nk_loc)
     end = timer()
     print "LDA initialize time %s" % (end - start)
     # run Gibbs sampling, parameter is number of times we run Gibbs
