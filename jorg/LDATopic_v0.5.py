@@ -6,9 +6,9 @@ import h5py
 
 # The global number of topics
 K_GL = 20
-N_GIBBS_SAMPLING_ITERATIONS = 5
-ALPHA = 50. / K_GL
-BETA = 200. / 31440
+N_GIBBS_SAMPLING_ITERATIONS = 50
+ALPHA = 0.05 #50. / K_GL
+BETA = 0.01 #200. / 31440
 
 def check_doc_word_matrix(mat, revs, w):
     print revs[0][0]
@@ -73,23 +73,22 @@ class LDAModel(object):
             # for each document, take the doc/word counter and use that to
             # create a long vector that contains each word token (so a word can appear more than once
             # the index "i" indicates the i-th word in the document
-            start = timer()
             for i, wd in enumerate(word_indices(doc_word_m[d, :])):
                 # choose an arbitrary topic as first topic for word i
-                k = np.random.randint(self.num_of_topics, size=self.num_of_topics)
+                k = np.random.randint(self.num_of_topics, size=1)[0]
                 self.ndk[d, k] += 1
                 self.nd[d] += 1
-                self.nkw[k, wd] += 1
+                self.nkw[k, wd] += 1 
                 self.nk[k] += 1
                 self.doc_w_topics_assgn[(d, i)] = k  # assign topic to word in document!
-            end = timer()
+                # print "d=%d, i=%d, wd=%d, word=%s" % (d, i, wd, self.bag_of_words.values()[wd])
 
     def build_topic_multinomial_dist(self, d, wd):
         # will return for each topic the current probability for a word-document being assigned to that topic
         # use this vector of "num_of_topics" to construct the multinomial distribution from which we will sample
         # a new topic for the "current word"
-        hltkid = (self.alpha + self.ndk[d, :]) / (self.nd[d] + self.sum_alpha)
-        hwwft = (self.beta[wd] + self.nkw[:, wd]) / (self.sum_beta + self.nk)
+        hltkid = (self.alpha + self.ndk[d, :]) / (self.nd[d] + self.num_of_topics*self.sum_alpha)
+        hwwft = (self.beta[wd] + self.nkw[:, wd]) / (self.vocab_size*self.sum_beta + self.nk)
         p_k = hltkid*hwwft
         pk = p_k/sum(p_k)
         return pk
@@ -118,10 +117,10 @@ class LDAModel(object):
                     self.nkw[k, wd] -= 1
                     self.nk[k] -= 1
                     self.nd[d] -= 1
+                    # print "d=%d, wd=%d, k=%d, word=%s" % (d, wd, k, self.bag_of_words.keys()[wd])
                     p_k = self.build_topic_multinomial_dist(d, wd)
                     # sample a new topic from the "new" distribution p_k (p_k is a num_of_topics dimensional vector)
-                    #k = np.nonzero(np.random.multinomial(1, p_k))[0][0]
-                    k = np.random.choice(range(self.num_of_topics), p_k)
+                    k = np.random.choice(self.num_of_topics, size=1, p=p_k)[0]
                     # increase counters according to the new sampled topic
                     self.ndk[d, k] += 1
                     self.nkw[k, wd] += 1
@@ -152,10 +151,16 @@ class LDAModel(object):
 
     def store_results(self, mem_file):
         # store the theta and phi matrix
+        h5f = h5py.File(mem_file, 'w')
+        h5f.create_dataset('theta_dist', data=self.theta_dist)
+        h5f.create_dataset('phi_dist', data=self.phi_dist)
+        h5f.close()
+        '''
         with open(mem_file, 'wb') as f:
             pickle.dump(self.theta_dist, f)
             pickle.dump(self.phi_dist, f)
         f.close()
+        '''
 
 
 if __name__ == '__main__':
@@ -182,12 +187,11 @@ if __name__ == '__main__':
     h5_file = dir_path + "data.h5"
     # pickelfile = dir_path + "example.pkl"
     # pickelfile = dir_path + "dvd_reviews.pkl"
-    mem_file_results = dir_path + "lda_results.mem"
+    mem_file_results = dir_path + "lda_results.h5"
 
     # inFile = sys.argv[2] + "dvd.xml" huge file
 
     if preprocess == 'True':
-
         reviews, w, doc_words = preprocessing(inFile)
         print "Save objects to file %s" % pickelfile
         start = timer()
@@ -214,7 +218,6 @@ if __name__ == '__main__':
         doc_words = h5f['doc_words'][:]
         h5f.close()
     # check_doc_word_matrix(doc_words, reviews, w)
-
     # create LDAModel object and initialize counters for Gibbs sampling
     lda = LDAModel(w, doc_words, K_GL, ALPHA, BETA)
     # initialize counters
@@ -237,5 +240,3 @@ if __name__ == '__main__':
     for i in range(K_GL):
     	print "Sum of Topic %d is %.4f" % (i, np.sum(lda.phi_dist[i, :]))
     lda.store_results(mem_file_results)
-    print lda.theta_dist.shape
-    print lda.phi_dist.shape
