@@ -22,5 +22,6 @@ f.close()
 for topic in range(number_of_topics):
 	ind = sorted(xrange(len(phi_mat[topic, :])), key=lambda x:phi_mat[topic, x], reverse=True)
         print "Topic %d" % topic
+        print phi_mat[topic, ind]
         print "----------------------------"
 	print [w.keys()[word] for word in ind[0:20]]

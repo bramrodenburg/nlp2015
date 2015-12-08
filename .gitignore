@@ -1,1 +1,4 @@
 sorted_data/
+*.pyc
+*.h5
+*.hdf5
