@@ -1,13 +1,13 @@
 import sys
 from preprocess_movie import *
-from preprocessingv13 import *
+from preprocessingv14 import *
 from handle_pp_objects import *
 from scipy.special import gammaln
 
 # The global number of topics
-K_GL = 10
-K_LOC = 4
-N_GIBBS_SAMPLING_ITERATIONS = 50
+K_GL = 25
+K_LOC = 8
+N_GIBBS_SAMPLING_ITERATIONS = 500
 
 global product
 
@@ -72,7 +72,6 @@ class LDAModel(object):
         self.dir_out = dir_out
         # number of sentences covered by a sliding window. Ivan uses 3 in his paper
         self.n_windows = 3
-
         # number of docs/reviews, max number of sentences/review in corpus, total vocabulary size of corpus
         self.n_docs = doc_s_count.shape[0]
         self.num_of_max_sentences = max_number_s
@@ -260,7 +259,7 @@ class LDAModel(object):
             self.nd_loc[d] += 1
             self.nk_loc[k] += 1
 
-    def sample_k_v_gl_loc(self, d, s, wd, v):
+    def sample_k_v_gl_loc(self, d, s, wd):
 
         # sampling topic new_z for t
         p_v_r_k = []
@@ -279,11 +278,11 @@ class LDAModel(object):
                 label_v_r_k.append(label)
                 part1 = float(self.nkw_gl[k_idx, wd] + self.beta_gl) / (self.nk_gl[k_idx] + (self.vocab_size * self.beta_gl))
 
-                part4 = float(self.ndk_gl[d, k_idx] + self.alpha_gl) / (self.nd_gl[d] + (self.num_of_gl_topics*self.alpha_gl))
+                part4 = float(self.ndk_gl[d, k_idx] + self.alpha_gl) / (self.nd_gl[d] + (self.num_of_gl_topics * self.alpha_gl))
                 score = part1 * part2 * part3 * part4
                 p_v_r_k.append(score)
             # for local topics
-            part3 = float(self.ndv_loc[d, s+v] + self.alpha_mix_loc) / (self.ndv[d, s+v_idx] + self.alpha_mix_gl + self.alpha_mix_loc)
+            part3 = float(self.ndv_loc[d, s+v_idx] + self.alpha_mix_loc) / (self.ndv[d, s+v_idx] + self.alpha_mix_gl + self.alpha_mix_loc)
             for k_idx in xrange(self.num_of_loc_topics):
                 label = [v_idx, "loc", k_idx]
                 label_v_r_k.append(label)
@@ -304,31 +303,46 @@ class LDAModel(object):
         # end = timer()
         # print "multinomial time %s" % (end - start)
         new_v, new_r, new_k = label_v_r_k[new_p_v_r_k_idx]
-        return new_v, new_r, new_k
+        return new_v, new_r, new_k, np_p_v_r_k
 
     def calc_loglikelihood(self):
         """
         Compute the likelihood that the model generated the data.
         """
-        gl_lik = 0
-        loc_lik = 0
+        likeli_gl = 0
+        likeli_loc = 0
 
+        # p(w|r=gl, k)
         for k in xrange(self.num_of_gl_topics):
-            gl_lik += log_multi_beta(self.nkw_gl[k, :]+self.beta_gl)
-            gl_lik -= log_multi_beta(self.beta_gl, self.vocab_size)
+            likeli_gl += log_multi_beta(self.nkw_gl[k, :]+self.beta_gl)
+            likeli_gl -= log_multi_beta(self.beta_gl, self.vocab_size)
 
-        for m in xrange(self.n_docs):
-            gl_lik += log_multi_beta(self.ndk_gl[m,:]+self.alpha_gl)
-            gl_lik -= log_multi_beta(self.alpha_gl, self.num_of_gl_topics)
-
-            loc_lik += log_multi_beta(self.ndk_loc[m, :]+self.alpha_loc)
-            loc_lik -= log_multi_beta(self.alpha_loc, self.num_of_loc_topics)
-
+        # p(w|r=loc, k)
         for k in xrange(self.num_of_loc_topics):
-            loc_lik += log_multi_beta(self.nkw_loc[k, :]+self.beta_loc)
-            loc_lik -= log_multi_beta(self.beta_loc, self.vocab_size)
+            likeli_loc += log_multi_beta(self.nkw_loc[k, :]+self.beta_loc)
+            likeli_loc -= log_multi_beta(self.beta_loc, self.vocab_size)
 
-        return gl_lik, loc_lik
+        # p(z|r, v)
+        for m in xrange(self.n_docs):
+            likeli_gl += log_multi_beta(self.ndk_gl[m, :]+self.alpha_gl)
+            likeli_gl -= log_multi_beta(self.alpha_gl, self.num_of_gl_topics)
+
+            likeli_loc += log_multi_beta(self.ndk_loc[m, :]+self.alpha_loc)
+            likeli_loc -= log_multi_beta(self.alpha_loc, self.num_of_loc_topics)
+
+        # p(v|d,s)
+        for d in xrange(self.n_docs):
+            likeli_gl += log_multi_beta(self.ndv_gl[d, :] + self.alpha_mix_gl)
+            likeli_gl -= log_multi_beta(self.alpha_mix_gl, self.alpha_mix_gl + self.alpha_mix_loc)
+            likeli_loc += log_multi_beta(self.ndv_loc[d, :] + self.alpha_mix_loc)
+            likeli_loc -= log_multi_beta(self.alpha_mix_loc, self.alpha_mix_gl + self.alpha_mix_loc)
+            for s in xrange(int(self.doc_s_count[d])):
+                likeli_gl += log_multi_beta(self.ndsv[d, s, :] + self.gamma)
+                likeli_gl -= log_multi_beta(self.gamma, self.n_windows)
+                likeli_loc += log_multi_beta(self.ndsv[d, s, :] + self.gamma)
+                likeli_loc -= log_multi_beta(self.gamma, self.n_windows)
+
+        return likeli_gl, likeli_loc
 
     def print_counts(self):
 
@@ -343,6 +357,7 @@ class LDAModel(object):
 
     def run_gibbs_sampling(self, max_iterations=2):
         global product
+        global reviews
 
         for gibbs_iteration in range(max_iterations):
             gibbs_counter = 0
@@ -360,33 +375,42 @@ class LDAModel(object):
                     n = 0
                     for i, wd in enumerate(self.doc_sentences_words[d][s]):
                         n += 1
+
                         k = self.doc_w_topics_assgn[(d, s, i)]
                         v = self.doc_w_window_assgn[(d, s, i)]
                         r = self.doc_w_gl_loc_assgn[(d, s, i)]
+                        # print self.bag_of_words[wd], r,v,k
                         # lower all counts
-
                         self.lower_counts(d, s, k, v, r, wd)
                         # start = timer()
-                        v_new, r_new, k_new = self.sample_k_v_gl_loc(d, s, wd, v)
+                        v_new, r_new, k_new, joined_p_v_r_k = self.sample_k_v_gl_loc(d, s, wd)
                         # end = timer()
                         # print "multinomial sampling time %s" % (end - start)
                         self.increase_counts(d, s, k_new, v_new, r_new, wd)
                         self.doc_w_topics_assgn[(d, s, i)] = k_new
                         self.doc_w_window_assgn[(d, s, i)] = v_new
                         self.doc_w_gl_loc_assgn[(d, s, i)] = r_new
-                    #
+
                     gibbs_counter += n
             # skip the first iteration
             # if gibbs_iteration > 0:
             #    self.gibbs_iter_postprocessing(gibbs_iteration)
             end = timer()
-            log_gl, log_loc = self.calc_loglikelihood()
-            print "Lap time iteration %s / took %d samples / gl_topic_likeli %f / loc_topic_likeli %f" % ((end - start), gibbs_counter, log_gl, log_loc)
-            if gibbs_iteration > 1 and (gibbs_iteration % 10 == 0 or gibbs_iteration+1 == N_GIBBS_SAMPLING_ITERATIONS):
-                    self.store_acc_phi_matrices(self.dir_out + str(gibbs_iteration) + "_phi_" + product + ".mem")
+            # log_gl, log_loc = self.calc_loglikelihood()
+            # print "Lap time iteration %s / took %d samples / ll_gl %f ll_loc %f" % ((end - start), gibbs_counter, log_gl, log_loc)
+            if gibbs_iteration > 1 and (gibbs_iteration % 20 == 0 or gibbs_iteration+1 == N_GIBBS_SAMPLING_ITERATIONS):
+                self.store_acc_phi_matrices(self.dir_out + str(gibbs_iteration) + "_phi_" + product + ".mem")
 
         self.build_phi_matrix_gl()
         self.build_phi_matrix_loc()
+
+    def debug_phis(self):
+        nkwgl_aug = self.nkw_gl + self.beta_gl
+        nkwgl_aug /= np.sum(nkwgl_aug, axis=1)[:, np.newaxis]
+        print np.sum(nkwgl_aug, axis=1)
+        nkwgl_aug = self.nkw_loc + self.beta_loc
+        nkwgl_aug /= np.sum(nkwgl_aug, axis=1)[:, np.newaxis]
+        print np.sum(nkwgl_aug, axis=1)
 
     def gibbs_iter_postprocessing(self, i_gibbs):
         global N_GIBBS_SAMPLING_ITERATIONS
@@ -404,9 +428,7 @@ class LDAModel(object):
 
         nkw_aug = self.nkw_gl + self.beta_gl
         for k in range(self.num_of_gl_topics):
-            if np.sum(np.sum(nkw_aug[k, :] != 0)):
-                self.phi_dist_gl[k, :] = nkw_aug[k, :] * 1/np.sum(nkw_aug[k, :])
-                # print "phi row sum to %s" % np.sum(self.phi_dist[k, :])
+            self.phi_dist_gl[k, :] = nkw_aug[k, :] * 1/np.sum(nkw_aug[k, :])
 
     def build_phi_matrix_loc(self):
         # phi is a matrix of dimension: (num of topics X num of words in corpus)
@@ -414,22 +436,19 @@ class LDAModel(object):
 
         nkw_aug = self.nkw_loc + self.beta_loc
         for k in range(self.num_of_loc_topics):
-            if np.sum(np.sum(nkw_aug[k, :] != 0)):
-                self.phi_dist_loc[k, :] = nkw_aug[k, :] * 1/np.sum(nkw_aug[k, :])
+            self.phi_dist_loc[k, :] = nkw_aug[k, :] * 1/np.sum(nkw_aug[k, :])
 
     def build_acc_phi_matrix_gl(self, i_gibbs):
 
         nkw_aug = self.acc_nkw_gl * 1/i_gibbs
         for k in range(self.num_of_gl_topics):
-            if np.sum(np.sum(nkw_aug[k, :] != 0)):
-                self.acc_phi_dist_gl[k, :] = nkw_aug[k, :] * 1/np.sum(nkw_aug[k, :])
+            self.acc_phi_dist_gl[k, :] = nkw_aug[k, :] * 1/np.sum(nkw_aug[k, :])
 
     def build_acc_phi_matrix_loc(self, i_gibbs):
 
         nkw_aug = self.acc_nkw_loc * 1/i_gibbs
         for k in range(self.num_of_loc_topics):
-            if np.sum(np.sum(nkw_aug[k, :] != 0)):
-                self.acc_phi_dist_loc[k, :] = nkw_aug[k, :] * 1/np.sum(nkw_aug[k, :])
+            self.acc_phi_dist_loc[k, :] = nkw_aug[k, :] * 1/np.sum(nkw_aug[k, :])
 
     def store_acc_phi_matrices(self, save_file):
 
@@ -471,13 +490,13 @@ if __name__ == '__main__':
         (1) preprocess files: "True" or "False" (no boolean but string)
         (2) directory path for input & output files
     """
+    global reviews
 
     if len(sys.argv) == 1:
         preprocess = "True"
-        dir_path = 'F:/temp/topics/D - data/movie/short_test/'
-        product = "movie"
-        # dir_path = 'F:/temp/topics/D - data/sorted_data/magazines/'
-        # product = "magazin"
+        # dir_path = 'F:/temp/topics/D - data/movie/test/'
+        product = "magazine"
+        dir_path = 'F:/temp/topics/D - data/sorted_data/magazines/'
     else:
         preprocess = sys.argv[1]
         dir_path = sys.argv[2]
@@ -498,8 +517,8 @@ if __name__ == '__main__':
     # last parameter is the max number of sentences for corpus
     doc_sentence_count, max_number_s = count_sent_docs(reviews)
     # create LDAModel object and initialize counters for Gibbs sampling
-    lda = LDAModel(d_vocab, m_docs_sentence_words, doc_sentence_count, max_number_s, K_GL, K_LOC, 0.01, 0.01, 0.01, 0.01,
-                   0.01, 0.01, 0.01, dir_path)
+    lda = LDAModel(l_bag_of_words, m_docs_sentence_words, doc_sentence_count, max_number_s, K_GL, K_LOC, 0.005, 0.005, 0.005, 0.005,
+                   0.005, 0.005, 0.005, dir_path)
     # initialize counters
     start = timer()
     print "LDA initialize..."
