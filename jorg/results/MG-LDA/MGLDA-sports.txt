@@ -1,0 +1,686 @@
+
+================ Global 1 ================
+[u'use', u'would', u'hole', u'many', u'keys', u'made', u'hold', u'slightly', u'player', u'step', 
+u'come', u'inside', u'years', u'around', u'still', u'design', u'top', u'spring', u'pedometer', u'air']
+
+================ Global 2 ================
+[u'back', u'exercises', u'exercise', u'muscles', u'workout', u'body', u'strength', u'lower', u'different', 
+u'feel', u'resistance', u'wrist', u'well', u'like', u'product', u'machine', u'using', u'arms', u'find', u'need']
+
+Jörg: 
+
+================ Global 3 ================ SIGG bottle 
+[u'water', u'bottle', u'bottles', u'top', u'like', u'sigg', u'drink', u'sports', u'size', u'plastic', u'makes' (weg), 
+u'regular', u'ramp', u'accessory', u'perfect', u'fun', u'style', u'well', u'personal', u'beautiful']
+
+Jörg: has already ratable aspects: beautiful, style, size
+
+================ Global 4 ================ 
+[u'ball', u'like', u'sword', u'game', u'blade', u'balls', u'little', u'really', u'hit', u'even', u'hard', 
+u'cheap', u'use', u'better', u'cards', u'stick', u'well', u'swing', u'good', u'made']
+
+================ Global 5 ================ SUUNTO sports watch
+[u'watch', u'compass', u'accurate', u'suunto', u'altimeter', u'time', u'use', u'display', u'big', u'really', 
+u'like', u'easy', u'wrist', u'barometer', u'functions', u'feature', u'reading', u'even', u'flybar', u'digital']
+
+
+================ Global 6 ================ Golf clubs?
+[u'unit', u'speed', u'would', u'time', u'product', u'day', u'work', u'swing', u'software', u'clubs', u'walking', 
+u'steps', u'every', u'set', u'help', u'could', u'high', u'first', u'course', u'golf']
+
+================ Global 7 ================ 
+[u'workout', u'dvd', u'really', u'work', u'like', u'great', u'workouts', u'time', u'cathe', u'good', 
+u'pump', u'body', u'step', u'use', u'set', u'day', u'used', u'minutes', u'best', u'ball']
+
+================ Global 8 ================ Stroller for child
+[u'stroller', u'use', u'baby', u'great', u'like', u'also', u'much', u'little', u'around', u'bar', 
+u'easy', u'back', u'put', u'bench', u'child', u'front', u'height', u'love', u'car', u'seat']
+
+================ Global 9 ================ 
+[u'hand', u'weight', u'good', u'grip', u'use', u'using', u'great', u'strength', u'tension', u'little', 
+u'would', u'heavy', u'fingers', u'much', u'work', u'easy', u'red', u'used', u'lbs', u'blue']
+
+================ Global 10 ================
+[u'bike', u'ride', u'rack', u'bikes', u'riding', u'like', u'seat', u'road', u'easy', u'front', u'well', 
+u'good', u'would', u'wheel', u'way', u'wheels', u'much', u'tires', u'bicycle', u'resistance']
+
+================ Global 11 ================
+[u'mat', u'yoga', u'mats', u'bag', u'bit', u'practice', u'like', u'good', u'great', u'end', u'side', 
+u'would', u'floor', u'used', u'also', u'towel', u'feet', u'little', u'really', u'recommend']
+
+================ Global 12 ================
+[u'would', u'back', u'amazon', u'product', u'service', u'sent', u'days', u'order', u'company', u'shipping', 
+u'never', u'customer', u'item', u'could', u'received', u'new', u'first', u'even', u'send', u'ordered']
+
+================ Global 13 ================
+[u'knife', u'pocket', u'blade', u'opening', u'knives', u'little', u'small', u'open', u'like', u'well', u'sharp', 
+u'lock', u'nice', u'great', u'tools', u'army', u'box', u'used', u'carry', u'enough']
+
+================ Global 14 ================
+[u'bag', u'backpack', u'would', u'pack', u'bought', u'great', u'use', u'well', u'fit', u'back', u'size', 
+u'small', u'year', u'perfect', u'around', u'good', u'big', u'love', u'also', u'enough']
+
+================ Global 15 ================
+[u'use', u'coffee', u'would', u'handle', u'like', u'sword', u'well', u'even', u'stove', u'used', 
+u'something', u'hold', u'much', u'long', u'small', u'thing', u'enough', u'good', u'easily', u'work']
+
+================ Global 16 ================
+[u'parts', u'would', u'screws', u'instructions', u'together', u'assembly', u'box', u'could', u'put', u'machine', 
+u'back', u'piece', u'work', u'product', u'fit', u'plastic', u'unit', u'directions', u'missing', u'top']
+
+================ Global 17 ================
+[u'light', u'rate', u'heart', u'batteries', u'battery', u'flashlight', u'monitor', u'use', u'lights', 
+u'led', u'bright', u'also', u'time', u'night', u'minutes', u'long', u'power', u'see', u'like', u'hours']
+
+================ Global 18 ================
+[u'gloves', u'bag', u'use', u'heavy', u'hands', u'pair', u'would', u'hand', u'wrist', u'well', 
+u'made', u'glove', u'padding', u'straps', u'great', u'good', u'strap', u'around', u'even', u'make']
+
+================ Global 19 ================
+[u'use', u'like', u'gym', u'used', u'great', u'day', u'weight', u'using', u'feel', u'time', 
+u'minutes', u'product', u'much', u'want', u'take', u'swim', u'first', u'workout', u'make', u'without']
+
+================ Global 20 ================
+[u'gun', u'good', u'scope', u'airsoft', u'like', u'great', u'shot', u'buy', u'use', 
+u'dont', u'shoot', u'accurate', u'clip', u'shoots', u'fps', u'rifle', u'thing', u'first', u'really', u'guns']
+
+================ Local 1 ================
+[u'good', u'price', u'product', u'would', u'worth', u'great', u'money', u'well', u'recommend', u'quality', u'bike', u'like', u'purchase', 
+u'overall', u'really', u'better', u'buy', u'happy', u'highly', u'equipment']
+
+================ Local 2 ================
+[u'old', u'bought', u'year', u'loves', u'son', u'great', u'daughter', u'christmas', u'purchased', u'love', u'gift', u'bike', u'years', 
+u'loved', u'kids', u'ago', u'toy', u'months', u'birthday', u'product']
+
+================ Local 3 ================
+[u'great', u'price', u'good', u'would', u'buy', u'highly', u'recommend', u'product', u'money', u'quality', u'really', u'bought', 
+u'best', u'recommended', u'better', u'well', u'worth', u'much', u'amazon', u'like']
+
+================ Local 4 ================
+[u'easy', u'great', u'product', u'together', u'use', u'well', u'put', u'good', u'time', u'sturdy', u'assemble', u'shipping', 
+u'works', u'love', u'price', u'assembly', u'took', u'item', u'instructions', u'amazon']
+
+================ Local 5 ================
+[u'use', u'workout', u'would', u'great', u'like', u'machine', u'product', u'good', u'time', u'really', u'used', u'work', 
+u'much', u'give', u'exercise', u'also', u'could', u'back', u'using', u'recommend']
+
+================ Local 6 ================
+[u'use', u'easy', u'time', u'put', u'bike', u'little', u'problem', u'well', u'first', u'together', u'like', u'small', 
+u'also', u'thing', u'without', u'enough', u'used', u'box', u'made', u'need']
+
+================ Local 7 ================
+[u'little', u'easy', u'use', u'comfortable', u'like', u'even', u'small', u'also', u'enough', u'seat', u'put', u'water', 
+u'easily', u'well', u'great', u'much', u'would', u'back', u'bag', u'thing']
+
+
+================ Global Topic 1 ==========================
+use: 0.009436
+would: 0.008696
+hole: 0.008141
+keys: 0.007031
+many: 0.007031
+made: 0.006661
+hold: 0.006476
+slightly: 0.005736
+step: 0.005551
+come: 0.005551
+player: 0.005551
+still: 0.005366
+years: 0.005366
+inside: 0.005366
+design: 0.005366
+around: 0.005366
+top: 0.005181
+spring: 0.004996
+pedometer: 0.004811
+air: 0.004626
+================ Global Topic 2 ==========================
+back: 0.016456
+exercises: 0.014810
+exercise: 0.013713
+muscles: 0.012068
+workout: 0.011794
+body: 0.010834
+strength: 0.008640
+lower: 0.008640
+different: 0.008091
+feel: 0.008091
+resistance: 0.007680
+wrist: 0.007680
+well: 0.007543
+product: 0.007543
+like: 0.007543
+machine: 0.007268
+using: 0.006994
+arms: 0.006857
+find: 0.006446
+need: 0.006308
+================ Global Topic 3 ==========================
+water: 0.065323
+bottle: 0.043118
+bottles: 0.025009
+top: 0.024578
+like: 0.022422
+sigg: 0.016817
+drink: 0.013583
+sports: 0.010780
+size: 0.010349
+plastic: 0.010349
+makes: 0.009056
+regular: 0.008840
+accessory: 0.008624
+ramp: 0.008624
+fun: 0.008409
+perfect: 0.008409
+well: 0.007978
+style: 0.007978
+personal: 0.007978
+cleaning: 0.007331
+================ Global Topic 4 ==========================
+ball: 0.022892
+like: 0.019057
+sword: 0.016420
+game: 0.010308
+blade: 0.009349
+balls: 0.008390
+little: 0.007671
+really: 0.007072
+hit: 0.007072
+hard: 0.006952
+even: 0.006952
+cheap: 0.006712
+use: 0.006233
+better: 0.006113
+cards: 0.005993
+stick: 0.005754
+swing: 0.005634
+well: 0.005634
+good: 0.005514
+made: 0.005394
+================ Global Topic 5 ==========================
+watch: 0.039925
+compass: 0.021614
+accurate: 0.013959
+suunto: 0.010507
+altimeter: 0.009757
+time: 0.009457
+use: 0.009006
+big: 0.008706
+display: 0.008706
+really: 0.008256
+like: 0.007806
+easy: 0.007205
+wrist: 0.007055
+barometer: 0.006905
+functions: 0.006155
+feature: 0.006004
+reading: 0.005554
+even: 0.005404
+flybar: 0.005404
+digital: 0.005104
+================ Global Topic 6 ==========================
+unit: 0.011924
+speed: 0.009473
+would: 0.008916
+time: 0.007467
+product: 0.007021
+day: 0.006798
+work: 0.006464
+swing: 0.006464
+software: 0.006018
+clubs: 0.005684
+walking: 0.005572
+steps: 0.005015
+every: 0.005015
+help: 0.004904
+set: 0.004904
+could: 0.004792
+high: 0.004681
+first: 0.004681
+course: 0.004570
+device: 0.004458
+================ Global Topic 7 ==========================
+workout: 0.023516
+dvd: 0.013173
+really: 0.009472
+work: 0.009472
+like: 0.009036
+great: 0.008819
+workouts: 0.008383
+time: 0.008057
+cathe: 0.007948
+good: 0.007948
+pump: 0.007839
+body: 0.007403
+step: 0.007186
+use: 0.006533
+set: 0.005770
+day: 0.005770
+minutes: 0.005770
+used: 0.005770
+best: 0.005662
+ball: 0.005662
+================ Global Topic 8 ==========================
+stroller: 0.012692
+use: 0.010558
+baby: 0.009435
+great: 0.008761
+like: 0.008536
+also: 0.008312
+much: 0.007301
+little: 0.007076
+around: 0.006964
+bar: 0.006627
+easy: 0.006515
+back: 0.006290
+put: 0.006066
+bench: 0.005953
+front: 0.005841
+child: 0.005841
+height: 0.005504
+love: 0.005055
+seat: 0.004942
+car: 0.004942
+================ Global Topic 9 ==========================
+hand: 0.017756
+weight: 0.016349
+good: 0.014592
+grip: 0.014240
+use: 0.013185
+using: 0.011252
+great: 0.010373
+tension: 0.009845
+strength: 0.009845
+little: 0.009494
+would: 0.008615
+heavy: 0.008087
+fingers: 0.007911
+much: 0.007911
+work: 0.007911
+red: 0.007560
+easy: 0.007560
+used: 0.006857
+lbs: 0.006857
+blue: 0.006681
+================ Global Topic 10 ==========================
+bike: 0.053237
+ride: 0.012691
+rack: 0.011867
+bikes: 0.009477
+like: 0.007664
+riding: 0.007664
+seat: 0.007252
+road: 0.006840
+easy: 0.006346
+good: 0.005934
+well: 0.005934
+front: 0.005934
+would: 0.005604
+wheels: 0.005439
+wheel: 0.005439
+way: 0.005439
+much: 0.005357
+tires: 0.005275
+bicycle: 0.005027
+resistance: 0.004945
+================ Global Topic 11 ==========================
+mat: 0.049917
+yoga: 0.019861
+mats: 0.010461
+bag: 0.010063
+bit: 0.007680
+practice: 0.007151
+good: 0.007018
+like: 0.007018
+great: 0.006886
+end: 0.006886
+side: 0.006489
+would: 0.006489
+used: 0.006356
+floor: 0.006356
+also: 0.006224
+feet: 0.005959
+towel: 0.005959
+little: 0.005826
+recommend: 0.005694
+really: 0.005694
+================ Global Topic 12 ==========================
+would: 0.015350
+back: 0.014485
+amazon: 0.012831
+product: 0.010391
+service: 0.009525
+sent: 0.009289
+days: 0.008974
+order: 0.008738
+company: 0.008659
+shipping: 0.008423
+never: 0.008423
+customer: 0.007872
+item: 0.007793
+could: 0.007400
+received: 0.006770
+new: 0.006219
+first: 0.006140
+even: 0.005904
+send: 0.005589
+ordered: 0.005432
+================ Global Topic 13 ==========================
+knife: 0.049054
+pocket: 0.013153
+blade: 0.012264
+opening: 0.011731
+knives: 0.011375
+little: 0.010309
+small: 0.010131
+open: 0.009243
+like: 0.009243
+well: 0.008532
+sharp: 0.007821
+lock: 0.006932
+nice: 0.006755
+great: 0.006577
+box: 0.006399
+army: 0.006399
+tools: 0.006399
+carry: 0.006221
+design: 0.006221
+enough: 0.006221
+================ Global Topic 14 ==========================
+bag: 0.010914
+backpack: 0.009739
+would: 0.009487
+pack: 0.008731
+bought: 0.007724
+great: 0.007640
+use: 0.006465
+well: 0.006381
+fit: 0.006297
+back: 0.006129
+size: 0.006045
+year: 0.005625
+small: 0.005625
+perfect: 0.005457
+around: 0.005373
+good: 0.005289
+big: 0.005121
+love: 0.005038
+enough: 0.005038
+also: 0.005038
+================ Global Topic 15 ==========================
+use: 0.009056
+coffee: 0.008359
+would: 0.007315
+handle: 0.006966
+like: 0.006966
+sword: 0.006734
+well: 0.006270
+stove: 0.005921
+even: 0.005921
+used: 0.005805
+something: 0.005457
+hold: 0.005341
+much: 0.005225
+long: 0.004993
+thing: 0.004761
+enough: 0.004761
+small: 0.004761
+good: 0.004644
+easily: 0.004528
+work: 0.004412
+================ Global Topic 16 ==========================
+parts: 0.013854
+would: 0.013236
+screws: 0.011875
+instructions: 0.011380
+together: 0.010391
+assembly: 0.010267
+box: 0.010143
+could: 0.009030
+put: 0.008659
+machine: 0.008535
+piece: 0.007546
+back: 0.007546
+product: 0.006804
+work: 0.006804
+fit: 0.006556
+plastic: 0.005443
+unit: 0.005319
+directions: 0.005196
+missing: 0.004948
+top: 0.004948
+================ Global Topic 17 ==========================
+light: 0.039445
+rate: 0.015027
+heart: 0.014829
+batteries: 0.012852
+battery: 0.011765
+flashlight: 0.010875
+monitor: 0.009985
+use: 0.009194
+lights: 0.008403
+led: 0.008305
+bright: 0.007711
+also: 0.007613
+time: 0.006822
+night: 0.006525
+minutes: 0.006130
+long: 0.005833
+power: 0.005734
+see: 0.005635
+like: 0.005240
+hours: 0.004943
+================ Global Topic 18 ==========================
+gloves: 0.031479
+bag: 0.016266
+use: 0.010064
+heavy: 0.009947
+hands: 0.008426
+would: 0.008192
+pair: 0.008192
+wrist: 0.007256
+hand: 0.007256
+well: 0.006671
+made: 0.006671
+glove: 0.006437
+padding: 0.006203
+straps: 0.005969
+great: 0.005735
+good: 0.005735
+strap: 0.005618
+around: 0.005383
+even: 0.005266
+make: 0.005149
+================ Global Topic 19 ==========================
+use: 0.014006
+like: 0.013040
+gym: 0.011591
+used: 0.010625
+great: 0.009901
+weight: 0.008814
+day: 0.008814
+using: 0.008573
+feel: 0.008211
+time: 0.007607
+minutes: 0.007245
+product: 0.006641
+much: 0.006400
+want: 0.005796
+take: 0.005554
+swim: 0.005313
+first: 0.005313
+workout: 0.005071
+without: 0.004951
+make: 0.004951
+================ Global Topic 20 ==========================
+gun: 0.060665
+good: 0.015820
+scope: 0.014169
+airsoft: 0.010593
+like: 0.009492
+great: 0.009217
+use: 0.008942
+buy: 0.008942
+shot: 0.008942
+dont: 0.007842
+shoot: 0.007704
+accurate: 0.007429
+clip: 0.007154
+shoots: 0.006879
+fps: 0.006879
+rifle: 0.006741
+thing: 0.006604
+first: 0.006604
+really: 0.006191
+guns: 0.006191
+
+
+================ Local Topic 1 ==========================
+good: 0.025162
+price: 0.024266
+product: 0.019788
+would: 0.017263
+worth: 0.017019
+great: 0.016856
+money: 0.015065
+well: 0.014983
+recommend: 0.014251
+quality: 0.014088
+bike: 0.010912
+like: 0.008958
+purchase: 0.008795
+overall: 0.008550
+really: 0.008225
+better: 0.008225
+buy: 0.007818
+happy: 0.006840
+highly: 0.006352
+equipment: 0.006352
+================ Local Topic 2 ==========================
+old: 0.026727
+bought: 0.023879
+year: 0.021114
+loves: 0.016925
+son: 0.015417
+great: 0.013490
+daughter: 0.013406
+christmas: 0.012987
+purchased: 0.011562
+love: 0.011060
+gift: 0.010306
+bike: 0.009468
+loved: 0.008127
+years: 0.008127
+kids: 0.007122
+ago: 0.006452
+toy: 0.006033
+birthday: 0.005949
+months: 0.005949
+product: 0.005865
+================ Local Topic 3 ==========================
+great: 0.026325
+price: 0.020537
+good: 0.016990
+would: 0.016803
+buy: 0.015310
+highly: 0.014283
+recommend: 0.012883
+product: 0.012509
+money: 0.010175
+quality: 0.009335
+really: 0.008495
+bought: 0.007655
+best: 0.007095
+better: 0.006908
+recommended: 0.006908
+well: 0.006722
+worth: 0.006068
+amazon: 0.005788
+much: 0.005788
+made: 0.005695
+================ Local Topic 4 ==========================
+easy: 0.028249
+great: 0.021972
+product: 0.015781
+together: 0.014909
+use: 0.014909
+well: 0.013427
+put: 0.013166
+good: 0.011684
+time: 0.009068
+sturdy: 0.008894
+assemble: 0.008545
+shipping: 0.007847
+works: 0.007499
+love: 0.007324
+price: 0.006975
+assembly: 0.006714
+took: 0.006539
+item: 0.006365
+instructions: 0.006278
+amazon: 0.006191
+================ Local Topic 5 ==========================
+use: 0.015689
+workout: 0.013831
+would: 0.012937
+great: 0.011423
+like: 0.010391
+machine: 0.009359
+product: 0.009083
+good: 0.008533
+time: 0.008120
+really: 0.007294
+used: 0.006813
+work: 0.006744
+much: 0.006537
+give: 0.006537
+exercise: 0.005712
+also: 0.005574
+could: 0.005505
+using: 0.005299
+back: 0.005299
+recommend: 0.005161
+================ Local Topic 6 ==========================
+use: 0.009719
+easy: 0.009081
+time: 0.008797
+put: 0.008300
+bike: 0.006952
+little: 0.006740
+problem: 0.006385
+well: 0.006385
+first: 0.006030
+together: 0.005888
+like: 0.005888
+small: 0.005108
+thing: 0.004824
+also: 0.004824
+without: 0.004682
+enough: 0.004611
+box: 0.004470
+used: 0.004470
+made: 0.004328
+need: 0.004186
+================ Local Topic 7 ==========================
+little: 0.010271
+easy: 0.010140
+use: 0.009290
+comfortable: 0.008570
+like: 0.007850
+even: 0.007523
+small: 0.007327
+also: 0.006346
+enough: 0.006150
+seat: 0.006019
+put: 0.005822
+water: 0.005626
+easily: 0.005561
+well: 0.005495
+great: 0.005365
+would: 0.005299
+much: 0.005299
+back: 0.005103
+bag: 0.004907
+made: 0.004841
+
+Process finished with exit code 0

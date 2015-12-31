@@ -1,0 +1,40 @@
+================ standard 1================
+[u'final', u'fantasy', u'good', u'version', u'games', u"'ve", u'job', u'series', u'time', u'little', u'much', u'could', u'however', u'may', u'would', u'also', u'iii', u'original', u'release', u"'ll"]
+================ standard 2================
+[u'game', u'final', u'games', u'fantasy', u'one', u'like', u'great', u"n't", u'characters', u'rpg', u'story', u'graphics', u'music', u'fun', u'ever', u'get', u'well', u'played', u'still', u'good']
+================ standard 3================
+[u'story', u'time', u'also', u'one', u'first', u'every', u'game', u'well', u'character', u'many', u'back', u'dark', u'characters', u'things', u'gameplay', u'find', u'three', u'...', u'two', u'plot']
+================ standard 4================
+[u'game', u'games', u'one', u"n't", u'puzzles', u'nancy', u'drew', u'could', u'also', u'like', u'well', u'little', u'train', u'order', u'way', u'start', u'challenging', u'find', u'things', u'violence']
+================ standard 5================
+[u'game', u"n't", u'one', u'time', u'halo', u'weapons', u'enemies', u'half-life', u'world', u'enemy', u'shoot', u'use', u'like', u'castlevania', u'look', u'games', u'could', u'best', u'first', u'weapon']
+================ standard 6================
+[u"n't", u'game', u'like', u'...', u'good', u"'ll", u"'re", u'much', u'time', u'level', u"'ve", u'play', u'get', u'really', u'bad', u'even', u'played', u'think', u'pretty', u'fun']
+================ standard 7================
+[u'game', u'characters', u'battle', u'system', u'first', u'story', u'one', u'rpg', u'character', u'enemies', u'gameplay', u'battles', u'also', u'new', u'episode', u'attack', u'xenosaga', u"n't", u'way', u'enemy']
+================ standard 8================
+[u'game', u'really', u'like', u'fun', u'play', u'good', u'first', u'much', u'get', u'star', u'one', u'better', u"n't", u'great', u'wars', u'characters', u'graphics', u'playing', u'little', u'jedi']
+================ standard 9================
+[u'game', u'games', u'play', u'played', u'great', u'playing', u'graphics', u'get', u'like', u'fun', u'hours', u'one', u"'ve", u'ever', u'time', u'got', u'even', u'best', u'love', u'still']
+================ standard 10================
+[u'game', u"n't", u'get', u'like', u'really', u'want', u'...', u'people', u'good', u'know', u'play', u'buy', u'make', u'thing', u'would', u'great', u'fun', u'think', u'see', u'time']
+================ standard 11================
+[u'game', u'memory', u'madden', u'games', u'card', u'jak', u'football', u'every', u'cards', u'play', u'one', u'get', u'nba', u'year', u'way', u'players', u"n't", u'new', u'mode', u'player']
+================ standard 12================
+[u'controller', u'ps2', u'buttons', u'button', u'controllers', u'que', u'car', u'racing', u'cars', u'races', u'race', u'los', u'original', u'wireless', u'gamecube', u'new', u'analog', u'hands', u'long', u'okami']
+================ standard 13================
+[u'game', u'new', u'star', u'levels', u'games', u'many', u'original', u'series', u'mode', u'control', u'level', u'still', u'wars', u'even', u"n't", u'players', u"'re", u'one', u'controls', u'little']
+================ standard 14================
+[u'game', u'missions', u'gun', u'like', u'get', u'mission', u'one', u'driving', u'little', u'good', u'graphics', u'much', u'really', u'shooting', u'take', u"'re", u'especially', u'lot', u'would', u'fun']
+================ standard 15================
+[u'...', u'way', u"n't", u'well', u'things', u'city', u'lot', u'one', u'use', u'system', u'wii', u'first', u'nice', u'many', u'far', u'see', u'good', u'make', u'run', u'keep']
+================ standard 16================
+[u'xbox', u'360', u"n't", u'buy', u'one', u'online', u'good', u'better', u'great', u'bought', u'...', u'product', u'get', u'live', u'use', u'money', u'would', u'best', u'problems', u'wireless']
+================ standard 17================
+[u'game', u'gta', u'songs', u'city', u'like', u'san', u'prince', u'fun', u'grand', u'andreas', u'auto', u'missions', u'theft', u'time', u'dance', u'play', u'love', u'great', u'vice', u'sing']
+================ standard 18================
+[u'games', u'nintendo', u'mario', u'system', u"n't", u'screen', u'lite', u'new', u'play', u'use', u'one', u'better', u'great', u'super', u'also', u'like', u'hard', u'old', u'stylus', u'way']
+================ standard 19================
+[u'game', u"n't", u'like', u'much', u'even', u'would', u'get', u'long', u'different', u'used', u'bit', u'another', u'really', u'times', u'look', u'often', u'nothing', u'voice', u'must', u'something']
+================ standard 20================
+[u'dvd', u'kids', u'play', u'games', u"n't", u'fun', u'old', u'remote', u'player', u'love', u'one', u'get', u'tekken', u'like', u'great', u'many', u'year', u'work', u'would', u'daughter']
