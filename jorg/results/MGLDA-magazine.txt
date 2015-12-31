@@ -1,0 +1,683 @@
+
+================ Global 1 ================ Political (Economist)
+[u'magazine', u'new', u'bush', u'read', u'reading', u'would', u'years', u'many', u'like', u'people', 
+u'article', u'issues', u'writers', u'political', u'tnr', u'war', u'liberal', u'economist', u'conservative', u'often']
+
+
+================ Global 2 ================ Wall Street Journal & News Week
+[u'journal', u'new', u'world', u'news', u'review', u'week', u'read', u'york', u'books', u'times', 
+u'street', u'wall', u'reviews', u'time', u'often', u'also', u'book', u'london', u'editorial', u'magazines']
+
+================ Global 3 ================ Pornography? 
+[u'magazine', u'like', u'girls', u'love', u'world', u'women', u'article', u'life', u'even', 
+u'know', u'girl', u'sex', u'real', u'want', u'see', u'way', u'also', u'people', u'mag', u'great']
+
+================ Global 4 ================ Fashion (Vogue)
+[u'magazine', u'fashion', u'vogue', u'patterns', u'like', u'knitting', u'pattern', u'magazines', 
+u'good', u'look', u'find', u'people', u'articles', u'photography', u'burda', u'want', u'make', u'new', u'size', u'etc']
+
+================ Global 5 ================ Software/Digital (Macworld magazine)
+[u'magazine', u'mac', u'like', u'articles', u'good', u'reviews', u'new', u'macworld', 
+u'computer', u'software', u'digital', u'ads', u'tips', u'photography', u'things', u'way', u'useful', u'many', u'great', u'hardware']
+
+================ Global 6 ================ Cars and "men"
+[u'magazine', u'car', u'like', u'driver', u'road', u'fortune', u'cars', u'foreign', u'news', 
+u'best', u'world', u'articles', u'magazines', u'bike', u'read', u'business', u'policy', u'racing', u'affairs', u'features']
+
+================ Global 7 ================ Cooking (Rachael Every Day magazine)
+[u'recipes', u'magazine', u'cooking', u'food', u'issue', u'like', u'cook', u'recipe', u'also', 
+u'home', u'love', u'find', u'rachael', u'easy', u'time', u'make', u'new', u'ingredients', u'many', u'great']
+
+================ Global 8 ================ Design/Travel/Home
+[u'magazine', u'home', u'design', u'like', u'great', u'ideas', u'travel', u'articles', 
+u'homes', u'magazines', u'also', u'ads', u'decorating', u'love', u'beautiful', u'pictures', u'things', u'many', u'new', u'read']
+
+================ Global 9 ================ Book review magazine
+[u'magazine', u'fiction', u'stories', u'also', u'articles', u'magazines', u'reviews', u'science', u'many', u'authors', 
+u'like', u'book', u'books', u'issue', u'find', u'read', u'good', u'new', u'short', u'writing']
+
+================ Global 10 ================ Political (see above)
+[u'magazine', u'articles', u'news', u'time', u'world', u'read', u'coverage', u'american', u'political', u'scientific', 
+u'liberal', u'would', u'science', u'like', u'conservative', u'economist', u'written', u'people', u'even', u'new']
+
+================ Global 11 ================
+[u'magazine', u'people', u'would', u'magazines', u'even', u'information', u'good', u'know', u'like', u'many', 
+u'best', u'buy', u'example', u'say', u'much', u'see', u'always', u'fortune', u'money', u'around']
+
+================ Global 12 ================ Music (Rolling Stone)
+[u'music', u'magazine', u'good', u'like', u'bands', u'reviews', u'rock', u'best', u'cover', u'magazines', u'articles', 
+u'rolling', u'new', u'also', u'stone', u'spin', u'great', u'always', u'mojo', u'issue']
+
+================ Global 13 ================ Religion (but Harper is more "general interest", so skip Harper)
+[u'magazine', u'christian', u'christianity', u'many', u'today', u'america', u'way', u'american', u'like', 
+u'harper', u'world', u'new', u'years', u'books', u'rather', u'left', u'pages', u'evangelical', u'publication', u'see']
+
+================ Global 14 ================ History
+[u'war', u'magazine', u'article', u'issue', u'history', u'well', u'vietnam', u'articles', u'month', 
+u'tips', u'great', u'people', u'many', u'inc', u'know', u'military', u'life', u'another', u'real', u'read']
+
+================ Global 15 ================ too diverse
+[u'magazine', u'also', u'like', u'relevant', u'technology', u'reviews', u'really', u'people', u'could', 
+u'magazines', u'culture', u'yet', u'games', u'world', u'star', u'today', u'put', u'christian', u'way', u'make']
+
+================ Global 16 ================ Health & fitness
+[u'magazine', u'fitness', u'health', u'like', u'women', u'products', u'body', u'beauty', u'many', u'yoga', 
+u'magazines', u'great', u'natural', u'healthy', u'articles', u'men', u'read', u'look', u'life', u'advice']
+
+================ Global 17 ================ Music
+[u'magazine', u'gramophone', u'new', u'music', u'wedding', u'recordings', u'classical', u'month', 
+u'reviews', u'reason', u'information', u'many', u'would', u'photos', u'issue', u'like', u'releases', u'review', u'feature', u'etc']
+
+================ Global 18 ================ ...again Food/wine/cooking
+[u'magazine', u'wine', u'like', u'recipes', u'home', u'articles', u'find', u'spectator', u'different', u'people', 
+u'food', u'new', u'issue', u'ads', u'taste', u'many', u'make', u'know', u'cooking', u'try']
+
+================ Global 19 ================ Travel
+[u'magazine', u'articles', u'people', u'many', u'places', u'article', u'living', u'find', u'travel', u'coast', 
+u'also', u'like', u'read', u'well', u'great', u'reading', u'world', u'southern', u'coastal', u'tea']
+
+================ Global 20 ================ too diverse
+[u'magazine', u'movie', u'son', u'que', u'big', u'like', u'women', u'release', u'press', u'magazines', 
+u'conservative', u'titles', u'city', u'hollywood', u'reviews', u'outside', u'cosmopolitan', u'must', u'writers', u'audiofile']
+
+
+================ Local 1 ================
+[u'magazine', u'like', u'fashion', u'read', u'articles', u'magazines', u'great', u'ads', u'love', u'best', u'reading', 
+u'good', u'much', u'also', u'people', u'dog', u'know', u'would', u'women', u'many']
+
+================ Local 2 ================ 
+[u'magazine', u'articles', u'well', u'issue', u'great', u'find', u'also', u'business', u'interesting', u'read', 
+u'new', u'information', u'ideas', u'every', u'topics', u'reviews', u'like', u'informative', u'good', u'money']
+
+================ Local 3 ================ Great articles? already a sentiment not a topic (see also below)
+[u'magazine', u'great', u'articles', u'like', u'good', u'read', u'pictures', u'interesting', 
+u'find', u'always', u'information', u'also', u'magazines', u'quality', u'well', u'stories', u'ads', u'issue', u'recipes', u'fun']
+
+
+================ Local 4 ================ in fact already a sentiment? highly recommend? not a topic
+[u'magazine', u'recommend', u'highly', u'like', u'read', u'new', u'best', u'anyone', u'great', 
+u'would', u'articles', u'well', u'magazines', u'world', u'good', u'really', u'music', u'even', u'written', u'sports']
+
+================ Local 5 ================
+[u'magazine', u'years', u'read', u'would', u'best', u'reading', u'great', u'love', u'ever', u'kids', 
+u'new', u'really', u'still', u'like', u'issue', u'think', u'people', u'enjoy', u'old', u'since']
+
+================ Local 6 ================ Price?
+[u'magazine', u'subscription', u'issue', u'cover', u'read', u'worth', u'would', u'every', u'time', u'money', 
+u'years', u'price', u'like', u'issues', u'month', u'year', u'magazines', u'good', u'well', u'even']
+
+================ Local 7 ================ Subscription service?
+[u'magazine', u'subscription', u'issue', u'first', u'received', u'year', u'issues', u'amazon', u'never', 
+u'years', u'order', u'months', u'ordered', u'time', u'copy', u'bought', u'gift', u'would', u'service', u'ago']
+
+
+
+================ Global Topic 1 ==========================
+magazine: 0.011906
+new: 0.006787
+bush: 0.005957
+would: 0.004711
+reading: 0.004711
+read: 0.004711
+years: 0.004573
+many: 0.004435
+like: 0.004296
+people: 0.004158
+issues: 0.004158
+article: 0.004158
+political: 0.004020
+writers: 0.004020
+tnr: 0.003881
+war: 0.003743
+liberal: 0.003604
+economist: 0.003604
+often: 0.003604
+conservative: 0.003604
+================ Global Topic 2 ==========================
+journal: 0.012297
+new: 0.010621
+world: 0.010435
+news: 0.008573
+review: 0.008201
+week: 0.006712
+read: 0.006339
+york: 0.006153
+street: 0.005595
+books: 0.005595
+times: 0.005595
+wall: 0.005222
+reviews: 0.005036
+often: 0.004664
+time: 0.004664
+book: 0.004478
+also: 0.004478
+london: 0.004105
+editorial: 0.003919
+magazines: 0.003547
+================ Global Topic 3 ==========================
+magazine: 0.021329
+like: 0.014814
+girls: 0.006916
+love: 0.006323
+women: 0.005928
+world: 0.005928
+article: 0.005533
+life: 0.005139
+know: 0.005040
+even: 0.005040
+girl: 0.004941
+sex: 0.004744
+real: 0.004645
+way: 0.004349
+want: 0.004349
+see: 0.004349
+also: 0.004250
+mag: 0.003954
+people: 0.003954
+great: 0.003756
+================ Global Topic 4 ==========================
+magazine: 0.019423
+fashion: 0.010272
+vogue: 0.010160
+patterns: 0.010049
+like: 0.007036
+knitting: 0.006924
+pattern: 0.006478
+magazines: 0.005920
+good: 0.005362
+find: 0.004916
+look: 0.004916
+people: 0.004581
+articles: 0.004581
+photography: 0.004469
+burda: 0.004358
+make: 0.004134
+want: 0.004134
+new: 0.004023
+etc: 0.003911
+size: 0.003911
+================ Global Topic 5 ==========================
+magazine: 0.024426
+mac: 0.011621
+like: 0.010132
+articles: 0.008048
+good: 0.007601
+reviews: 0.007452
+new: 0.006261
+macworld: 0.006261
+computer: 0.005814
+software: 0.005665
+ads: 0.005219
+digital: 0.005219
+tips: 0.005070
+photography: 0.005070
+things: 0.004325
+useful: 0.004176
+way: 0.004176
+many: 0.004028
+hardware: 0.004028
+great: 0.004028
+================ Global Topic 6 ==========================
+magazine: 0.020688
+car: 0.018942
+like: 0.010482
+driver: 0.008602
+road: 0.008199
+fortune: 0.007393
+cars: 0.007259
+foreign: 0.007259
+news: 0.007124
+world: 0.006587
+best: 0.006587
+articles: 0.005916
+magazines: 0.005647
+bike: 0.005110
+business: 0.004976
+read: 0.004976
+racing: 0.004841
+policy: 0.004841
+features: 0.004707
+affairs: 0.004707
+================ Global Topic 7 ==========================
+recipes: 0.027926
+magazine: 0.022803
+cooking: 0.016570
+food: 0.013239
+issue: 0.010422
+like: 0.010251
+cook: 0.009824
+recipe: 0.008970
+also: 0.007348
+home: 0.006494
+love: 0.006408
+find: 0.005981
+rachael: 0.005811
+make: 0.005725
+easy: 0.005725
+time: 0.005725
+new: 0.005042
+ingredients: 0.004871
+many: 0.004615
+great: 0.004615
+================ Global Topic 8 ==========================
+magazine: 0.032533
+home: 0.012948
+design: 0.011459
+like: 0.010543
+great: 0.008939
+ideas: 0.008596
+travel: 0.007450
+articles: 0.007336
+homes: 0.006763
+magazines: 0.005847
+also: 0.005503
+ads: 0.005045
+decorating: 0.004931
+love: 0.004587
+beautiful: 0.004587
+pictures: 0.004587
+things: 0.004472
+new: 0.004243
+many: 0.004243
+read: 0.004129
+================ Global Topic 9 ==========================
+magazine: 0.024342
+fiction: 0.010130
+stories: 0.008532
+also: 0.008354
+articles: 0.007554
+reviews: 0.007022
+magazines: 0.007022
+science: 0.006844
+many: 0.006755
+authors: 0.006755
+like: 0.006577
+book: 0.006577
+issue: 0.005956
+books: 0.005956
+find: 0.005956
+good: 0.005600
+read: 0.005600
+new: 0.005423
+short: 0.005334
+writing: 0.005156
+================ Global Topic 10 ==========================
+magazine: 0.021538
+articles: 0.012522
+news: 0.012171
+time: 0.011296
+world: 0.007970
+read: 0.007007
+coverage: 0.005957
+american: 0.005782
+political: 0.005519
+scientific: 0.005344
+liberal: 0.005169
+would: 0.005081
+science: 0.004994
+like: 0.004819
+conservative: 0.004731
+economist: 0.004293
+written: 0.003856
+new: 0.003681
+people: 0.003681
+politics: 0.003681
+================ Global Topic 11 ==========================
+magazine: 0.012705
+people: 0.009419
+would: 0.008970
+magazines: 0.007327
+even: 0.007028
+information: 0.006282
+good: 0.006132
+know: 0.005833
+like: 0.005684
+many: 0.005236
+best: 0.004788
+buy: 0.004788
+example: 0.004489
+say: 0.004340
+see: 0.004190
+much: 0.004190
+always: 0.004041
+fortune: 0.004041
+money: 0.003891
+around: 0.003742
+================ Global Topic 12 ==========================
+music: 0.025752
+magazine: 0.017897
+good: 0.011788
+like: 0.010806
+bands: 0.010151
+reviews: 0.007097
+rock: 0.007097
+best: 0.006988
+cover: 0.006660
+magazines: 0.006551
+articles: 0.006224
+rolling: 0.006115
+new: 0.005897
+also: 0.005460
+stone: 0.005242
+spin: 0.005133
+great: 0.004806
+always: 0.004587
+mojo: 0.004369
+issue: 0.004369
+================ Global Topic 13 ==========================
+christian: 0.012685
+magazine: 0.012685
+christianity: 0.005586
+many: 0.005417
+today: 0.005079
+america: 0.004910
+harper: 0.004741
+american: 0.004741
+way: 0.004741
+like: 0.004741
+new: 0.004403
+world: 0.004403
+years: 0.004065
+rather: 0.003558
+books: 0.003558
+left: 0.003389
+publication: 0.003051
+pages: 0.003051
+evangelical: 0.003051
+highly: 0.002882
+================ Global Topic 14 ==========================
+war: 0.014147
+magazine: 0.013001
+article: 0.008034
+issue: 0.008034
+history: 0.006696
+well: 0.006123
+vietnam: 0.006123
+articles: 0.005741
+month: 0.004595
+tips: 0.004595
+great: 0.004213
+many: 0.004022
+people: 0.004022
+inc: 0.003831
+know: 0.003831
+simple: 0.003639
+real: 0.003639
+read: 0.003639
+military: 0.003639
+life: 0.003639
+================ Global Topic 15 ==========================
+magazine: 0.022389
+also: 0.009028
+like: 0.008860
+relevant: 0.007023
+technology: 0.006522
+reviews: 0.005520
+really: 0.004685
+people: 0.004518
+could: 0.004351
+yet: 0.004184
+magazines: 0.004184
+games: 0.004184
+culture: 0.004184
+world: 0.003850
+today: 0.003683
+star: 0.003683
+christian: 0.003516
+put: 0.003516
+make: 0.003349
+way: 0.003349
+================ Global Topic 16 ==========================
+magazine: 0.028527
+fitness: 0.012883
+health: 0.012031
+like: 0.010967
+women: 0.009264
+products: 0.007242
+body: 0.006497
+beauty: 0.005859
+many: 0.005752
+yoga: 0.005539
+magazines: 0.005220
+great: 0.005007
+natural: 0.004901
+articles: 0.004794
+healthy: 0.004794
+men: 0.004582
+look: 0.004475
+read: 0.004475
+life: 0.004369
+advice: 0.003943
+================ Global Topic 17 ==========================
+magazine: 0.014114
+gramophone: 0.013564
+new: 0.008069
+music: 0.006420
+wedding: 0.005138
+recordings: 0.004772
+classical: 0.004772
+month: 0.004589
+reviews: 0.004589
+information: 0.004405
+reason: 0.004405
+would: 0.004222
+many: 0.004222
+issue: 0.003856
+photos: 0.003856
+like: 0.003673
+releases: 0.003673
+review: 0.003673
+etc: 0.003306
+fanfare: 0.003306
+================ Global Topic 18 ==========================
+magazine: 0.021363
+wine: 0.015047
+like: 0.010685
+recipes: 0.007527
+articles: 0.006023
+home: 0.006023
+find: 0.005572
+spectator: 0.005121
+different: 0.004820
+people: 0.004670
+new: 0.004519
+food: 0.004519
+ads: 0.004369
+issue: 0.004369
+taste: 0.004219
+know: 0.003918
+many: 0.003918
+make: 0.003918
+try: 0.003767
+cooking: 0.003767
+================ Global Topic 19 ==========================
+magazine: 0.018656
+articles: 0.011451
+people: 0.010320
+many: 0.008201
+places: 0.006788
+living: 0.006647
+article: 0.006647
+find: 0.006082
+travel: 0.005799
+coast: 0.005799
+like: 0.005517
+also: 0.005517
+read: 0.005093
+well: 0.005093
+great: 0.004669
+reading: 0.004669
+coastal: 0.004245
+world: 0.004245
+tea: 0.004245
+southern: 0.004245
+================ Global Topic 20 ==========================
+magazine: 0.015508
+movie: 0.008909
+son: 0.008335
+que: 0.006901
+big: 0.006614
+like: 0.006614
+women: 0.005753
+release: 0.005179
+press: 0.005179
+magazines: 0.004892
+conservative: 0.004605
+titles: 0.004318
+city: 0.004031
+hollywood: 0.004031
+outside: 0.004031
+reviews: 0.004031
+writers: 0.003744
+cosmopolitan: 0.003744
+must: 0.003744
+okay: 0.003457
+================ Local Topic 1 ==========================
+magazine: 0.043507
+like: 0.014343
+fashion: 0.010834
+read: 0.010047
+articles: 0.009926
+magazines: 0.009563
+great: 0.009018
+ads: 0.007990
+love: 0.007808
+best: 0.006961
+reading: 0.006901
+good: 0.006598
+much: 0.006175
+also: 0.006054
+dog: 0.005812
+people: 0.005812
+know: 0.005570
+women: 0.005388
+would: 0.005388
+many: 0.005207
+================ Local Topic 2 ==========================
+magazine: 0.026496
+articles: 0.026041
+well: 0.011260
+issue: 0.010123
+great: 0.010009
+find: 0.009099
+also: 0.008872
+business: 0.008247
+interesting: 0.007678
+read: 0.006996
+new: 0.006825
+ideas: 0.006598
+information: 0.006598
+every: 0.006484
+topics: 0.006370
+reviews: 0.006257
+like: 0.005574
+informative: 0.005574
+good: 0.005176
+money: 0.005063
+================ Local Topic 3 ==========================
+magazine: 0.034714
+great: 0.016009
+articles: 0.015816
+like: 0.008745
+good: 0.008681
+read: 0.008617
+pictures: 0.008359
+interesting: 0.007974
+find: 0.007717
+information: 0.007267
+always: 0.007267
+also: 0.006110
+magazines: 0.005981
+quality: 0.005981
+well: 0.005595
+ads: 0.005595
+stories: 0.005595
+issue: 0.005210
+recipes: 0.005146
+fun: 0.004953
+================ Local Topic 4 ==========================
+magazine: 0.036023
+recommend: 0.013932
+highly: 0.013131
+like: 0.012651
+read: 0.011210
+new: 0.008409
+best: 0.008328
+anyone: 0.008168
+great: 0.006888
+would: 0.006728
+articles: 0.006407
+well: 0.006087
+magazines: 0.006007
+world: 0.005447
+good: 0.005047
+really: 0.004566
+music: 0.004486
+even: 0.004486
+written: 0.004406
+sports: 0.004326
+================ Local Topic 5 ==========================
+magazine: 0.040889
+years: 0.009477
+read: 0.009192
+would: 0.008480
+best: 0.007625
+reading: 0.007625
+great: 0.007198
+love: 0.007126
+ever: 0.005916
+kids: 0.005773
+really: 0.005346
+new: 0.005346
+like: 0.005132
+still: 0.005132
+think: 0.004918
+issue: 0.004918
+enjoy: 0.004847
+people: 0.004847
+since: 0.004705
+old: 0.004705
+================ Local Topic 6 ==========================
+magazine: 0.031924
+subscription: 0.017454
+issue: 0.017144
+cover: 0.014101
+read: 0.013728
+worth: 0.012300
+would: 0.010250
+every: 0.009878
+time: 0.008698
+money: 0.008511
+years: 0.008139
+price: 0.007766
+like: 0.007331
+issues: 0.006524
+month: 0.006462
+year: 0.005841
+magazines: 0.005779
+good: 0.005406
+well: 0.005282
+even: 0.005158
+================ Local Topic 7 ==========================
+magazine: 0.040145
+subscription: 0.030822
+issue: 0.022542
+first: 0.015687
+received: 0.014919
+year: 0.012012
+issues: 0.010806
+amazon: 0.009709
+never: 0.009051
+years: 0.008229
+order: 0.008119
+months: 0.008119
+ordered: 0.007625
+time: 0.006858
+bought: 0.006693
+copy: 0.006693
+gift: 0.006474
+would: 0.005980
+service: 0.005761
+ago: 0.005706
+
+Process finished with exit code 0
