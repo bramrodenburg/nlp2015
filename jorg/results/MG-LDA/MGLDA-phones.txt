@@ -1,5 +1,5 @@
 
-================ Global 1 ================
+================ Global 1 ================ 
 [u'nt', u'going', u'one', u'way', u'much', u'battery', u'see', u'need', u'pictures', u'll', u'take', u'might', 
 u'give', u'thought', u'remove', u'little', u'idea', u'charge', u'nice', u'want']
 ================ Global 2 ================
