@@ -1,0 +1,40 @@
+================ standard 1================
+[u'treo', u'button', u'skin', u'700w', u'going', u'one', u'700p', u'deal', u'screen', u'see', u'650', u'know', u'thought', u'try', u'icons', u"n't", u'overall', u'take', u'almost', u'bump']
+================ standard 2================
+[u'ear', u'sound', u"n't", u'hear', u'could', u'one', u'talking', u'people', u'different', u'quality', u'small', u'nokia', u'say', u'fit', u'noise', u'without', u'gels', u'headset', u'person', u'use']
+================ standard 3================
+[u'one', u'charger', u"n't", u'little', u'got', u'would', u'charge', u'came', u'two', u'used', u'car', u'better', u'buy', u'also', u'charges', u'worked', u'works', u'using', u'purchase', u'could']
+================ standard 4================
+[u'case', u'phone', u'clip', u'belt', u"n't", u'cover', u'great', u'fit', u'like', u'well', u'would', u'holster', u'product', u'use', u'fits', u'easy', u'easily', u'also', u'...', u'good']
+================ standard 5================
+[u'phone', u"n't", u'product', u'work', u'would', u'amazon', u'charger', u'could', u'buy', u'charge', u'item', u'motorola', u'...', u'back', u'time', u'get', u'price', u'great', u'one', u'return']
+================ standard 6================
+[u'phone', u'new', u'one', u'phones', u'get', u'replacement', u'card', u'cingular', u'service', u'sim', u'working', u'minutes', u'went', u'first', u'since', u'battery', u'would', u'junk', u'months', u'problems']
+================ standard 7================
+[u'battery', u'phone', u'life', u'one', u'charge', u'use', u'really', u'time', u"n't", u'get', u'people', u'every', u'cell', u'even', u'never', u'take', u'day', u'bought', u'good', u'last']
+================ standard 8================
+[u'screen', u'phone', u'like', u'really', u'get', u'much', u'great', u'little', u'better', u'case', u'cover', u"n't", u'motorola', u'thing', u'without', u'comes', u'time', u'buttons', u'looks', u'plastic']
+================ standard 9================
+[u'charger', u'price', u'cord', u'great', u'nice', u'car', u'cost', u'product', u'bit', u'got', u'thing', u'would', u'one', u"n't", u'thick', u'little', u'skin', u'work', u'designed', u'free']
+================ standard 10================
+[u'phone', u'use', u'need', u'windows', u'using', u'support', u'device', u'however', u'set', u'even', u'since', u'user', u"n't", u'way', u'audio', u'dial', u'connect', u'button', u'works', u'devices']
+================ standard 11================
+[u'phone', u"n't", u'phones', u'nextel', u'even', u'one', u'calls', u'service', u"'ve", u'color', u'months', u'pink', u'still', u'another', u'razr', u'really', u'different', u'years', u'buy', u'good']
+================ standard 12================
+[u"n't", u'get', u'would', u'like', u'also', u'time', u'service', u'put', u'customer', u'two', u'could', u'call', u'days', u'motorola', u'ringtones', u'virgin', u'contract', u'message', u'problem', u'ring']
+================ standard 13================
+[u'easy', u'like', u'phone', u'dropped', u'buttons', u'great', u'others', u'thickness', u'type', u'less', u'months', u'skin', u'used', u'function', u'times', u'cases', u'etc', u'four', u'press', u'prior']
+================ standard 14================
+[u'good', u'one', u'use', u'piece', u'earpiece', u'two', u'ear', u'first', u'time', u'product', u'plastic', u'work', u"n't", u'unit', u'need', u'thing', u'enough', u'put', u'compatible', u'however']
+================ standard 15================
+[u'...', u'tracfone', u'service', u'free', u'minutes', u'please', u'call', u'good', u'ringtones', u'send', u'would', u'fone', u"n't", u'100', u'internet', u'making', u'program', u'yet', u'either', u'email']
+================ standard 16================
+[u'palm', u'first', u'device', u'treo', u'much', u"n't", u'blackberry', u"'ve", u'also', u'pearl', u'pda', u'best', u'email', u'keyboard', u'650', u'actually', u'software', u'user', u'680', u'better']
+================ standard 17================
+[u'phone', u'one', u"n't", u'...', u"'ve", u'like', u'get', u'problem', u'good', u'way', u'would', u'great', u'thing', u"'re", u'call', u'keep', u'using', u'months', u'turn', u'going']
+================ standard 18================
+[u'cable', u'phone', u'software', u'usb', u'work', u'computer', u'data', u'driver', u'nokia', u'drivers', u'works', u'windows', u'came', u'sync', u'download', u'able', u'great', u'use', u'media', u'worked']
+================ standard 19================
+[u'phone', u'camera', u'use', u'great', u'good', u'player', u'mp3', u'card', u'easy', u'feature', u'memory', u'internet', u'many', u'music', u'pictures', u'cons', u'features', u'screen', u'also', u'reception']
+================ standard 20================
+[u'headset', u'use', u'quality', u'bluetooth', u'sound', u'volume', u'well', u'call', u'really', u'hear', u'samsung', u'good', u'like', u'works', u'voice', u'fine', u'order', u'work', u'ear', u'find']
