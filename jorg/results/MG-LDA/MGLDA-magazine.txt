@@ -1,10 +1,10 @@
 
-================ Global 1 ================ Political (Economist)
+================ Global 1 ================ Politics (Economist)
 [u'magazine', u'new', u'bush', u'read', u'reading', u'would', u'years', u'many', u'like', u'people', 
 u'article', u'issues', u'writers', u'political', u'tnr', u'war', u'liberal', u'economist', u'conservative', u'often']
 
 
-================ Global 2 ================ Wall Street Journal & News Week
+================ Global 2 ================ International business (Wall Street Journal & News Week)
 [u'journal', u'new', u'world', u'news', u'review', u'week', u'read', u'york', u'books', u'times', 
 u'street', u'wall', u'reviews', u'time', u'often', u'also', u'book', u'london', u'editorial', u'magazines']
 
