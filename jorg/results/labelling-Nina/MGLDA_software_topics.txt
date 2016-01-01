@@ -1,113 +1,114 @@
 
-================ Global 1 ================ Tax preperation/return software (turbotax product)
-[u'tax', u'year', u'state', u'turbotax', u'return', u'taxcut', u'forms', u'taxes', u'used', u'would', u'data', 
-u'years', u'program', u'turbo', u'time', u'form', u'software', u'print', u'federal', u'like']
+================ Global 1 ================
+Software for taxes and taxpaying
+[u'tax', u'year', u'state', u'turbotax', u'return', u'taxcut', u'forms', u'taxes', u'used', u'would', u'data', u'years', u'program', u'turbo', u'time', u'form', u'software', u'print', u'federal', u'like']
 
-================ Global 2 ================ Learning language software (Rosetta stone)
-[u'spanish', u'language', u'learn', u'stone', u'rosetta', u'software', u'learning', 
-u'would', u'words', u'program', u'pimsleur', u'good', u'english', u'japanese', u'french', u'like', u'also', u'product', u'really', u'speak']
+================ Global 2 ================
+Language learning software
+[u'spanish', u'language', u'learn', u'stone', u'rosetta', u'software', u'learning', u'would', u'words', u'program', u'pimsleur', u'good', u'english', u'japanese', u'french', u'like', u'also', u'product', u'really', u'speak']
 
-================ Global 3 ================ Office software (Microsoft)
-[u'office', u'word', u'2007', u'microsoft', u'outlook', u'2003', u'use', u'excel', u'features', 
-u'work', u'used', u'like', u'interface', u'email', u'many', u'web', u'wordperfect', u'powerpoint', u'product', u'professional']
+================ Global 3 ================
+Microsoft
+[u'office', u'word', u'2007', u'microsoft', u'outlook', u'2003', u'use', u'excel', u'features', u'work', u'used', u'like', u'interface', u'email', u'many', u'web', u'wordperfect', u'powerpoint', u'product', u'professional']
 
-================ Global 4 ================ ???
-[u'like', u'new', u'software', u'better', u'version', u'years', u'way', u'work', u'microsoft', 
-u'still', u'using', u'see', u'versions', u'little', u'great', u'even', u'best', u'enough', u'free', u'want']
+================ Global 4 ================
+Versions
+[u'like', u'new', u'software', u'better', u'version', u'years', u'way', u'work', u'microsoft', u'still', u'using', u'see', u'versions', u'little', u'great', u'even', u'best', u'enough', u'free', u'want']
 
-================ Global 5 ================ Drawing & design software
-[u'illustrator', u'adobe', u'like', u'bible', u'comics', u'also', u'book', u'cs2', u'great', 
-u'bridge', u'read', u'comic', u'spiderman', u'photoshop', u'click', u'learning', u'different', u'year', u'coreldraw', u'curve']
+================ Global 5 ================
+Programs for drawing and designing
+[u'illustrator', u'adobe', u'like', u'bible', u'comics', u'also', u'book', u'cs2', u'great', u'bridge', u'read', u'comic', u'spiderman', u'photoshop', u'click', u'learning', u'different', u'year', u'coreldraw', u'curve']
 
-================ Global 6 ================ Accounting software (quickbooks)
-[u'program', u'use', u'much', u'quicken', u'business', u'quickbooks', u'like', u'since', u'product', 
-u'version', u'online', u'small', u'make', u'data', u'easy', u'could', u'money', u'everything', u'pretty', u'feature']
+================ Global 6 ================
+Accounting software (Quickbooks)
+[u'program', u'use', u'much', u'quicken', u'business', u'quickbooks', u'like', u'since', u'product', u'version', u'online', u'small', u'make', u'data', u'easy', u'could', u'money', u'everything', u'pretty', u'feature']
 
-================ Global 7 ================ Games for children
-[u'game', u'play', u'games', u'fun', u'kids', u'chess', u'playing', u'really', u'could', u'like', 
-u'child', u'well', u'good', u'learning', u'math', u'love', u'learn', u'great', u'nancy', u'children']
+================ Global 7 ================
+Computer games for children
+[u'game', u'play', u'games', u'fun', u'kids', u'chess', u'playing', u'really', u'could', u'like', u'child', u'well', u'good', u'learning', u'math', u'love', u'learn', u'great', u'nancy', u'children']
 
-================ Global 8 ================ Windows operating system
-[u'windows', u'vista', u'system', u'new', u'software', u'install', u'computer', u'upgrade', u'microsoft', 
-u'home', u'like', u'installed', u'also', u'ram', u'work', u'drivers', u'several', u'problems', u'even', u'operating']
+================ Global 8 ================
+Windows
+[u'windows', u'vista', u'system', u'new', u'software', u'install', u'computer', u'upgrade', u'microsoft', u'home', u'like', u'installed', u'also', u'ram', u'work', u'drivers', u'several', u'problems', u'even', u'operating']
 
-================ Global 9 ================ Costumer support
-[u'support', u'software', u'customer', u'product', u'service', u'version', u'back', u'would', u'free', 
-u'email', u'company', u'could', u'buy', u'download', u'work', u'hours', u'number', u'try', u'phone', u'trying']
+================ Global 9 ================
+Costumer support
+[u'support', u'software', u'customer', u'product', u'service', u'version', u'back', u'would', u'free', u'email', u'company', u'could', u'buy', u'download', u'work', u'hours', u'number', u'try', u'phone', u'trying']
 
-================ Global 10 ================ Antivirus
-[u'norton', u'internet', u'computer', u'antivirus', u'security', u'system', u'firewall', u'installed', 
-u'virus', u'would', u'mcafee', u'program', u'spyware', u'product', u'used', u'time', u'use', u'using', u'years', u'2007']
+================ Global 10 ================
+Antivirus software
+[u'norton', u'internet', u'computer', u'antivirus', u'security', u'system', u'firewall', u'installed', u'virus', u'would', u'mcafee', u'program', u'spyware', u'product', u'used', u'time', u'use', u'using', u'years', u'2007']
 
-================ Global 11 ================ Route planning software
-[u'gps', u'route', u'roxio', u'program', u'streets', u'even', u'map', u'trips', u'maps', u'need', 
-u'find', u'turn', u'product', u'help', u'software', u'road', u'street', u'support', u'send', u'way']
+================ Global 11 ================
+Route planning (-roxio?)
+[u'gps', u'route', u'roxio', u'program', u'streets', u'even', u'map', u'trips', u'maps', u'need', u'find', u'turn', u'product', u'help', u'software', u'road', u'street', u'support', u'send', u'way']
 
-================ Global 12 ================ Adobe Acrobat
-[u'pdf', u'version', u'acrobat', u'adobe', u'files', u'documents', u'new', u'features', u'feature', 
-u'file', u'even', u'also', u'create', u'using', u'fact', u'document', u'better', u'software', u'many', u'professional']
+================ Global 12 ================
+Adobe Acrobat
+[u'pdf', u'version', u'acrobat', u'adobe', u'files', u'documents', u'new', u'features', u'feature', u'file', u'even', u'also', u'create', u'using', u'fact', u'document', u'better', u'software', u'many', u'professional']
 
-================ Global 13 ================ ??
-[u'software', u'would', u'punch', u'little', u'really', u'fish', u'buy', u'much', u'monitor', 
-u'even', u'hours', u'work', u'good', u'order', u'real', u'color', u'design', u'version', u'want', u'need']
+================ Global 13 ================
 
-================ Global 14 ================ Adobe photoshop
-[u'photoshop', u'photo', u'adobe', u'cs2', u'photos', u'file', u'new', u'text', u'also', u'images', 
-u'use', u'tool', u'image', u'easy', u'editing', u'digital', u'paint', u'features', u'control', u'like']
+[u'software', u'would', u'punch', u'little', u'really', u'fish', u'buy', u'much', u'monitor', u'even', u'hours', u'work', u'good', u'order', u'real', u'color', u'design', u'version', u'want', u'need']
 
-================ Global 15 ================ Backup software
-[u'drive', u'backup', u'hard', u'software', u'files', u'disk', u'would', u'computer', u'use', u'new', 
-u'install', u'process', u'system', u'data', u'could', u'installation', u'able', u'backups', u'drives', u'restore']
+================ Global 14 ================
+Adobe photoshop
+[u'photoshop', u'photo', u'adobe', u'cs2', u'photos', u'file', u'new', u'text', u'also', u'images', u'use', u'tool', u'image', u'easy', u'editing', u'digital', u'paint', u'features', u'control', u'like']
 
-================ Global 16 ================ Image management (???)
-[u'images', u'use', u'collection', u'image', u'art', u'time', u'would', u'search', u'like', u'screen', 
-u'could', u'box', u'something', u'photo', u'able', u'quality', u'way', u'web', u'new', u'find']
+================ Global 15 ================
+Harddrives
+[u'drive', u'backup', u'hard', u'software', u'files', u'disk', u'would', u'computer', u'use', u'new', u'install', u'process', u'system', u'data', u'could', u'installation', u'able', u'backups', u'drives', u'restore']
 
-================ Global 17 ================ Multimedia software / Nero
-[u'mac', u'software', u'time', u'work', u'dvd', u'using', u'nero', u'run', u'old', u'system', 
-u'video', u'windows', u'running', u'need', u'programs', u'computer', u'first', u'around', u'back', u'well']
+================ Global 16 ================
+Image management
+[u'images', u'use', u'collection', u'image', u'art', u'time', u'would', u'search', u'like', u'screen', u'could', u'box', u'something', u'photo', u'able', u'quality', u'way', u'web', u'new', u'find']
+
+================ Global 17 ================
+Multimedia software / Nero?
+[u'mac', u'software', u'time', u'work', u'dvd', u'using', u'nero', u'run', u'old', u'system', u'video', u'windows', u'running', u'need', u'programs', u'computer', u'first', u'around', u'back', u'well']
 
 ================ Global 18 ================
-[u'program', u'also', u'way', u'time', u'many', u'things', u'would', u'find', u'different', 
-u'screen', u'right', u'lot', u'change', u'want', u'see', u'first', u'far', u'put', u'like', u'back']
 
-================ Global 19 ================ Electronic cards
-[u'program', u'card', u'cards', u'use', u'would', u'really', u'also', u'easy', u'great', u'much', 
-u'frontpage', u'may', u'hallmark', u'art', u'way', u'studio', u'good', u'make', u'found', u'recommend']
+[u'program', u'also', u'way', u'time', u'many', u'things', u'would', u'find', u'different', u'screen', u'right', u'lot', u'change', u'want', u'see', u'first', u'far', u'put', u'like', u'back']
 
-================ Global 20 ================ Video editing software (final cut pro)
-[u'video', u'home', u'use', u'music', u'product', u'want', u'good', u'software', u'program', 
-u'make', u'without', u'able', u'made', u'makes', u'simple', u'pro', u'cut', u'easy', u'final', u'best']
+================ Global 19 ================
+E-cards
+[u'program', u'card', u'cards', u'use', u'would', u'really', u'also', u'easy', u'great', u'much', u'frontpage', u'may', u'hallmark', u'art', u'way', u'studio', u'good', u'make', u'found', u'recommend']
 
-================ Local 1 ================ Customer support
-[u'support', u'product', u'problem', u'help', u'customer', u'software', u'service', u'tech', 
-u'would', u'online', u'technical', u'site', u'program', u'time', u'back', u'could', u'even', u'never', u'free', u'web']
+================ Global 20 ================
+Music
+[u'video', u'home', u'use', u'music', u'product', u'want', u'good', u'software', u'program', u'make', u'without', u'able', u'made', u'makes', u'simple', u'pro', u'cut', u'easy', u'final', u'best']
 
-================ Local 2 ================ Installation
-[u'program', u'product', u'computer', u'software', u'money', u'recommend', u'would', u'use', 
-u'like', u'install', u'office', u'even', u'time', u'waste', u'new', u'could', u'home', u'installed', u'better', u'also']
+#########################################
+================ Local 1 ================
+Customer support
+[u'support', u'product', u'problem', u'help', u'customer', u'software', u'service', u'tech', u'would', u'online', u'technical', u'site', u'program', u'time', u'back', u'could', u'even', u'never', u'free', u'web']
 
-================ Local 3 ================ Memory ???
-[u'software', u'program', u'system', u'use', u'time', u'computer', u'work', u'user', 
-u'windows', u'well', u'ram', u'give', u'could', u'new', u'machine', u'also', u'really', u'used', u'would', u'install']
+================ Local 2 ================
+Installation
+[u'program', u'product', u'computer', u'software', u'money', u'recommend', u'would', u'use', u'like', u'install', u'office', u'even', u'time', u'waste', u'new', u'could', u'home', u'installed', u'better', u'also']
 
-================ Local 4 ================ Product upgrades
-[u'product', u'version', u'software', u'used', u'bought', u'years', u'upgrade', u'using', 
-u'reviews', u'windows', u'since', u'great', u'buy', u'products', u'would', u'program', u'mac', u'new', u'never', u'purchased']
+================ Local 3 ================
 
-================ Local 5 ================ User friendliness
-[u'use', u'easy', u'software', u'program', u'product', u'good', u'used', u'also', u'make', 
-u'simple', u'learn', u'best', u'love', u'first', u'bought', u'want', u'computer', u'dvd', u'yet', u'great']
+[u'software', u'program', u'system', u'use', u'time', u'computer', u'work', u'user', u'windows', u'well', u'ram', u'give', u'could', u'new', u'machine', u'also', u'really', u'used', u'would', u'install']
 
-================ Local 6 ================ Microsoft upgrades
-[u'version', u'new', u'product', u'upgrade', u'work', u'microsoft', u'use', u'much', 
-u'software', u'word', u'office', u'would', u'features', u'great', u'good', u'2007', u'vista', u'buy', u'versions', u'windows']
+================ Local 4 ================
+General Upgrades 
+[u'product', u'version', u'software', u'used', u'bought', u'years', u'upgrade', u'using', u'reviews', u'windows', u'since', u'great', u'buy', u'products', u'would', u'program', u'mac', u'new', u'never', u'purchased']
 
-================ Local 7 ================ price/quality
-[u'product', u'time', u'money', u'use', u'would', u'program', u'software', u'worth', u'great', 
-u'recommend', u'good', u'easy', u'price', u'well', u'buy', u'really', u'waste', u'highly', u'like', u'much']
+================ Local 5 ================
+Simplicity (?)
+[u'use', u'easy', u'software', u'program', u'product', u'good', u'used', u'also', u'make', u'simple', u'learn', u'best', u'love', u'first', u'bought', u'want', u'computer', u'dvd', u'yet', u'great']
 
+================ Local 6 ================
+Microsoft Upgrades
+[u'version', u'new', u'product', u'upgrade', u'work', u'microsoft', u'use', u'much', u'software', u'word', u'office', u'would', u'features', u'great', u'good', u'2007', u'vista', u'buy', u'versions', u'windows']
 
+================ Local 7 ================
+Price-Quality rate
+[u'product', u'time', u'money', u'use', u'would', u'program', u'software', u'worth', u'great', u'recommend', u'good', u'easy', u'price', u'well', u'buy', u'really', u'waste', u'highly', u'like', u'much']
+
+##########################################################
 ================ Global Topic 1 ==========================
 tax: 0.031832
 year: 0.023874
