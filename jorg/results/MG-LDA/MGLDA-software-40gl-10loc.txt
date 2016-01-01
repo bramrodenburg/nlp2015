@@ -1,0 +1,1207 @@
+
+================ Global 1 ================
+[u'punch', u'home', u'software', u'design', u'product', u'3dha', u'architect', u'price', u'basic', u'plan', u'real', u'interior', 
+u'cost', u'base', u'ability', u'complete', u'microsoft', u'see', u'work', u'need']
+================ Global 2 ================
+[u'process', u'software', u'could', u'many', u'calibration', u'computer', u'feature', u'makes', u'device', u'force', 
+u'even', u'new', u'images', u'simple', u'standard', u'product', u'required', u'activation', u'adjustments', u'automatic']
+================ Global 3 ================
+[u'money', u'accounts', u'read', u'banking', u'bank', u'star', u'amazon', u'fully', u'yet', u'bill', u'2004', u'stacey', 
+u'favor', u'yellow', u'going', u'investment', u'fund', u'corded', u'still', u'online']
+================ Global 4 ================
+[u'fish', u'software', u'images', u'time', u'slow', u'review', u'files', u'years', u'project', u'image', u'also', u'even', 
+u'hand', u'hit', u'large', u'still', u'key', u'side', u'seconds', u'although']
+================ Global 5 ================
+[u'nero', u'computer', u'burning', u'backup', u'product', u'could', u'dvd', u'burn', u'version', u'almost', u'works', 
+u'system', u'bought', u'company', u'help', u'ultra', u'backups', u'utility', u'oem', u'dual']
+================ Global 6 ================
+[u'play', u'game', u'chess', u'program', u'kids', u'games', u'great', u'much', u'learning', u'playing', u'learn', u'think', 
+u'first', u'guitar', u'good', u'year', u'fun', u'computer', u'start', u'children']
+================ Global 7 ================
+[u'photoshop', u'photo', u'images', u'photos', u'image', u'digital', u'lightroom', u'use', u'raw', u'elements', u'editing', 
+u'camera', u'file', u'edit', u'adobe', u'people', u'browser', u'functions', u'even', u'cs2']
+================ Global 8 ================
+[u'2007', u'outlook', u'email', u'like', u'time', u'new', u'word', u'studio', u'product', u'mail', u'many', u'send', 
+u'problems', u'system', u'version', u'old', u'act', u'office', u'document', u'software']
+================ Global 9 ================
+[u'subpoint', u'fonts', u'espp', u'heading', u'merge', u'safe', u'instance', u'que', u'oblique', u'eazyspeak', u'smooth', 
+u'highly', u'rejected', u'800', u'rendering', u'epson', u'outline', u'suitable', u'bold', u'personnel']
+================ Global 10 ================
+[u'art', u'program', u'card', u'use', u'explosion', u'cards', u'hallmark', u'scrapbook', u'quality', u'looking', u'professional', 
+u'designs', u'disc', u'greeting', u'kid', u'good', u'photos', u'great', u'variety', u'clip']
+================ Global 11 ================
+[u'monitor', u'registry', u'program', u'also', u'language', u'however', u'latin', u'happy', u'tools', u'supplement', u'gamma', 
+u'instead', u'perfect', u'textbook', u'use', u'glad', u'printer', u'adobe', u'photos', u'photo']
+================ Global 12 ================
+[u'new', u'illustrator', u'live', u'photoshop', u'feature', u'used', u'adobe', u'paint', u'palette', u'version', u'features', 
+u'trace', u'object', u'control', u'cs2', u'also', u'pen', u'contains', u'easily', u'integration']
+================ Global 13 ================
+[u'accuracy', u'keynote', u'dragon', u'powerpoint', u'presentations', u'presentation', u'next', u'slide', u'training', 
+u'typing', u'think', u'numbers', u'iwork', u'naturallyspeaking', u'speaking', u'headset', u'naturally', u'dictation', u'microphone', u'dictate']
+================ Global 14 ================
+[u'software', u'even', u'free', u'microsoft', u'want', u'simply', u'use', u'package', u'order', u'know', u'open', u'apple', 
+u'buy', u'however', u'would', u'since', u'need', u'well', u'money', u'office']
+================ Global 15 ================
+[u'support', u'roxio', u'problem', u'help', u'contact', u'product', u'customer', u'website', u'phone', u'email', 
+u'service', u'online', u'technical', u'response', u'find', u'creator', u'received', u'able', u'tech', u'download']
+================ Global 16 ================
+[u'lesson', u'lessons', u'day', u'program', u'instructions', u'current', u'note', u'installation', u'maybe', 
+u'something', u'fingers', u'also', u'usually', u'read', u'reviewer', u'may', u'piano', u'screen', u'complete', u'live']
+================ Global 17 ================
+[u'program', u'route', u'way', u'screen', u'function', u'would', u'also', u'times', u'lot', u'city', u'road', 
+u'several', u'many', u'even', u'easily', u'showed', u'time', u'roads', u'construction', u'totally']
+================ Global 18 ================
+[u'vista', u'windows', u'microsoft', u'system', u'mac', u'upgrade', u'new', u'computer', u'home', u'operating', 
+u'software', u'install', u'work', u'drivers', u'compatible', u'apple', u'like', u'run', u'running', u'edition']
+================ Global 19 ================
+[u'like', u'software', u'time', u'want', u'also', u'good', u'make', u'would', u'see', u'well', u'even', u'new', u'much', 
+u'version', u'better', u'program', u'use', u'still', u'little', u'take']
+================ Global 20 ================
+[u'tax', u'year', u'turbotax', u'state', u'return', u'quicken', u'program', u'years', u'data', u'used', u'taxcut', 
+u'would', u'quickbooks', u'taxes', u'turbo', u'version', u'use', u'time', u'forms', u'using']
+================ Global 21 ================
+[u'linux', u'windows', u'programs', u'free', u'also', u'away', u'comes', u'copy', u'life', u'click', u'software', u'several', 
+u'wait', u'mac', u'give', u'adobe', u'per', u'computer', u'desktop', u'lot']
+================ Global 22 ================
+[u'bible', u'files', u'study', u'book', u'great', u'palm', u'wonderful', u'family', u'errors', u'process', u'restored', 
+u'niv', u'click', u'looked', u'love', u'photos', u'received', u'decided', u'understand', u'product']
+================ Global 23 ================
+[u'cards', u'print', u'program', u'text', u'card', u'printer', u'printing', u'etc', u'quality', u'make', u'nice', u'christmas', 
+u'life', u'great', u'pictures', u'limited', u'wife', u'best', u'software', u'editor']
+================ Global 24 ================
+[u'game', u'make', u'play', u'good', u'graphics', u'horse', u'fun', u'hard', u'really', u'great', u'buy', u'games', u'animation', 
+u'racing', u'old', u'puzzles', u'like', u'time', u'cars', u'could']
+================ Global 25 ================
+[u'account', u'password', u'key', u'manager', u'copy', u'least', u'passwords', u'name', u'2nd', u'registered', u'subscription', 
+u'hear', u'receive', u'enter', u'prompted', u'receipt', u'rules', u'rule', u'somewhere', u'half']
+================ Global 26 ================
+[u'cs2', u'adobe', u'indesign', u'objects', u'text', u'also', u'like', u'graphics', u'work', u'layout', u'illustrator', u'palette', 
+u'order', u'using', u'well', u'tool', u'pdf', u'features', u'say', u'bridge']
+================ Global 27 ================
+[u'norton', u'internet', u'spyware', u'software', u'firewall', u'security', u'antivirus', u'virus', u'would', u'computer', 
+u'mcafee', u'free', u'used', u'problems', u'like', u'protection', u'even', u'use', u'system', u'micro']
+================ Global 28 ================
+[u'illustrator', u'think', u'old', u'cs2', u'adobe', u'top', u'line', u'back', u'see', u'work', u'way', u'know', u'bugs', u'little', 
+u'sure', u'tab', u'object', u'enough', u'gig', u'looked']
+================ Global 29 ================
+[u'wordperfect', u'useful', u'information', u'access', u'word', u'need', u'feature', u'features', u'report', u'software', 
+u'reports', u'using', u'user', u'important', u'another', u'able', u'simple', u'use', u'job', u'put']
+================ Global 30 ================
+[u'gps', u'streets', u'trips', u'even', u'map', u'remote', u'maps', u'used', u'usb', u'turn', u'use', u'could', u'program', 
+u'microsoft', u'street', u'good', u'route', u'trip', u'laptop', u'well']
+================ Global 31 ================
+[u'office', u'word', u'use', u'2003', u'microsoft', u'work', u'many', u'think', u'program', u'excel', u'used', u'2007', u'like', 
+u'version', u'look', u'new', u'better', u'versions', u'suite', u'people']
+================ Global 32 ================
+[u'comics', u'comic', u'spiderman', u'great', u'read', u'collection', u'like', u'dvd', u'year', u'issues', u'see', u'years', 
+u'marvel', u'book', u'original', u'entire', u'creole', u'issue', u'run', u'first']
+================ Global 33 ================
+[u'language', u'spanish', u'learn', u'rosetta', u'learning', u'stone', u'words', u'would', u'program', u'software', u'like', 
+u'pimsleur', u'use', u'also', u'really', u'japanese', u'french', u'english', u'want', u'grammar']
+================ Global 34 ================
+[u'software', u'video', u'profile', u'snapfire', u'windows', u'photos', u'also', u'could', u'add', u'colors', u'using', u'walls', 
+u'needed', u'monitors', u'room', u'calibration', u'created', u'size', u'able', u'correct']
+================ Global 35 ================
+[u'image', u'images', u'use', u'service', u'customer', u'may', u'objects', u'word', u'photo', u'size', u'collection', 
+u'pixels', u'dpi', u'wide', u'300', u'example', u'great', u'professional', u'difference', u'version']
+================ Global 36 ================
+[u'illustrator', u'corel', u'program', u'adobe', u'live', u'draw', u'coreldraw', u'still', u'drawing', u'far', u'cs2', u'like', 
+u'photoshop', u'trace', u'great', u'could', u'vector', u'features', u'learning', u'feature']
+================ Global 37 ================
+[u'music', u'program', u'audio', u'also', u'video', u'loops', u'acid', u'cut', u'editing', u'work', u'fce', u'digital', u'sound',
+ u'product', u'final', u'computer', u'tracks', u'features', u'really', u'software']
+================ Global 38 ================
+[u'pdf', u'acrobat', u'adobe', u'documents', u'new', u'file', u'version', u'document', u'files', u'features', u'feature', 
+u'office', u'create', u'word', u'form', u'using', u'users', u'like', u'format', u'page']
+================ Global 39 ================
+[u'web', u'support', u'frontpage', u'site', u'code', u'product', u'design', u'dreamweaver', u'help', u'tech', u'also', 
+u'need', u'website', u'expression', u'media', u'using', u'homesite', u'plus', u'another', u'still']
+================ Global 40 ================
+[u'game', u'games', u'mia', u'math', u'nancy', u'kids', u'fun', u'drew', u'well', u'playing', u'like', u'could', u'love', 
+u'bought', u'really', u'child', u'new', u'puzzles', u'reading', u'done']
+
+
+================ Local 1 ================
+[u'version', u'office', u'microsoft', u'product', u'work', u'new', u'upgrade', u'2007', u'versions', u'use', u'word', u'program', u'better', 
+u'home', u'used', u'windows', u'would', u'also', u'2003', u'software']
+================ Local 2 ================
+[u'use', u'easy', u'software', u'good', u'product', u'great', u'learning', u'program', u'works', u'curve', u'make', 
+u'work', u'much', u'features', u'well', u'also', u'lot', u'like', u'time', u'help']
+================ Local 3 ================
+[u'computer', u'install', u'installed', u'software', u'program', u'norton', u'system', u'windows', u'problems', u'time', 
+u'internet', u'new', u'version', u'installation', u'antivirus', u'problem', u'updates', u'use', u'would', u'installing']
+================ Local 4 ================
+[u'product', u'use', u'years', u'using', u'software', u'better', u'time', u'used', u'like', u'bought', u'lot', u'program', 
+u'much', u'version', u'good', u'many', u'great', u'find', u'new', u'easy']
+================ Local 5 ================
+[u'money', u'product', u'software', u'time', u'good', u'worth', u'waste', u'price', u'buy', u'well', u'use', u'best', u'upgrade', 
+u'like', u'would', u'save', u'really', u'things', u'great', u'ever']
+================ Local 6 ================
+[u'drive', u'hard', u'backup', u'make', u'dvd', u'files', u'use', u'disk', u'file', u'program', u'would', u'easy', u'want', 
+u'product', u'image', u'could', u'software', u'computer', u'system', u'music']
+================ Local 7 ================
+[u'system', u'ram', u'memory', u'computer', u'machine', u'running', u'better', u'slow', u'software', u'version', u'run', u'much', 
+u'windows', u'program', u'new', u'product', u'really', u'works', u'installed', u'laptop']
+================ Local 8 ================
+[u'use', u'easy', u'program', u'recommend', u'would', u'product', u'software', u'highly', u'user', u'anyone', u'simple', u'much', 
+u'great', u'really', u'love', u'family', u'like', u'even', u'find', u'made']
+================ Local 9 ================
+[u'product', u'software', u'version', u'would', u'windows', u'reviews', u'support', u'system', u'upgrade', u'give', u'time', 
+u'problems', u'read', u'used', u'stars', u'operating', u'great', u'service', u'microsoft', u'using']
+================ Local 10 ================
+[u'support', u'product', u'software', u'back', u'time', u'could', u'help', u'would', u'problem', u'call', u'tech', u'customer', 
+u'even', u'days', u'bought', u'email', u'phone', u'free', u'company', u'still']
+
+
+================ Global Topic 1 ==========================
+punch: 0.020961
+home: 0.018277
+software: 0.015594
+design: 0.012910
+product: 0.009152
+3dha: 0.007005
+architect: 0.006468
+price: 0.005931
+basic: 0.005931
+interior: 0.005395
+real: 0.005395
+plan: 0.005395
+cost: 0.004858
+ability: 0.004858
+base: 0.004858
+need: 0.004321
+see: 0.004321
+work: 0.004321
+functionality: 0.004321
+tool: 0.004321
+================ Global Topic 2 ==========================
+software: 0.011018
+process: 0.011018
+could: 0.009554
+many: 0.008822
+calibration: 0.008090
+computer: 0.007358
+device: 0.005893
+feature: 0.005893
+makes: 0.005893
+new: 0.005161
+images: 0.005161
+even: 0.005161
+simple: 0.005161
+force: 0.005161
+activation: 0.004429
+adjustments: 0.004429
+required: 0.004429
+product: 0.004429
+automatic: 0.004429
+standard: 0.004429
+================ Global Topic 3 ==========================
+money: 0.023196
+accounts: 0.011158
+read: 0.007454
+bank: 0.005602
+amazon: 0.005602
+banking: 0.005602
+star: 0.005602
+favor: 0.004676
+yet: 0.004676
+stacey: 0.004676
+bill: 0.004676
+2004: 0.004676
+fully: 0.004676
+fund: 0.003750
+nearly: 0.003750
+mention: 0.003750
+still: 0.003750
+corded: 0.003750
+msn: 0.003750
+going: 0.003750
+================ Global Topic 4 ==========================
+fish: 0.014847
+software: 0.012102
+images: 0.008260
+slow: 0.007712
+review: 0.007712
+files: 0.007712
+time: 0.007712
+years: 0.006614
+project: 0.006065
+also: 0.005516
+even: 0.005516
+image: 0.005516
+hand: 0.004967
+hit: 0.004967
+key: 0.004418
+incredibly: 0.004418
+seconds: 0.004418
+side: 0.004418
+still: 0.004418
+ability: 0.004418
+================ Global Topic 5 ==========================
+nero: 0.036430
+computer: 0.013410
+burning: 0.012340
+backup: 0.010198
+product: 0.009128
+could: 0.007522
+dvd: 0.007522
+version: 0.006986
+burn: 0.006986
+works: 0.006451
+almost: 0.006451
+bought: 0.005916
+system: 0.005916
+company: 0.005380
+help: 0.005380
+backups: 0.004845
+dual: 0.004845
+utility: 0.004845
+ultra: 0.004845
+oem: 0.004845
+================ Global Topic 6 ==========================
+play: 0.026828
+game: 0.025699
+chess: 0.014409
+program: 0.012151
+kids: 0.011304
+games: 0.010740
+great: 0.008482
+much: 0.008199
+playing: 0.007917
+learning: 0.007917
+think: 0.007635
+learn: 0.007635
+first: 0.007353
+guitar: 0.007353
+good: 0.007353
+year: 0.007070
+fun: 0.006788
+computer: 0.006224
+start: 0.005941
+children: 0.005659
+================ Global Topic 7 ==========================
+photoshop: 0.032109
+photo: 0.024508
+images: 0.017751
+photos: 0.013528
+image: 0.013246
+digital: 0.011275
+lightroom: 0.009868
+use: 0.009586
+raw: 0.009023
+elements: 0.008179
+editing: 0.007334
+file: 0.006489
+camera: 0.006489
+edit: 0.006208
+adobe: 0.005645
+people: 0.005363
+browser: 0.005082
+functions: 0.005082
+collection: 0.004800
+cs2: 0.004800
+================ Global Topic 8 ==========================
+2007: 0.018914
+outlook: 0.016690
+email: 0.015856
+like: 0.010020
+time: 0.009186
+new: 0.008908
+word: 0.008630
+studio: 0.007240
+product: 0.006962
+mail: 0.006684
+problems: 0.006406
+send: 0.006406
+many: 0.006406
+system: 0.006128
+version: 0.005851
+document: 0.005573
+act: 0.005573
+old: 0.005573
+office: 0.005573
+software: 0.005295
+================ Global Topic 9 ==========================
+subpoint: 0.006738
+fonts: 0.005624
+espp: 0.004510
+heading: 0.003397
+safe: 0.003397
+merge: 0.003397
+instance: 0.003397
+oblique: 0.003397
+que: 0.003397
+800: 0.002283
+epson: 0.002283
+region: 0.002283
+rendering: 0.002283
+kind: 0.002283
+herramientas: 0.002283
+suitable: 0.002283
+bold: 0.002283
+highly: 0.002283
+personnel: 0.002283
+smooth: 0.002283
+================ Global Topic 10 ==========================
+art: 0.019073
+program: 0.016567
+card: 0.014562
+use: 0.013058
+explosion: 0.011554
+hallmark: 0.011053
+cards: 0.011053
+scrapbook: 0.009048
+quality: 0.008045
+looking: 0.007544
+professional: 0.007544
+designs: 0.006542
+disc: 0.006040
+greeting: 0.005539
+good: 0.005539
+kid: 0.005539
+great: 0.005038
+clip: 0.005038
+photos: 0.005038
+variety: 0.005038
+================ Global Topic 11 ==========================
+monitor: 0.014938
+registry: 0.011833
+program: 0.011212
+also: 0.008727
+language: 0.008727
+latin: 0.007485
+however: 0.007485
+happy: 0.006864
+tools: 0.006864
+instead: 0.006242
+supplement: 0.006242
+gamma: 0.006242
+textbook: 0.005621
+perfect: 0.005621
+use: 0.005621
+glad: 0.005621
+printer: 0.005000
+adobe: 0.005000
+wizard: 0.004379
+photos: 0.004379
+================ Global Topic 12 ==========================
+new: 0.026177
+illustrator: 0.014671
+live: 0.013102
+photoshop: 0.011533
+feature: 0.011010
+paint: 0.008395
+adobe: 0.008395
+used: 0.008395
+palette: 0.007349
+version: 0.007349
+trace: 0.006825
+features: 0.006825
+control: 0.006302
+cs2: 0.006302
+object: 0.006302
+also: 0.005256
+pen: 0.005256
+allows: 0.004733
+integration: 0.004733
+contains: 0.004733
+================ Global Topic 13 ==========================
+accuracy: 0.012520
+keynote: 0.012520
+dragon: 0.010180
+powerpoint: 0.010180
+presentations: 0.008620
+presentation: 0.007840
+slide: 0.006279
+next: 0.006279
+think: 0.005499
+numbers: 0.005499
+typing: 0.005499
+training: 0.005499
+iwork: 0.005499
+naturallyspeaking: 0.004719
+speaking: 0.004719
+headset: 0.003939
+dictation: 0.003939
+dictate: 0.003939
+improved: 0.003939
+microphone: 0.003939
+================ Global Topic 14 ==========================
+software: 0.021518
+even: 0.010356
+free: 0.009116
+microsoft: 0.008702
+want: 0.008289
+simply: 0.007462
+use: 0.007462
+package: 0.006222
+know: 0.005808
+order: 0.005808
+however: 0.005395
+buy: 0.005395
+open: 0.005395
+apple: 0.005395
+would: 0.004982
+money: 0.004568
+need: 0.004568
+well: 0.004568
+since: 0.004568
+office: 0.004155
+================ Global Topic 15 ==========================
+support: 0.031869
+roxio: 0.014348
+problem: 0.009836
+help: 0.009570
+contact: 0.009039
+product: 0.008508
+customer: 0.008243
+website: 0.007977
+phone: 0.007977
+email: 0.007712
+online: 0.007446
+service: 0.007446
+technical: 0.007181
+find: 0.005854
+response: 0.005854
+able: 0.005057
+creator: 0.005057
+received: 0.005057
+download: 0.004792
+like: 0.004792
+================ Global Topic 16 ==========================
+lesson: 0.012829
+day: 0.007441
+lessons: 0.007441
+program: 0.007441
+instructions: 0.006768
+current: 0.006094
+installation: 0.005421
+note: 0.005421
+maybe: 0.005421
+something: 0.005421
+piano: 0.004748
+read: 0.004748
+fingers: 0.004748
+may: 0.004748
+reviewer: 0.004748
+also: 0.004748
+usually: 0.004748
+bug: 0.004074
+screen: 0.004074
+user: 0.004074
+================ Global Topic 17 ==========================
+program: 0.029422
+route: 0.020413
+way: 0.012826
+screen: 0.012352
+function: 0.009981
+would: 0.008085
+times: 0.007610
+also: 0.007610
+lot: 0.007136
+city: 0.006662
+road: 0.005714
+several: 0.005714
+easily: 0.005240
+many: 0.005240
+even: 0.005240
+totally: 0.004765
+happened: 0.004765
+showed: 0.004765
+time: 0.004765
+zoom: 0.004765
+================ Global Topic 18 ==========================
+vista: 0.053790
+windows: 0.034609
+microsoft: 0.015805
+system: 0.014677
+mac: 0.012608
+upgrade: 0.011856
+new: 0.011480
+computer: 0.009600
+home: 0.009412
+operating: 0.008847
+software: 0.008659
+install: 0.007531
+work: 0.007155
+drivers: 0.006967
+compatible: 0.006779
+like: 0.006591
+apple: 0.006591
+run: 0.006403
+running: 0.005463
+edition: 0.005087
+================ Global Topic 19 ==========================
+like: 0.010972
+software: 0.008743
+time: 0.008475
+also: 0.008119
+want: 0.008119
+good: 0.007494
+make: 0.007405
+would: 0.006959
+see: 0.006692
+well: 0.006424
+even: 0.006157
+new: 0.006068
+much: 0.005979
+version: 0.005979
+better: 0.005622
+program: 0.005533
+use: 0.005265
+little: 0.004998
+still: 0.004998
+used: 0.004909
+================ Global Topic 20 ==========================
+tax: 0.023388
+year: 0.019578
+turbotax: 0.011960
+state: 0.011829
+return: 0.010646
+quicken: 0.010515
+program: 0.010515
+years: 0.010384
+data: 0.009595
+used: 0.009595
+taxcut: 0.009333
+would: 0.008413
+quickbooks: 0.008282
+taxes: 0.007888
+turbo: 0.007625
+version: 0.007494
+use: 0.007362
+time: 0.006574
+forms: 0.006574
+using: 0.006443
+================ Global Topic 21 ==========================
+linux: 0.027463
+windows: 0.026973
+programs: 0.015703
+free: 0.010804
+also: 0.008844
+comes: 0.006884
+away: 0.006884
+copy: 0.006394
+software: 0.005904
+click: 0.005904
+several: 0.005904
+life: 0.005904
+mac: 0.005414
+wait: 0.005414
+adobe: 0.004924
+per: 0.004924
+computer: 0.004924
+give: 0.004924
+desktop: 0.004434
+lot: 0.004434
+================ Global Topic 22 ==========================
+bible: 0.030911
+files: 0.018131
+study: 0.012807
+book: 0.009079
+great: 0.008547
+palm: 0.008014
+wonderful: 0.008014
+family: 0.007482
+process: 0.006949
+errors: 0.006949
+restored: 0.006417
+niv: 0.005884
+looked: 0.005352
+click: 0.005352
+love: 0.004819
+understand: 0.004819
+photos: 0.004819
+decided: 0.004819
+received: 0.004819
+product: 0.004287
+================ Global Topic 23 ==========================
+cards: 0.029424
+print: 0.022891
+program: 0.012004
+text: 0.009826
+card: 0.009282
+printer: 0.007649
+printing: 0.007104
+make: 0.006015
+quality: 0.006015
+etc: 0.006015
+nice: 0.005471
+christmas: 0.004927
+pictures: 0.004382
+limited: 0.004382
+wife: 0.004382
+great: 0.004382
+life: 0.004382
+editor: 0.003838
+best: 0.003838
+software: 0.003838
+================ Global Topic 24 ==========================
+game: 0.054519
+make: 0.010270
+play: 0.009339
+good: 0.008873
+graphics: 0.007941
+horse: 0.007941
+fun: 0.007010
+hard: 0.006544
+buy: 0.006078
+animation: 0.006078
+racing: 0.006078
+games: 0.006078
+great: 0.006078
+really: 0.006078
+like: 0.005613
+old: 0.005613
+puzzles: 0.005613
+cars: 0.005147
+could: 0.005147
+lot: 0.005147
+================ Global Topic 25 ==========================
+account: 0.014135
+password: 0.013352
+key: 0.007870
+manager: 0.007087
+copy: 0.006304
+name: 0.005521
+least: 0.005521
+passwords: 0.005521
+registered: 0.004738
+subscription: 0.004738
+hear: 0.004738
+2nd: 0.004738
+prompted: 0.003955
+receive: 0.003955
+enter: 0.003955
+half: 0.003172
+setup: 0.003172
+rule: 0.003172
+basic: 0.003172
+ie7: 0.003172
+================ Global Topic 26 ==========================
+cs2: 0.029948
+adobe: 0.025121
+indesign: 0.019812
+objects: 0.009194
+text: 0.007746
+like: 0.007264
+also: 0.007264
+work: 0.006781
+graphics: 0.006781
+layout: 0.006298
+illustrator: 0.006298
+palette: 0.005816
+order: 0.005333
+using: 0.005333
+well: 0.005333
+tool: 0.005333
+pdf: 0.004851
+say: 0.004851
+features: 0.004851
+bridge: 0.004851
+================ Global Topic 27 ==========================
+norton: 0.021990
+internet: 0.013262
+spyware: 0.012777
+software: 0.012130
+firewall: 0.011645
+security: 0.011484
+antivirus: 0.009868
+virus: 0.009706
+would: 0.008736
+computer: 0.008736
+mcafee: 0.008090
+free: 0.006797
+problems: 0.006473
+used: 0.006473
+like: 0.006312
+protection: 0.006150
+even: 0.005665
+use: 0.005665
+system: 0.005504
+micro: 0.005342
+================ Global Topic 28 ==========================
+think: 0.008848
+illustrator: 0.008848
+old: 0.008297
+cs2: 0.008297
+top: 0.007746
+adobe: 0.007746
+line: 0.007194
+back: 0.007194
+see: 0.006643
+way: 0.006643
+work: 0.006643
+know: 0.006092
+tab: 0.005540
+bugs: 0.005540
+little: 0.005540
+sure: 0.005540
+looked: 0.004989
+gig: 0.004989
+enough: 0.004989
+object: 0.004989
+================ Global Topic 29 ==========================
+wordperfect: 0.013007
+information: 0.010303
+useful: 0.010303
+access: 0.008681
+word: 0.008140
+need: 0.008140
+feature: 0.007599
+features: 0.007599
+report: 0.007058
+software: 0.006517
+user: 0.005976
+using: 0.005976
+reports: 0.005976
+important: 0.005976
+able: 0.005436
+simple: 0.005436
+another: 0.005436
+use: 0.005436
+job: 0.005436
+maybe: 0.004895
+================ Global Topic 30 ==========================
+gps: 0.020822
+streets: 0.016591
+trips: 0.013064
+remote: 0.009891
+even: 0.009891
+map: 0.009891
+maps: 0.008833
+used: 0.008480
+usb: 0.007423
+use: 0.007070
+turn: 0.007070
+could: 0.006717
+program: 0.006717
+street: 0.006012
+microsoft: 0.006012
+good: 0.006012
+trip: 0.005659
+route: 0.005659
+laptop: 0.005307
+well: 0.004954
+================ Global Topic 31 ==========================
+office: 0.042143
+word: 0.013386
+use: 0.012171
+2003: 0.012171
+microsoft: 0.011361
+work: 0.009336
+program: 0.008121
+think: 0.008121
+many: 0.008121
+excel: 0.007716
+version: 0.006501
+used: 0.006501
+2007: 0.006501
+like: 0.006501
+look: 0.006096
+new: 0.006096
+versions: 0.005691
+better: 0.005691
+suite: 0.005286
+seen: 0.004881
+================ Global Topic 32 ==========================
+comics: 0.018503
+spiderman: 0.012588
+comic: 0.012588
+great: 0.010740
+read: 0.010370
+like: 0.009261
+collection: 0.009261
+dvd: 0.008521
+year: 0.007782
+issues: 0.007412
+see: 0.007043
+years: 0.007043
+marvel: 0.006303
+book: 0.005934
+original: 0.005564
+entire: 0.005564
+creole: 0.005194
+first: 0.004824
+run: 0.004824
+reading: 0.004824
+================ Global Topic 33 ==========================
+language: 0.020402
+spanish: 0.019043
+learn: 0.018460
+rosetta: 0.014382
+learning: 0.014382
+stone: 0.014187
+words: 0.011663
+would: 0.011080
+program: 0.009138
+like: 0.008944
+software: 0.008944
+pimsleur: 0.008555
+use: 0.007196
+also: 0.006613
+really: 0.006419
+japanese: 0.006225
+french: 0.006225
+english: 0.005642
+grammar: 0.005448
+want: 0.005448
+================ Global Topic 34 ==========================
+software: 0.016031
+video: 0.011104
+profile: 0.009873
+snapfire: 0.009052
+windows: 0.007820
+photos: 0.007410
+also: 0.007410
+add: 0.006178
+colors: 0.006178
+could: 0.006178
+using: 0.005768
+walls: 0.005768
+room: 0.005357
+calibration: 0.005357
+needed: 0.005357
+monitors: 0.005357
+size: 0.004947
+created: 0.004947
+able: 0.004947
+correct: 0.004947
+================ Global Topic 35 ==========================
+image: 0.012739
+use: 0.009562
+images: 0.009562
+customer: 0.008927
+service: 0.008927
+may: 0.007656
+objects: 0.007656
+size: 0.007021
+word: 0.007021
+collection: 0.007021
+photo: 0.007021
+pixels: 0.006385
+wide: 0.006385
+dpi: 0.006385
+300: 0.005750
+professional: 0.005115
+great: 0.005115
+version: 0.005115
+difference: 0.005115
+example: 0.005115
+================ Global Topic 36 ==========================
+illustrator: 0.028734
+corel: 0.015896
+program: 0.011166
+adobe: 0.009814
+live: 0.009139
+draw: 0.008801
+coreldraw: 0.008463
+still: 0.007787
+far: 0.007449
+drawing: 0.007449
+cs2: 0.007112
+like: 0.006774
+photoshop: 0.006436
+trace: 0.006098
+vector: 0.005760
+great: 0.005760
+features: 0.005760
+could: 0.005760
+learning: 0.005422
+book: 0.005085
+================ Global Topic 37 ==========================
+music: 0.016232
+program: 0.012707
+audio: 0.010592
+also: 0.010240
+video: 0.008477
+acid: 0.008125
+loops: 0.008125
+cut: 0.007772
+editing: 0.007420
+work: 0.007067
+fce: 0.007067
+digital: 0.006715
+sound: 0.006715
+computer: 0.006010
+final: 0.006010
+product: 0.006010
+tracks: 0.005657
+features: 0.005657
+software: 0.005305
+really: 0.005305
+================ Global Topic 38 ==========================
+pdf: 0.023724
+acrobat: 0.022595
+adobe: 0.016046
+documents: 0.015594
+new: 0.012884
+file: 0.012207
+version: 0.011981
+document: 0.010852
+files: 0.010626
+features: 0.009271
+feature: 0.007916
+office: 0.007464
+create: 0.007012
+word: 0.006786
+form: 0.006786
+users: 0.006335
+using: 0.006335
+like: 0.006109
+format: 0.005883
+page: 0.005431
+================ Global Topic 39 ==========================
+web: 0.025222
+support: 0.019474
+frontpage: 0.014169
+site: 0.011517
+code: 0.009306
+design: 0.007096
+product: 0.007096
+dreamweaver: 0.006654
+help: 0.006654
+tech: 0.006211
+also: 0.006211
+website: 0.005769
+need: 0.005769
+homesite: 0.005327
+plus: 0.005327
+using: 0.005327
+expression: 0.005327
+media: 0.005327
+still: 0.004885
+questions: 0.004885
+================ Global Topic 40 ==========================
+game: 0.028008
+games: 0.014641
+mia: 0.013388
+math: 0.012135
+nancy: 0.011299
+kids: 0.010046
+fun: 0.010046
+drew: 0.009628
+well: 0.009211
+playing: 0.008793
+like: 0.008793
+could: 0.008375
+bought: 0.007122
+love: 0.007122
+really: 0.006287
+child: 0.005869
+new: 0.005869
+reading: 0.005034
+done: 0.005034
+information: 0.005034
+================ Local Topic 1 ==========================
+version: 0.029646
+office: 0.024840
+microsoft: 0.015708
+product: 0.013946
+work: 0.013145
+new: 0.012344
+upgrade: 0.011383
+2007: 0.011062
+versions: 0.010261
+use: 0.009140
+word: 0.008980
+program: 0.008819
+better: 0.008659
+home: 0.008339
+used: 0.008179
+windows: 0.007858
+would: 0.007538
+also: 0.007378
+2003: 0.007378
+buy: 0.007217
+================ Local Topic 2 ==========================
+use: 0.024138
+easy: 0.017851
+software: 0.016831
+good: 0.012243
+product: 0.011733
+great: 0.010714
+learning: 0.010204
+program: 0.009864
+works: 0.008505
+curve: 0.007995
+make: 0.007655
+work: 0.006805
+much: 0.006466
+features: 0.006296
+well: 0.006126
+also: 0.005956
+lot: 0.005786
+like: 0.005786
+help: 0.005616
+nice: 0.005616
+================ Local Topic 3 ==========================
+computer: 0.021268
+install: 0.016221
+installed: 0.013107
+software: 0.012462
+program: 0.012355
+norton: 0.012033
+system: 0.008704
+windows: 0.008596
+problems: 0.007845
+time: 0.007415
+internet: 0.007200
+new: 0.007093
+version: 0.006986
+installation: 0.006878
+problem: 0.006449
+antivirus: 0.006449
+use: 0.006341
+would: 0.006341
+updates: 0.006341
+computers: 0.005912
+================ Local Topic 4 ==========================
+product: 0.018822
+use: 0.013082
+years: 0.011647
+using: 0.011488
+software: 0.011328
+better: 0.011328
+time: 0.010372
+used: 0.010053
+like: 0.008299
+bought: 0.008139
+program: 0.007502
+lot: 0.007502
+version: 0.007342
+much: 0.007342
+good: 0.007183
+many: 0.006545
+great: 0.006226
+find: 0.005907
+new: 0.005748
+would: 0.005588
+================ Local Topic 5 ==========================
+money: 0.024261
+product: 0.019443
+software: 0.017997
+time: 0.017515
+good: 0.012697
+worth: 0.012215
+waste: 0.010127
+price: 0.008842
+buy: 0.008521
+well: 0.007878
+use: 0.007075
+best: 0.006915
+like: 0.006754
+upgrade: 0.006754
+would: 0.006433
+save: 0.006272
+really: 0.005951
+things: 0.005630
+great: 0.005469
+ever: 0.005308
+================ Local Topic 6 ==========================
+drive: 0.026751
+hard: 0.018478
+backup: 0.011360
+make: 0.009629
+dvd: 0.009436
+files: 0.009244
+use: 0.009052
+disk: 0.008667
+file: 0.007897
+program: 0.007705
+would: 0.007513
+easy: 0.006935
+product: 0.006743
+want: 0.006743
+image: 0.006551
+could: 0.006358
+computer: 0.006166
+software: 0.006166
+system: 0.005974
+used: 0.005781
+================ Local Topic 7 ==========================
+system: 0.019744
+ram: 0.016139
+memory: 0.014241
+computer: 0.010826
+machine: 0.009687
+running: 0.009118
+better: 0.008928
+slow: 0.008359
+software: 0.008359
+version: 0.008169
+run: 0.007979
+windows: 0.007789
+much: 0.007789
+program: 0.007600
+new: 0.007410
+product: 0.006651
+works: 0.006461
+really: 0.006461
+installed: 0.006271
+laptop: 0.006271
+================ Local Topic 8 ==========================
+use: 0.030775
+easy: 0.025410
+program: 0.025095
+recommend: 0.021781
+would: 0.020361
+product: 0.016101
+software: 0.015944
+highly: 0.013419
+user: 0.011684
+anyone: 0.009632
+simple: 0.009001
+much: 0.007739
+great: 0.007739
+really: 0.007108
+love: 0.006319
+family: 0.005846
+like: 0.005530
+even: 0.005372
+made: 0.005215
+find: 0.005215
+================ Local Topic 9 ==========================
+product: 0.025393
+software: 0.015156
+version: 0.015020
+would: 0.013792
+windows: 0.010925
+reviews: 0.009970
+support: 0.009697
+system: 0.009424
+upgrade: 0.007923
+give: 0.007377
+time: 0.007240
+problems: 0.006831
+used: 0.006694
+read: 0.006694
+stars: 0.006558
+operating: 0.006285
+great: 0.006012
+service: 0.005739
+microsoft: 0.005603
+buy: 0.005466
+================ Local Topic 10 ==========================
+support: 0.023099
+product: 0.016054
+software: 0.010965
+back: 0.010313
+time: 0.010183
+could: 0.009791
+help: 0.009400
+would: 0.009009
+problem: 0.007965
+call: 0.007834
+tech: 0.007704
+customer: 0.007443
+days: 0.006791
+even: 0.006791
+bought: 0.006399
+phone: 0.006269
+free: 0.006269
+email: 0.006269
+company: 0.006138
+never: 0.005747
+
+Process finished with exit code 0

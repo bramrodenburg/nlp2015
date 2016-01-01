@@ -1,0 +1,96 @@
+================ standard 1================
+Interior design (?)
+[u"'ve", u"n't", u'software', u'video', u'design', u'help', u'really', u'also', u'way', u'without', u'get', u'could', 
+u'want', u'little', u'best', u'even', u'home', u'experience', u'code', u'learn']
+
+================ standard 2================
+Learning language software
+[u'learn', u'language', u'learning', u'program', u'spanish', u'words', u'stone', u'rosetta', u'would', u'also', u'software', u'get', 
+u'lessons', u'pimsleur', u'english', u'basic', u'even', u'however', u'may', u'play']
+
+================ standard 3================
+Tax preperation/return software (turbotax product)
+[u'tax', u'year', u'state', u'turbotax', u'return', u'years', u'taxcut', u'forms', u'taxes', u'used', 
+u'turbo', u'use', u'data', u'form', u'way', u'federal', u'last', u'using', u'e-file', u'information']
+
+================ standard 4================
+User friendliness ?
+[u'program', u'easy', u'use', u'software', u'one', u'would', u'great', u'like', u'make', u'also', u'product', 
+u'find', u'used', u'music', u'recommend', u'able', u'many', u'made', u'computer', u'well']
+
+================ standard 5================
+Games for children
+[u'game', u'play', u'games', u'kids', u'gps', u'lot', u'fun', u'really', u'route', u"n't",
+ u'way', u'well', u'would', u'chess', u'playing', u'even', u'streets', u'could', u'get', u'math']
+
+================ standard 6================
+
+[u"n't", u'...', u'get', u'one', u'like', u'money', u'find', u'could', u'buy', u'time', u'give', 
+u'would', u'want', u'know', u'something', u'think', u'hard', u'might', u'waste', u'people']
+
+================ standard 7================
+Product upgrades
+[u'version', u'new', u"'ve", u"n't", u'features', u'like', u'upgrade', u'better', 
+u'still', u'feature', u'much', u'previous', u'years', u'versions', u'program', 
+u'live', u'good', u'get', u'think', u'far']
+
+================ standard 8================
+
+[u'one', u'easy', u'many', u'great', u'good', u'new', u'first', u'different', u'set', u'bible', 
+u'would', u'product', u'color', u'monitor', u'images', u'use', u'creator', u'process', u'may', u'instructions']
+
+================ standard 9================
+Adobe Photoshop
+[u'photoshop', u'adobe', u'photo', u'cs2', u'image', u'illustrator', u'...', u'use', u'images', u'corel', u'photos', u'elements', 
+u'editing', u'digital', u'features', u'tool', u'paint', u'objects', u'control', u'text']
+
+================ standard 10================
+Antivirus
+[u'norton', u'computer', u'internet', u'system', u'installed', u'security', u'firewall', u'mcafee', u'antivirus', u'symantec', u'virus', u'spyware', u'would', u'problems', u'software', u'products', u'protection', u'use', u'install', u'one']
+
+================ standard 11================
+Backups
+[u'program', u'drive', u'back', u"n't", u'hard', u'files', u'time', u'machine', u'backup', u'got', u'could', u'disk', u'running', u'old', u'even', u"'ve", u'computer', u'keep', u'every', u'going']
+
+================ standard 12================
+Microsoft office products
+[u'office', u'word', u'microsoft', u'2007', u'new', u'use', u'2003', u'cards', u'outlook', u'card', u'many', u'work', u"n't", 
+u'program', u'used', u'find', u'user', u'one', u'programs', u'print']
+
+================ standard 13================
+
+[u'product', u'much', u'would', u'time', u'software', u'using', u'well', u'really', 
+u'use', u'work', u'used', u'bit', u"'ve", u"n't", u'worth', u'every', u'always', u'take', u'think', u'less']
+
+================ standard 14================
+Customer support
+[u'support', u'software', u'product', u'problem', u'would', u'get', u'customer', 
+u"n't", u'help', u'computer', u'service', u'tech', u'work', u'could', u'version', u'call', u'even', u'program', u'back', u'tried']
+
+================ standard 15================
+planet wide comics comic book creator
+[u'like', u'get', u'one', u'great', u'love', u"n't", u'comics', u'see', u'disc', u'dvd', u'years', 
+u'issues', u'lot', u'thing', u'bought', u'collection', u'first', u'whole', u'pages', u'worth']
+
+================ standard 16================
+Adobe Acrobat
+[u'adobe', u'pdf', u'acrobat', u'files', u'documents', u'version', u'file', u'using', u'document', u'even', u'features', u'page', u'feature', u'format', u'standard', u'users', u'better', u'professional', u'product', u'click']
+
+================ standard 17================
+Multimedia software / Nero
+[u'product', u'use', u'software', u'easy', u'great', u'need', u'version', u'dvd', u'best', u'web', u'user', u'products', u'works', u'nero', u'price', u'free', u'home', u'recommend', u'studio', u'used']
+
+================ standard 18================
+Operating systems ???
+[u'one', u"n't", u'time', u'like', u'work', u'enough', u'even', u'though', u'say', u'programs', 
+u'free', u'also', u'however', u'linux', u'buy', u'computer', u'things', u'windows', u'get', u'two']
+
+================ standard 19================
+Operating systems
+[u'windows', u'vista', u'system', u'new', u'upgrade', u'microsoft', 
+u'mac', u'software', u'running', u'work', u'computer', u'operating', u'install', u'ram', u'home', u'installed', u'problems', u'hardware', u'version', u'using']
+
+================ standard 20================
+Quickbooks
+[u"n't", u'time', u'program', u'business', u'quicken', u'money', u'simple', u'get', u'information', 
+u'quickbooks', u'need', u'going', u'would', u'like', u'small', u'using', u'online', u'questions', u'since', u'customer']

@@ -1,117 +1,116 @@
 
-================ Global 1 ================ Pedometer
-[u'use', u'would', u'hole', u'many', u'keys', u'made', u'hold', u'slightly', u'player', u'step', 
-u'come', u'inside', u'years', u'around', u'still', u'design', u'top', u'spring', u'pedometer', u'air']
+================ Global 1 ================
 
-================ Global 2 ================ Body workout
-[u'back', u'exercises', u'exercise', u'muscles', u'workout', u'body', u'strength', u'lower', u'different', 
-u'feel', u'resistance', u'wrist', u'well', u'like', u'product', u'machine', u'using', u'arms', u'find', u'need']
+[u'use', u'would', u'hole', u'many', u'keys', u'made', u'hold', u'slightly', u'player', u'step', u'come', u'inside', u'years', u'around', u'still', u'design', u'top', u'spring', u'pedometer', u'air']
 
-================ Global 3 ================ Accessory - drinking bottle - SIGG bottle 
-[u'water', u'bottle', u'bottles', u'top', u'like', u'sigg', u'drink', u'sports', u'size', u'plastic', u'makes', 
-u'regular', u'ramp', u'accessory', u'perfect', u'fun', u'style', u'well', u'personal', u'beautiful']
+================ Global 2 ================
+Exercise
+[u'back', u'exercises', u'exercise', u'muscles', u'workout', u'body', u'strength', u'lower', u'different', u'feel', u'resistance', u'wrist', u'well', u'like', u'product', u'machine', u'using', u'arms', u'find', u'need']
 
-Jörg: has already ratable aspects: beautiful, style, size
+================ Global 3 ================
+Water bottles
+[u'water', u'bottle', u'bottles', u'top', u'like', u'sigg', u'drink', u'sports', u'size', u'plastic', u'makes', u'regular', u'ramp', u'accessory', u'perfect', u'fun', u'style', u'well', u'personal', u'beautiful']
 
-================ Global 4 ================  Tools for games
-[u'ball', u'like', u'sword', u'game', u'blade', u'balls', u'little', u'really', u'hit', u'even', u'hard', 
-u'cheap', u'use', u'better', u'cards', u'stick', u'well', u'swing', u'good', u'made']
+================ Global 4 ================
+Tools for games
+[u'ball', u'like', u'sword', u'game', u'blade', u'balls', u'little', u'really', u'hit', u'even', u'hard', u'cheap', u'use', u'better', u'cards', u'stick', u'well', u'swing', u'good', u'made']
 
-================ Global 5 ================ Sport watches (SUUNTO sports watch)
-[u'watch', u'compass', u'accurate', u'suunto', u'altimeter', u'time', u'use', u'display', u'big', u'really', 
-u'like', u'easy', u'wrist', u'barometer', u'functions', u'feature', u'reading', u'even', u'flybar', u'digital']
+================ Global 5 ================
+Outdoor devices
+[u'watch', u'compass', u'accurate', u'suunto', u'altimeter', u'time', u'use', u'display', u'big', u'really', u'like', u'easy', u'wrist', u'barometer', u'functions', u'feature', u'reading', u'even', u'flybar', u'digital']
 
+================ Global 6 ================
+Golf
+[u'unit', u'speed', u'would', u'time', u'product', u'day', u'work', u'swing', u'software', u'clubs', u'walking', u'steps', u'every', u'set', u'help', u'could', u'high', u'first', u'course', u'golf']
 
-================ Global 6 ================ Golf 
-[u'unit', u'speed', u'would', u'time', u'product', u'day', u'work', u'swing', u'software', u'clubs', u'walking', 
-u'steps', u'every', u'set', u'help', u'could', u'high', u'first', u'course', u'golf']
+================ Global 7 ================
+Workout
+[u'workout', u'dvd', u'really', u'work', u'like', u'great', u'workouts', u'time', u'cathe', u'good', u'pump', u'body', u'step', u'use', u'set', u'day', u'used', u'minutes', u'best', u'ball']
 
-================ Global 7 ================ ???
-[u'workout', u'dvd', u'really', u'work', u'like', u'great', u'workouts', u'time', u'cathe', u'good', 
-u'pump', u'body', u'step', u'use', u'set', u'day', u'used', u'minutes', u'best', u'ball']
+================ Global 8 ================
+Carriers to bring your child
+[u'stroller', u'use', u'baby', u'great', u'like', u'also', u'much', u'little', u'around', u'bar', u'easy', u'back', u'put', u'bench', u'child', u'front', u'height', u'love', u'car', u'seat']
 
-================ Global 8 ================ Stroller for children
-[u'stroller', u'use', u'baby', u'great', u'like', u'also', u'much', u'little', u'around', u'bar', 
-u'easy', u'back', u'put', u'bench', u'child', u'front', u'height', u'love', u'car', u'seat']
+================ Global 9 ================
+Grip
+[u'hand', u'weight', u'good', u'grip', u'use', u'using', u'great', u'strength', u'tension', u'little', u'would', u'heavy', u'fingers', u'much', u'work', u'easy', u'red', u'used', u'lbs', u'blue']
 
-================ Global 9 ================ ???
-[u'hand', u'weight', u'good', u'grip', u'use', u'using', u'great', u'strength', u'tension', u'little', 
-u'would', u'heavy', u'fingers', u'much', u'work', u'easy', u'red', u'used', u'lbs', u'blue']
+================ Global 10 ================
+Cycling
+[u'bike', u'ride', u'rack', u'bikes', u'riding', u'like', u'seat', u'road', u'easy', u'front', u'well', u'good', u'would', u'wheel', u'way', u'wheels', u'much', u'tires', u'bicycle', u'resistance']
 
-================ Global 10 ================ Cycling
-[u'bike', u'ride', u'rack', u'bikes', u'riding', u'like', u'seat', u'road', u'easy', u'front', u'well', 
-u'good', u'would', u'wheel', u'way', u'wheels', u'much', u'tires', u'bicycle', u'resistance']
+================ Global 11 ================
+Yoga
+[u'mat', u'yoga', u'mats', u'bag', u'bit', u'practice', u'like', u'good', u'great', u'end', u'side', u'would', u'floor', u'used', u'also', u'towel', u'feet', u'little', u'really', u'recommend']
 
-================ Global 11 ================ Yoga 
-[u'mat', u'yoga', u'mats', u'bag', u'bit', u'practice', u'like', u'good', u'great', u'end', u'side', 
-u'would', u'floor', u'used', u'also', u'towel', u'feet', u'little', u'really', u'recommend']
+================ Global 12 ================
+Online shopping (Amazon?)
+[u'would', u'back', u'amazon', u'product', u'service', u'sent', u'days', u'order', u'company', u'shipping', u'never', u'customer', u'item', u'could', u'received', u'new', u'first', u'even', u'send', u'ordered']
 
-================ Global 12 ================ Customer service (Online shopping) 
-[u'would', u'back', u'amazon', u'product', u'service', u'sent', u'days', u'order', u'company', u'shipping', 
-u'never', u'customer', u'item', u'could', u'received', u'new', u'first', u'even', u'send', u'ordered']
+================ Global 13 ================
+Pocket knives
+[u'knife', u'pocket', u'blade', u'opening', u'knives', u'little', u'small', u'open', u'like', u'well', u'sharp', u'lock', u'nice', u'great', u'tools', u'army', u'box', u'used', u'carry', u'enough']
 
-================ Global 13 ================ Pocket knives
-[u'knife', u'pocket', u'blade', u'opening', u'knives', u'little', u'small', u'open', u'like', u'well', u'sharp', 
-u'lock', u'nice', u'great', u'tools', u'army', u'box', u'used', u'carry', u'enough']
+================ Global 14 ================
+Backpacks
+[u'bag', u'backpack', u'would', u'pack', u'bought', u'great', u'use', u'well', u'fit', u'back', u'size', u'small', u'year', u'perfect', u'around', u'good', u'big', u'love', u'also', u'enough']
 
-================ Global 14 ================ Backpacks
-[u'bag', u'backpack', u'would', u'pack', u'bought', u'great', u'use', u'well', u'fit', u'back', u'size', 
-u'small', u'year', u'perfect', u'around', u'good', u'big', u'love', u'also', u'enough']
+================ Global 15 ================
 
-================ Global 15 ================ ???
-[u'use', u'coffee', u'would', u'handle', u'like', u'sword', u'well', u'even', u'stove', u'used', 
-u'something', u'hold', u'much', u'long', u'small', u'thing', u'enough', u'good', u'easily', u'work']
+[u'use', u'coffee', u'would', u'handle', u'like', u'sword', u'well', u'even', u'stove', u'used', u'something', u'hold', u'much', u'long', u'small', u'thing', u'enough', u'good', u'easily', u'work']
 
-================ Global 16 ================ Assembly instructions (local topic)
-[u'parts', u'would', u'screws', u'instructions', u'together', u'assembly', u'box', u'could', u'put', u'machine', 
-u'back', u'piece', u'work', u'product', u'fit', u'plastic', u'unit', u'directions', u'missing', u'top']
+================ Global 16 ================
+Assembly
+[u'parts', u'would', u'screws', u'instructions', u'together', u'assembly', u'box', u'could', u'put', u'machine', u'back', u'piece', u'work', u'product', u'fit', u'plastic', u'unit', u'directions', u'missing', u'top']
 
-================ Global 17 ================ Torch/flashlight 
-[u'light', u'rate', u'heart', u'batteries', u'battery', u'flashlight', u'monitor', u'use', u'lights', 
-u'led', u'bright', u'also', u'time', u'night', u'minutes', u'long', u'power', u'see', u'like', u'hours']
+================ Global 17 ================
+Flashlights
+[u'light', u'rate', u'heart', u'batteries', u'battery', u'flashlight', u'monitor', u'use', u'lights', u'led', u'bright', u'also', u'time', u'night', u'minutes', u'long', u'power', u'see', u'like', u'hours']
 
-================ Global 18 ================ Gloves 
-[u'gloves', u'bag', u'use', u'heavy', u'hands', u'pair', u'would', u'hand', u'wrist', u'well', 
-u'made', u'glove', u'padding', u'straps', u'great', u'good', u'strap', u'around', u'even', u'make']
+================ Global 18 ================
+Gloves
+[u'gloves', u'bag', u'use', u'heavy', u'hands', u'pair', u'would', u'hand', u'wrist', u'well', u'made', u'glove', u'padding', u'straps', u'great', u'good', u'strap', u'around', u'even', u'make']
 
-================ Global 19 ================ ???
-[u'use', u'like', u'gym', u'used', u'great', u'day', u'weight', u'using', u'feel', u'time', 
-u'minutes', u'product', u'much', u'want', u'take', u'swim', u'first', u'workout', u'make', u'without']
+================ Global 19 ================
+Workout 2?
+[u'use', u'like', u'gym', u'used', u'great', u'day', u'weight', u'using', u'feel', u'time', u'minutes', u'product', u'much', u'want', u'take', u'swim', u'first', u'workout', u'make', u'without']
 
-================ Global 20 ================ Guns and Rifles 
-[u'gun', u'good', u'scope', u'airsoft', u'like', u'great', u'shot', u'buy', u'use', 
-u'dont', u'shoot', u'accurate', u'clip', u'shoots', u'fps', u'rifle', u'thing', u'first', u'really', u'guns']
+================ Global 20 ================
+Guns and Rifles
+[u'gun', u'good', u'scope', u'airsoft', u'like', u'great', u'shot', u'buy', u'use', u'dont', u'shoot', u'accurate', u'clip', u'shoots', u'fps', u'rifle', u'thing', u'first', u'really', u'guns']
 
 
-================ Local 1 ================ Price/quality
-[u'good', u'price', u'product', u'would', u'worth', u'great', u'money', u'well', u'recommend', u'quality', u'bike', u'like', u'purchase', 
-u'overall', u'really', u'better', u'buy', u'happy', u'highly', u'equipment']
+#########################################
+================ Local 1 ================
+Recommendation bicycle 
+[u'good', u'price', u'product', u'would', u'worth', u'great', u'money', u'well', u'recommend', u'quality', u'bike', u'like', u'purchase', u'overall', u'really', u'better', u'buy', u'happy', u'highly', u'equipment']
 
-================ Local 2 ================ Presents
-[u'old', u'bought', u'year', u'loves', u'son', u'great', u'daughter', u'christmas', u'purchased', u'love', u'gift', u'bike', u'years', 
-u'loved', u'kids', u'ago', u'toy', u'months', u'birthday', u'product']
+================ Local 2 ================
+(Birthday) presents
+[u'old', u'bought', u'year', u'loves', u'son', u'great', u'daughter', u'christmas', u'purchased', u'love', u'gift', u'bike', u'years', u'loved', u'kids', u'ago', u'toy', u'months', u'birthday', u'product']
 
-================ Local 3 ================ Quality (twijfelachtig) ???
-[u'great', u'price', u'good', u'would', u'buy', u'highly', u'recommend', u'product', u'money', u'quality', u'really', u'bought', 
-u'best', u'recommended', u'better', u'well', u'worth', u'much', u'amazon', u'like']
+================ Local 3 ================
+Quality (Amazon products)
+[u'great', u'price', u'good', u'would', u'buy', u'highly', u'recommend', u'product', u'money', u'quality', u'really', u'bought', u'best', u'recommended', u'better', u'well', u'worth', u'much', u'amazon', u'like']
 
-================ Local 4 ================ Product assembly
-[u'easy', u'great', u'product', u'together', u'use', u'well', u'put', u'good', u'time', u'sturdy', u'assemble', u'shipping', 
-u'works', u'love', u'price', u'assembly', u'took', u'item', u'instructions', u'amazon']
+================ Local 4 ================
+Product assembly
+[u'easy', u'great', u'product', u'together', u'use', u'well', u'put', u'good', u'time', u'sturdy', u'assemble', u'shipping', u'works', u'love', u'price', u'assembly', u'took', u'item', u'instructions', u'amazon']
 
-================ Local 5 ================ ???
-[u'use', u'workout', u'would', u'great', u'like', u'machine', u'product', u'good', u'time', u'really', u'used', u'work', 
-u'much', u'give', u'exercise', u'also', u'could', u'back', u'using', u'recommend']
+================ Local 5 ================
+Recommended workout
+[u'use', u'workout', u'would', u'great', u'like', u'machine', u'product', u'good', u'time', u'really', u'used', u'work', u'much', u'give', u'exercise', u'also', u'could', u'back', u'using', u'recommend']
 
-================ Local 6 ================ ???
-[u'use', u'easy', u'time', u'put', u'bike', u'little', u'problem', u'well', u'first', u'together', u'like', u'small', 
-u'also', u'thing', u'without', u'enough', u'used', u'box', u'made', u'need']
+================ Local 6 ================
 
-================ Local 7 ================ Ease & comfort
-[u'little', u'easy', u'use', u'comfortable', u'like', u'even', u'small', u'also', u'enough', u'seat', u'put', u'water', 
-u'easily', u'well', u'great', u'much', u'would', u'back', u'bag', u'thing']
+[u'use', u'easy', u'time', u'put', u'bike', u'little', u'problem', u'well', u'first', u'together', u'like', u'small', u'also', u'thing', u'without', u'enough', u'used', u'box', u'made', u'need']
+
+================ Local 7 ================
+Ease and comfort
+[u'little', u'easy', u'use', u'comfortable', u'like', u'even', u'small', u'also', u'enough', u'seat', u'put', u'water', u'easily', u'well', u'great', u'much', u'would', u'back', u'bag', u'thing']
 
 
+##########################################################
 ================ Global Topic 1 ==========================
 use: 0.009436
 would: 0.008696

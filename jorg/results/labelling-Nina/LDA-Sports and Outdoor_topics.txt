@@ -1,0 +1,99 @@
+================ standard 1================
+Weight loss (?)
+[u'back', u'use', u'time', u'get', u'product', u'using', u'day', u'weight', u"n't", u'body', u'feel', u'work', u'...', u'pain', u'works', u'first', u'gym', u'used', u'pounds', u'make']
+
+================ standard 2================
+Water bottles
+[u'water', u'bottle', u'like', u'top', u'bottles', u"n't", u'drink', u'coffee', u'get', u'sigg', u'well', u'hot', u'plastic', 
+u'also', u'makes', u'perfect', u'size', u'cooler', u'sports', u'inside']
+
+================ standard 3================
+Cycling
+[u'bike', u'ride', u'seat', u'riding', u'great', u'bikes', u'would', u'easy', u"n't", u'bought', u'like', 
+u'fit', u'front', u'mount', u'little', u'made', u'road', u'wheel', u'comfortable', u'much']
+
+================ standard 4================
+Gloves
+[u'gloves', u'good', u'use', u'great', u'bag', u'hands', u'like', u'hand', u'heavy',
+ u'pair', u'also', u'well', u'grip', u'used', u'using', u'would', u'glove', u'wrist', u'blue', u'weight']
+
+================ standard 5================
+???
+[u"'ve", u'pack', u'great', u"n't", u'used', u'water', u'one', u'well', u'cap', u'works', 
+u'bought', u'swim', u'best', u'product', u'use', u'trip', u'fits', u'comfortable', u'tried', u'put']
+
+================ standard 6================
+Golf
+[u'ball', u'pump', u'air', u'board', u'balls', u'swing', u'game', u'set', u'golf', u'play', 
+u'clubs', u'case', u'hit', u'cards', u'one', u'bed', u'made', u'club', u'player', u'practice']
+
+================ standard 7================
+Presents
+[u'old', u'year', u'loves', u'son', u'kids', u'great', u'daughter', u'bought', u'fun', 
+u"n't", u'one', u'love', u'little', u'christmas', u'really', u'toy', u'...', u'got', u'child', u'gift']
+
+================ standard 8================
+Workout/fitness
+[u'workout', u'great', u'also', u"n't", u'like', u'rate', u'heart', u'use', u'step', 
+u'body', u'dvd', u'workouts', u'exercise', u'work', u'gym', u'get', u'training', u'good', u'really', u'easy']
+
+================ standard 9================
+Price/quality
+[u'great', u'price', u'well', u'easy', u'product', u'good', u'table', u'use', u'quality', 
+u'best', u'made', u'time', u'perfect', u'comfortable', u'set', u'one', u'every', u'money', u'highly', u'value']
+
+================ standard 10================
+
+[u"n't", u'get', u'like', u'really', u'good', u'would', u'...', u'one', u'could', u'think', 
+u'thing', u'buy', u'got', u'better', u"'re", u'something', u'know', u'much', u'want', u'going']
+
+
+================ standard 11================
+Online shopping / customer service
+[u'product', u'would', u'amazon', u'item', u'shipping', u'service', u'received', u'...', u'company', 
+u'box', u'order', u'back', u'sent', u'unit', u'arrived', u'days', u'ordered', u'work', u'time', u'customer']
+
+================ standard 12================
+Assembly
+[u'machine', u'together', u'put', u'instructions', u'could', u'assembly', u'took', u"n't", 
+u'parts', u'get', u'good', u'read', u'sturdy', u'reviews', u'even', u'would', u'little', u'easy', u'using', u'use']
+
+================ standard 13================
+???
+[u'product', u'one', u'exercise', u'strength', u'great', u'exercises', u'different', u'hand', u'little', 
+u'muscles', u'work', u'tension', u'grip', u'love', u'finger', u'find', u'daily', u'lbs', u'fingers', u'found']
+
+
+================ standard 14================
+Sport watches
+[u'watch', u'compass', u'accurate', u'use', u'time', u'display', u'pedometer', u'computer', u'easy', u'features', u'unit', u'suunto', u'like', u'get', u'feature', u'altimeter', u'device', u'set', u'software', u'reading']
+
+================ standard 15================
+Guns & Rifles
+[u'gun', u'good', u'great', u'...', u'buy', u'scope', u'got', u'dont', u'get', u'really', u'like', u'airsoft', 
+u'also', u'fast', u'shot', u'best', u'clip', u'feet', u'shoot', u'even']
+
+================ standard 16================
+Stroller
+[u'easy', u"n't", u'would', u'rack', u'well', u'use', u'one', u'hold', u'fit', u'even', u'stroller', 
+u'two', u'back', u'small', u'put', u'weight', u'easily', u'also', u'enough', u'around']
+
+================ standard 17================
+
+[u'one', u"n't", u'first', u'would', u'time', u'two', u'buy', u'get', u'years', u'still', 
+u'months', u'even', u'money', u'bought', u'new', u'another', u"'ve", u'thing', u'back', u'last']
+
+================ standard 18================
+Yoga
+[u'mat', u'bag', u'great', u'backpack', u'one', u'yoga', u"n't", u'also', u'would', u'love', 
+u'around', u'like', u'mats', u'much', u'bought', u'really', u'nice', u'recommend', u'room', u'large']
+
+================ standard 19================
+Weapons
+[u'knife', u'sword', u'blade', u'pocket', u'like', u'one', u'knives', u'little', u'small', u"n't", u'handle', 
+u'sharp', u'well', u'nice', u'steel', u'tool', u'use', u'opening', u'metal', u'edge']
+
+================ standard 20================
+Flashlights
+[u'light', u'one', u'batteries', u'battery', u'flashlight', u'night', u'lights', u'led', u'use', 
+u'bright', u'power', u'see', u'used', u'hours', u'also', u'time', u'enough', u'small', u'even', u'two']
