@@ -36,7 +36,7 @@ u'homes', u'magazines', u'also', u'ads', u'decorating', u'love', u'beautiful', u
 [u'magazine', u'fiction', u'stories', u'also', u'articles', u'magazines', u'reviews', u'science', u'many', u'authors', 
 u'like', u'book', u'books', u'issue', u'find', u'read', u'good', u'new', u'short', u'writing']
 
-================ Global 10 ================ Political (see above)
+================ Global 10 ================ Politics (see above)
 [u'magazine', u'articles', u'news', u'time', u'world', u'read', u'coverage', u'american', u'political', u'scientific', 
 u'liberal', u'would', u'science', u'like', u'conservative', u'economist', u'written', u'people', u'even', u'new']
 
@@ -68,7 +68,7 @@ u'magazines', u'great', u'natural', u'healthy', u'articles', u'men', u'read', u'
 [u'magazine', u'gramophone', u'new', u'music', u'wedding', u'recordings', u'classical', u'month', 
 u'reviews', u'reason', u'information', u'many', u'would', u'photos', u'issue', u'like', u'releases', u'review', u'feature', u'etc']
 
-================ Global 18 ================ ...again Food/wine/cooking
+================ Global 18 ================ Life style
 [u'magazine', u'wine', u'like', u'recipes', u'home', u'articles', u'find', u'spectator', u'different', u'people', 
 u'food', u'new', u'issue', u'ads', u'taste', u'many', u'make', u'know', u'cooking', u'try']
 
