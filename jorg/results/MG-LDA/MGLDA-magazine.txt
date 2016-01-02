@@ -1,26 +1,26 @@
 
-================ Global 1 ================ Politics (Economist)
+================ Global 1 ================ Politics (Economist, TNR)
 [u'magazine', u'new', u'bush', u'read', u'reading', u'would', u'years', u'many', u'like', u'people', 
 u'article', u'issues', u'writers', u'political', u'tnr', u'war', u'liberal', u'economist', u'conservative', u'often']
 
 
-================ Global 2 ================ International business (Wall Street Journal & News Week)
+================ Global 2 ================ News (Wall Street Journal & Newsweek & New York Times)
 [u'journal', u'new', u'world', u'news', u'review', u'week', u'read', u'york', u'books', u'times', 
 u'street', u'wall', u'reviews', u'time', u'often', u'also', u'book', u'london', u'editorial', u'magazines']
 
-================ Global 3 ================ Pornography? 
+================ Global 3 ================ ???
 [u'magazine', u'like', u'girls', u'love', u'world', u'women', u'article', u'life', u'even', 
 u'know', u'girl', u'sex', u'real', u'want', u'see', u'way', u'also', u'people', u'mag', u'great']
 
-================ Global 4 ================ Fashion (Vogue)
+================ Global 4 ================ Fashion (Vogue, Burda)
 [u'magazine', u'fashion', u'vogue', u'patterns', u'like', u'knitting', u'pattern', u'magazines', 
 u'good', u'look', u'find', u'people', u'articles', u'photography', u'burda', u'want', u'make', u'new', u'size', u'etc']
 
-================ Global 5 ================ Software/Digital (Macworld magazine)
+================ Global 5 ================ Software/Digital 
 [u'magazine', u'mac', u'like', u'articles', u'good', u'reviews', u'new', u'macworld', 
 u'computer', u'software', u'digital', u'ads', u'tips', u'photography', u'things', u'way', u'useful', u'many', u'great', u'hardware']
 
-================ Global 6 ================ Cars and "men"
+================ Global 6 ================ Mens lifestyle
 [u'magazine', u'car', u'like', u'driver', u'road', u'fortune', u'cars', u'foreign', u'news', 
 u'best', u'world', u'articles', u'magazines', u'bike', u'read', u'business', u'policy', u'racing', u'affairs', u'features']
 
@@ -28,15 +28,15 @@ u'best', u'world', u'articles', u'magazines', u'bike', u'read', u'business', u'p
 [u'recipes', u'magazine', u'cooking', u'food', u'issue', u'like', u'cook', u'recipe', u'also', 
 u'home', u'love', u'find', u'rachael', u'easy', u'time', u'make', u'new', u'ingredients', u'many', u'great']
 
-================ Global 8 ================ Design/Travel/Home
+================ Global 8 ================ Home decoration
 [u'magazine', u'home', u'design', u'like', u'great', u'ideas', u'travel', u'articles', 
 u'homes', u'magazines', u'also', u'ads', u'decorating', u'love', u'beautiful', u'pictures', u'things', u'many', u'new', u'read']
 
-================ Global 9 ================ Book review magazine
+================ Global 9 ================ ???
 [u'magazine', u'fiction', u'stories', u'also', u'articles', u'magazines', u'reviews', u'science', u'many', u'authors', 
 u'like', u'book', u'books', u'issue', u'find', u'read', u'good', u'new', u'short', u'writing']
 
-================ Global 10 ================ Politics (see above)
+================ Global 10 ================ Politics ???
 [u'magazine', u'articles', u'news', u'time', u'world', u'read', u'coverage', u'american', u'political', u'scientific', 
 u'liberal', u'would', u'science', u'like', u'conservative', u'economist', u'written', u'people', u'even', u'new']
 
@@ -44,11 +44,11 @@ u'liberal', u'would', u'science', u'like', u'conservative', u'economist', u'writ
 [u'magazine', u'people', u'would', u'magazines', u'even', u'information', u'good', u'know', u'like', u'many', 
 u'best', u'buy', u'example', u'say', u'much', u'see', u'always', u'fortune', u'money', u'around']
 
-================ Global 12 ================ Music (Rolling Stone)
+================ Global 12 ================ Music
 [u'music', u'magazine', u'good', u'like', u'bands', u'reviews', u'rock', u'best', u'cover', u'magazines', u'articles', 
 u'rolling', u'new', u'also', u'stone', u'spin', u'great', u'always', u'mojo', u'issue']
 
-================ Global 13 ================ Religion (but Harper is more "general interest", so skip Harper)
+================ Global 13 ================ Religion
 [u'magazine', u'christian', u'christianity', u'many', u'today', u'america', u'way', u'american', u'like', 
 u'harper', u'world', u'new', u'years', u'books', u'rather', u'left', u'pages', u'evangelical', u'publication', u'see']
 
@@ -56,7 +56,7 @@ u'harper', u'world', u'new', u'years', u'books', u'rather', u'left', u'pages', u
 [u'war', u'magazine', u'article', u'issue', u'history', u'well', u'vietnam', u'articles', u'month', 
 u'tips', u'great', u'people', u'many', u'inc', u'know', u'military', u'life', u'another', u'real', u'read']
 
-================ Global 15 ================ too diverse
+================ Global 15 ================ 
 [u'magazine', u'also', u'like', u'relevant', u'technology', u'reviews', u'really', u'people', u'could', 
 u'magazines', u'culture', u'yet', u'games', u'world', u'star', u'today', u'put', u'christian', u'way', u'make']
 
@@ -64,11 +64,11 @@ u'magazines', u'culture', u'yet', u'games', u'world', u'star', u'today', u'put',
 [u'magazine', u'fitness', u'health', u'like', u'women', u'products', u'body', u'beauty', u'many', u'yoga', 
 u'magazines', u'great', u'natural', u'healthy', u'articles', u'men', u'read', u'look', u'life', u'advice']
 
-================ Global 17 ================ Music
+================ Global 17 ================ Classical music
 [u'magazine', u'gramophone', u'new', u'music', u'wedding', u'recordings', u'classical', u'month', 
 u'reviews', u'reason', u'information', u'many', u'would', u'photos', u'issue', u'like', u'releases', u'review', u'feature', u'etc']
 
-================ Global 18 ================ Life style
+================ Global 18 ================ ???
 [u'magazine', u'wine', u'like', u'recipes', u'home', u'articles', u'find', u'spectator', u'different', u'people', 
 u'food', u'new', u'issue', u'ads', u'taste', u'many', u'make', u'know', u'cooking', u'try']
 
@@ -76,7 +76,7 @@ u'food', u'new', u'issue', u'ads', u'taste', u'many', u'make', u'know', u'cookin
 [u'magazine', u'articles', u'people', u'many', u'places', u'article', u'living', u'find', u'travel', u'coast', 
 u'also', u'like', u'read', u'well', u'great', u'reading', u'world', u'southern', u'coastal', u'tea']
 
-================ Global 20 ================ too diverse
+================ Global 20 ================ ???
 [u'magazine', u'movie', u'son', u'que', u'big', u'like', u'women', u'release', u'press', u'magazines', 
 u'conservative', u'titles', u'city', u'hollywood', u'reviews', u'outside', u'cosmopolitan', u'must', u'writers', u'audiofile']
 
@@ -85,16 +85,16 @@ u'conservative', u'titles', u'city', u'hollywood', u'reviews', u'outside', u'cos
 [u'magazine', u'like', u'fashion', u'read', u'articles', u'magazines', u'great', u'ads', u'love', u'best', u'reading', 
 u'good', u'much', u'also', u'people', u'dog', u'know', u'would', u'women', u'many']
 
-================ Local 2 ================ 
+================ Local 2 ================ Informative ?
 [u'magazine', u'articles', u'well', u'issue', u'great', u'find', u'also', u'business', u'interesting', u'read', 
 u'new', u'information', u'ideas', u'every', u'topics', u'reviews', u'like', u'informative', u'good', u'money']
 
-================ Local 3 ================ Great articles? already a sentiment not a topic (see also below)
+================ Local 3 ================ 	Quality (articles, picture, stories, ads)
 [u'magazine', u'great', u'articles', u'like', u'good', u'read', u'pictures', u'interesting', 
 u'find', u'always', u'information', u'also', u'magazines', u'quality', u'well', u'stories', u'ads', u'issue', u'recipes', u'fun']
 
 
-================ Local 4 ================ in fact already a sentiment? highly recommend? not a topic
+================ Local 4 ================ 
 [u'magazine', u'recommend', u'highly', u'like', u'read', u'new', u'best', u'anyone', u'great', 
 u'would', u'articles', u'well', u'magazines', u'world', u'good', u'really', u'music', u'even', u'written', u'sports']
 
@@ -102,11 +102,11 @@ u'would', u'articles', u'well', u'magazines', u'world', u'good', u'really', u'mu
 [u'magazine', u'years', u'read', u'would', u'best', u'reading', u'great', u'love', u'ever', u'kids', 
 u'new', u'really', u'still', u'like', u'issue', u'think', u'people', u'enjoy', u'old', u'since']
 
-================ Local 6 ================ Price?
+================ Local 6 ================ Price
 [u'magazine', u'subscription', u'issue', u'cover', u'read', u'worth', u'would', u'every', u'time', u'money', 
 u'years', u'price', u'like', u'issues', u'month', u'year', u'magazines', u'good', u'well', u'even']
 
-================ Local 7 ================ Subscription service?
+================ Local 7 ================ Subscription service
 [u'magazine', u'subscription', u'issue', u'first', u'received', u'year', u'issues', u'amazon', u'never', 
 u'years', u'order', u'months', u'ordered', u'time', u'copy', u'bought', u'gift', u'would', u'service', u'ago']
 
