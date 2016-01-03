@@ -1,40 +1,79 @@
-================ standard 1================
-[u'magazine', u'car', u'best', u"n't", u'much', u'like', u'cars', u'one', u'fashion', u'articles', u'driver', u'road', u'better', u'magazines', u'products', u'way', u'instyle', u'style', u'photography', u'always']
-================ standard 2================
-[u'news', u'world', u'time', u'magazine', u'journal', u'read', u'economist', u'foreign', u'get', u'editorial', u'affairs', u"n't", u'coverage', u'newspaper', u'issues', u'politics', u'reading', u'events', u'policy', u'national']
-================ standard 3================
-[u'magazine', u'great', u'read', u'kids', u'like', u'old', u"n't", u'much', u'really', u'children', u'year', u'subscription', u'reading', u'child', u'years', u'parents', u'age', u'love', u'cover', u'mag']
-================ standard 4================
-[u'magazine', u'travel', u'home', u'like', u'ideas', u'living', u'great', u'homes', u'pages', u'golf', u'new', u'design', u'even', u'love', u'much', u'places', u'articles', u'house', u'many', u'country']
-================ standard 5================
-[u'years', u'fiction', u'new', u"n't", u'magazine', u'one', u'stories', u'read', u'science', u'people', u'two', u'reading', u'since', u'news', u'business', u'every', u'york', u'better', u'reviews', u'fantasy']
-================ standard 6================
-[u'magazine', u'subscription', u'issue', u'received', u"n't", u'get', u'first', u'amazon', u'issues', u'order', u'months', u'would', u'ordered', u'...', u'one', u'still', u'never', u'year', u'service', u'weeks']
-================ standard 7================
-[u'magazine', u'people', u'cover', u'stories', u'dog', u'history', u'read', u'reading', u'interesting', u'pictures', u'issue', u'articles', u'well', u'great', u'weekly', u'touch', u'price', u'enjoy', u'week', u'worth']
-================ standard 8================
-[u'magazine', u'like', u"n't", u'fashion', u'women', u'men', u'ads', u'articles', u'...', u'magazines', u'vogue', u'fitness', u'get', u'girls', u'see', u'love', u'little', u'look', u'one', u'still']
-================ standard 9================
-[u'war', u'read', u'political', u'one', u'many', u'left', u'new', u'conservative', u'reason', u'often', u'writing', u'american', u'years', u'liberal', u'america', u'current', u'bush', u'want', u'writers', u'nation']
-================ standard 10================
-[u'recipes', u'magazine', u'food', u'cooking', u'issue', u'recipe', u'one', u'always', u'great', u'love', u'cook', u'tips', u'also', u'section', u'easy', u'make', u'home', u'ingredients', u'well', u'life']
-================ standard 11================
-[u'christian', u'yoga', u'culture', u'life', u'relevant', u'article', u'white', u'world', u'books', u'know', u'book', u'today', u'many', u'never', u'review', u'rather', u'way', u'issue', u'mind', u'people']
-================ standard 12================
-[u'magazine', u"n't", u'like', u'read', u'good', u'would', u'get', u'want', u'people', u'one', u'really', u"'ve", u'...', u'see', u'know', u'time', u'make', u'things', u'best', u'every']
+================ standard 1================ Cars
+[u'magazine', u'car', u'best', u"n't", u'much', u'like', u'cars', u'one', u'fashion', u'articles', u'driver', 
+u'road', u'better', u'magazines', u'products', u'way', u'instyle', u'style', u'photography', u'always']
+
+================ standard 2================ News
+[u'news', u'world', u'time', u'magazine', u'journal', u'read', u'economist', u'foreign', u'get', u'editorial', 
+u'affairs', u"n't", u'coverage', u'newspaper', u'issues', u'politics', u'reading', u'events', u'policy', u'national']
+
+================ standard 3================ Childrens magazine
+[u'magazine', u'great', u'read', u'kids', u'like', u'old', u"n't", u'much', u'really', u'children', u'year', 
+u'subscription', u'reading', u'child', u'years', u'parents', u'age', u'love', u'cover', u'mag']
+
+================ standard 4================ Life style
+[u'magazine', u'travel', u'home', u'like', u'ideas', u'living', u'great', u'homes', u'pages', u'golf', u'new', 
+u'design', u'even', u'love', u'much', u'places', u'articles', u'house', u'many', u'country']
+
+================ standard 5================ Science fiction
+[u'years', u'fiction', u'new', u"n't", u'magazine', u'one', u'stories', u'read', u'science', u'people', u'two', 
+u'reading', u'since', u'news', u'business', u'every', u'york', u'better', u'reviews', u'fantasy']
+
+================ standard 6================ Subscription service
+[u'magazine', u'subscription', u'issue', u'received', u"n't", u'get', u'first', u'amazon', u'issues', u'order', 
+u'months', u'would', u'ordered', u'...', u'one', u'still', u'never', u'year', u'service', u'weeks']
+
+================ standard 7================ 
+[u'magazine', u'people', u'cover', u'stories', u'dog', u'history', u'read', u'reading', u'interesting', u'pictures', 
+u'issue', u'articles', u'well', u'great', u'weekly', u'touch', u'price', u'enjoy', u'week', u'worth']
+
+================ standard 8================ Fashion (Vogue)
+[u'magazine', u'like', u"n't", u'fashion', u'women', u'men', u'ads', u'articles', u'...', u'magazines', u'vogue', 
+u'fitness', u'get', u'girls', u'see', u'love', u'little', u'look', u'one', u'still']
+
+================ standard 9================ (American) Politics
+[u'war', u'read', u'political', u'one', u'many', u'left', u'new', u'conservative', u'reason', u'often', u'writing', 
+u'american', u'years', u'liberal', u'america', u'current', u'bush', u'want', u'writers', u'nation']
+
+================ standard 10================ Cooking
+[u'recipes', u'magazine', u'food', u'cooking', u'issue', u'recipe', u'one', u'always', u'great', u'love', u'cook', 
+u'tips', u'also', u'section', u'easy', u'make', u'home', u'ingredients', u'well', u'life']
+
+================ standard 11================ Mindfulness
+[u'christian', u'yoga', u'culture', u'life', u'relevant', u'article', u'white', u'world', u'books', u'know', u'book', 
+u'today', u'many', u'never', u'review', u'rather', u'way', u'issue', u'mind', u'people']
+
+================ standard 12================ ???
+[u'magazine', u"n't", u'like', u'read', u'good', u'would', u'get', u'want', u'people', u'one', u'really', u"'ve", 
+u'...', u'see', u'know', u'time', u'make', u'things', u'best', u'every']
+
 ================ standard 13================
-[u'articles', u'magazine', u'world', u'one', u'time', u'reading', u'wine', u'publication', u'well', u'always', u'would', u'week', u'recent', u'article', u'written', u'years', u'horror', u"'ve", u'movie', u'best']
-================ standard 14================
-[u'magazine', u'articles', u'like', u'well', u'written', u'american', u'good', u'paper', u'science', u'scientific', u'give', u'would', u'quality', u'technology', u'also', u'today', u'great', u'high', u'might', u'could']
-================ standard 15================
-[u'magazine', u'love', u'every', u'great', u'look', u'one', u'issue', u'ideas', u"'ve", u'also', u'new', u'month', u"n't", u'even', u'patterns', u'much', u'projects', u'really', u'keep', u'things']
-================ standard 16================
-[u'books', u'reviews', u'book', u'new', u'also', u'review', u'music', u'magazine', u'gramophone', u'best', u'like', u'movies', u'people', u'latest', u'releases', u'simply', u'current', u'john', u'take', u'woodworking']
-================ standard 17================
-[u'magazine', u'articles', u'information', u'photography', u'great', u'reviews', u'find', u'new', u'issue', u'magazines', u'best', u"'ve", u'found', u'years', u'photo', u'read', u'mac', u'recommend', u'ads', u'digital']
-================ standard 18================
-[u'magazine', u'music', u'like', u'reviews', u'good', u'mag', u"n't", u'games', u'one', u'...', u'great', u'best', u'cover', u'bands', u'well', u'get', u'new', u'game', u'even', u'also']
+[u'articles', u'magazine', u'world', u'one', u'time', u'reading', u'wine', u'publication', u'well', u'always', 
+u'would', u'week', u'recent', u'article', u'written', u'years', u'horror', u"'ve", u'movie', u'best']
+
+================ standard 14================ Science/technology
+[u'magazine', u'articles', u'like', u'well', u'written', u'american', u'good', u'paper', u'science', 
+u'scientific', u'give', u'would', u'quality', u'technology', u'also', u'today', u'great', u'high', u'might', u'could']
+
+================ standard 15================ 
+[u'magazine', u'love', u'every', u'great', u'look', u'one', u'issue', u'ideas', u"'ve", u'also', u'new', 
+u'month', u"n't", u'even', u'patterns', u'much', u'projects', u'really', u'keep', u'things']
+
+================ standard 16================ 
+[u'books', u'reviews', u'book', u'new', u'also', u'review', u'music', u'magazine', u'gramophone', u'best', 
+u'like', u'movies', u'people', u'latest', u'releases', u'simply', u'current', u'john', u'take', u'woodworking']
+
+================ standard 17================ 
+[u'magazine', u'articles', u'information', u'photography', u'great', u'reviews', u'find', u'new', u'issue', 
+u'magazines', u'best', u"'ve", u'found', u'years', u'photo', u'read', u'mac', u'recommend', u'ads', u'digital']
+
+================ standard 18================ 
+[u'magazine', u'music', u'like', u'reviews', u'good', u'mag', u"n't", u'games', u'one', u'...', u'great', 
+u'best', u'cover', u'bands', u'well', u'get', u'new', u'game', u'even', u'also']
+
 ================ standard 19================
-[u'magazine', u'articles', u'one', u'find', u'issue', u'good', u'read', u'well', u'great', u'stories', u'would', u'time', u'writing', u'reading', u'magazines', u'every', u'writers', u'like', u'also', u'always']
-================ standard 20================
-[u'magazine', u'articles', u'business', u'information', u'like', u'one', u'read', u'also', u'issue', u'find', u'many', u'useful', u'every', u'want', u'well', u'always', u'publication', u'small', u'topics', u'money']
+[u'magazine', u'articles', u'one', u'find', u'issue', u'good', u'read', u'well', u'great', u'stories', 
+u'would', u'time', u'writing', u'reading', u'magazines', u'every', u'writers', u'like', u'also', u'always']
+
+================ standard 20================ 
+[u'magazine', u'articles', u'business', u'information', u'like', u'one', u'read', u'also', u'issue', 
+u'find', u'many', u'useful', u'every', u'want', u'well', u'always', u'publication', u'small', u'topics', u'money']
