@@ -1,6 +1,5 @@
 import sys
-from preprocess_movie import *
-from preprocessingv14 import *
+from preprocessing import *
 from handle_pp_objects import *
 from scipy.special import gammaln
 
@@ -504,12 +503,8 @@ if __name__ == '__main__':
     mem_file_results = dir_path + "mglda_" + product + "_" + str(N_GIBBS_SAMPLING_ITERATIONS) + ".mem"
 
     if preprocess == 'True':
-        if product != "movie":
-            inFile = dir_path +  "all.review.xml"
-            reviews, d_vocab, l_bag_of_words, m_doc_words, m_docs_sentence_words = preprocessing(inFile)
-        else:
-            reviews, d_vocab, l_bag_of_words, m_doc_words, m_docs_sentence_words = buildvocab(dir_path, 3, '0')
-        save_objects(dir_path, product, reviews, d_vocab, l_bag_of_words, m_doc_words, m_docs_sentence_words)
+        inFile = dir_path +  "all.review.xml"
+        reviews, d_vocab, l_bag_of_words, m_doc_words, m_docs_sentence_words = preprocessing(inFile)
     else:
         reviews, d_vocab, l_bag_of_words, m_doc_words, m_docs_sentence_words = load_objects(dir_path, product)
 
@@ -537,17 +532,4 @@ if __name__ == '__main__':
 
     mem_file_counter = dir_path + product + "_counters_" + str(N_GIBBS_SAMPLING_ITERATIONS) + ".mem"
     lda.store_counters(mem_file_counter)
-
-    # print w['newsweek']
-    # print np.sum(doc_words[:, w['newsweek']])
-    # print w['unseen']
-    # print np.sum(doc_words[:, w['unseen']])
-    # print w['unseen']
-    # print np.sum(doc_words[:, w['unseen']])
-    # print w['magazine']
-    # print np.sum(doc_words[:, w['magazine']])
-
-    # magazine magazim  newsweekli newsweek
-
-
 

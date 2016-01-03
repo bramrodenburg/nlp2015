@@ -3,7 +3,6 @@ import pickle
 import numpy as np
 from handle_pp_objects import *
 
-
 def load_bag_of_words(infile):
 
     with open(infile, 'rb') as f:
@@ -31,8 +30,6 @@ def show_topics(phi, topic_type, l_vocab):
 def show_results(dir_path, product, num_of_iters):
 
     mem_file_results = dir_path + "mglda_" + product+ "_" + num_of_iters + ".mem"
-    # picklefile = dir_path + "movie_dic_words.pkl"
-    # h5_file = dir_path + "movie_dw_dsw.h5"
     mem_file_counter = dir_path + product + "_counters_" + num_of_iters + ".mem"
 
     lda_results = h5py.File(mem_file_results, 'r')
