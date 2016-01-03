@@ -7,9 +7,11 @@ Known issue: due to a 'bug' in the preprocessing part not the entire 'eletronics
 
 ## Running the LDA program
 The LDA program can be run with the following commands:
+```
 python LDA.py preprocessing-boolean path-to-dataset-directory
-
+```
 For example:
+```
 python LDA.py True data/eletronics/
-
+```
 ## Running the MG-LDA program
